@@ -1,0 +1,11 @@
+'use strict';
+
+$(function () {
+    $('.chores-wrapper').columnize({
+        columns: 3
+    });
+
+    $('.chore-extend').click(function () {
+        $(this).parent('.chore').toggleClass('_extended');
+    });
+});

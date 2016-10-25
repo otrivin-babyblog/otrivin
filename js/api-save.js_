@@ -1,0 +1,67 @@
+'use strict'
+
+var url = '';
+//var obj;
+var userid = '';
+
+
+
+/*--------------------------------------*/
+$(function(){
+	
+	
+	/*try {
+            BB.init("UR9MWcMuOXSpMvqVH4EeyQJFS7cpTp5ByOh97Emg");
+        }
+        catch(err) {
+        //....
+        }
+	*/
+	/*BB.callMethod(
+            "getMyInfo",
+            {},
+            function(data){
+                //Ваш код обработки результата
+				userid = data.result.user_id;
+            },
+            function(err){
+                //Ваш код обработки ошибки
+            }
+        );*/
+	
+	$.ajax({
+			type: "GET",
+			url: url+"/api/post/get/"+userid,
+			success: function(msg) {
+				alert(msg);
+			},
+			error: function(errmsg){
+				
+			} 
+		});
+	
+	
+	
+});
+
+
+
+$(document).ready(function () {
+	
+	/*
+    $('.save-wrapper').click(function () {
+      
+	  $('#notes-list').append(
+	  
+				'<li>'+
+              '<div class="top"><a data-id="0" class="remove" href="#"><i class="fa fa-times"></i></a></div>'+
+              '<div class="content">'+
+                '<p class="title">орроло</p>'+
+               ' <p class="phone">46465</p>'+
+                '<p class="description"></p>'+
+              '</div>'+
+           ' </li>' );
+	  
+    });*/
+    
+});
