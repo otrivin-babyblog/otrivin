@@ -36,7 +36,7 @@ $(document).ready(function() {
                         // Данные о пользователе - user_data
 
                         authorizedButton = authorizedButton
-                            .replace('USER_URL', 'https://www.babyblog.ru' + user_data.user_profile_url)
+                            .replace('USER_URL', 'https://www.babyblog.ru/user/lenta/' + user_data.login)
                             .replace('AVATAR_URL', user_data.avatar)
                             .replace('USER_NAME', user_data.fio);
 
