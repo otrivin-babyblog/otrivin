@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-entertain.jpg" alt="Развлекай ребенка">
+          <img src="<? echo $source; ?>img/title-img-entertain.jpg" alt="Развлекай ребенка">
           <h1 class="main-title">Развлекай ребенка</h1>
         </div>
         <div class="breadcrumb">
@@ -16,7 +16,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <a href="" class="breadcrumb__link breadcrumb__link_current">Развлекай ребенка</a>
         </div>
         <div class="zoo-links-wrapper">
-          <img src="./img/whale-and-sea.png" alt="Китенок" class="zoo-links__img">
+          <img src="<? echo $source; ?>img/whale-and-sea.png" alt="Китенок" class="zoo-links__img">
           <h2 class="zoo-links__title">Игра “Здоровый зоопарк”</h2>
           <p class="zoo-links__about">Животные в нашем зоопарке простудились, у них насморк: носик забит о совсем не дышит. Добрый доктор Айболит очень занят, но вы можете помочь ему вылечить зверят. Дайте питомцу правильное лекарство и он мигом поправится! <br>
           Поиграйте вместе с малышом, это поможет развить эмпатию, привить любовь к животным, и просто здорово развеселит. Выучите, как говорит каждый зверь, и повторяйте вместе с ним. К тому же, ребенок будет лучше относиться к лечению, когда вы скажите: “Закапаем в носик, как китенку”</p>
@@ -74,8 +74,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

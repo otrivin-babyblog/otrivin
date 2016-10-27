@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-article.jpg" alt="Статьи">
+          <img src="<? echo $source; ?>img/title-img-article.jpg" alt="Статьи">
           <h1 class="main-title">Чтобы дышалось хорошо</h1>
         </div>
          <div class="breadcrumb">
@@ -17,7 +17,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <h1 class="page-title">Чтобы дышалось хорошо</h1>
         <div class="article-wrapper">
-          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="img/Depositphotos_12302401_m-2015.jpg" alt="" class="article__img article__img_left">
+          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/Depositphotos_12302401_m-2015.jpg" alt="" class="article__img article__img_left">
           <p class="article__text">Представьте себе такую картину: мама с новорожденным приезжают домой из роддома. В квартире все сверкает чистотой, все заранее подготовлено к приему нового жильца. Начинается домашняя жизнь: сон, кормления, купание, прогулки. Все идет своим чередом, и вдруг… Однажды ночью вы просыпаетесь от того, что у малыша заложен носик!
 
 Главное – это сохранять спокойствие! Педиатр, конечно, должен осматривать младенца регулярно, но нормальная работа крохотного носика зависит во многом от тех условий, которые созданы дома родителями. Мы с вами уже говорили об особенностях строения дыхательного аппарата новорожденного, так давайте не будем о них забывать. Подобный насморк часто называют «физиологическим» и связан он зачастую с тем, что правила содержания помещения не соблюдаются. А они не такие уж сложные, и их, по сути, всего три.</p>
@@ -58,8 +58,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

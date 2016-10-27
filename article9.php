@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-article.jpg" alt="Статьи">
+          <img src="<? echo $source; ?>img/title-img-article.jpg" alt="Статьи">
           <h1 class="main-title">Как устроен детский носик</h1>
         </div>
          <div class="breadcrumb">
@@ -59,8 +59,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

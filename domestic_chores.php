@@ -7,11 +7,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-domestic-chores.jpg" alt="Домашние дела">
+          <img src="<? echo $source; ?>img/title-img-domestic-chores.jpg" alt="Домашние дела">
           <h1 class="main-title">Домашние дела</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/" class="breadcrumb__link">Главная</a>
+          <a href="/calendar.php" class="breadcrumb__link">Планируй день</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Домашние дела</a>
         </div>
@@ -295,7 +295,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 </div>
 
  <div class="chore chore_elephant">
-            <img src="./img/elephant-right.png" alt="" class="chore__img">
+            <img src="<? echo $source; ?>img/elephant-right.png" alt="" class="chore__img">
           </div>
          
         </div>
@@ -324,10 +324,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
      <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
-    <script src="./js/jquery.columnizer.js"></script>
-    <script src="./js/chores.js"></script>
+    <script src="<? echo $source; ?>js/jquery.columnizer.js"></script>
+    <script src="<? echo $source; ?>js/chores.js"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

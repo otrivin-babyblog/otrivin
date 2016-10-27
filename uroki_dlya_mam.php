@@ -6,11 +6,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php") ?>
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-lessons.jpg" alt="Потешки">
+          <img src="<? echo $source; ?>img/title-img-lessons.jpg" alt="Потешки">
           <h1 class="main-title">Уроки для мамы</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/" class="breadcrumb__link">Главная</a>
+          <a href="/calendar.php" class="breadcrumb__link">Планируй день</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Уроки для мамы</a>
         </div>
@@ -57,7 +57,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php") ?>
       </div>
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
  <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

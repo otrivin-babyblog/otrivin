@@ -1,5 +1,24 @@
 <? 
 $title ='Гигиена носика';
+
+$ref = $_SERVER['HTTP_REFERER'];
+$ref_title = explode('/',$ref);
+if (count($ref_title) > 1){
+$ref_title = $ref_title[count($ref_title)-1];
+
+		if ($ref_title == 'calendar.php'){
+			$ref_title = 'Планируй день';
+		}else
+		{
+			$ref_title = 'Главная';	
+		}
+
+}else
+{
+$ref_title = 'Главная';	
+}
+
+
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
  ?>
 <body>
@@ -7,11 +26,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-nose-hygiene.jpg" alt="Гигиена носика">
+          <img src="<? echo $source; ?>img/title-img-nose-hygiene.jpg" alt="Гигиена носика">
           <h1 class="main-title">Гигиена носика</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/" class="breadcrumb__link">Главная</a>
+          <a href="<? echo $ref;?>" class="breadcrumb__link"><? echo $ref_title;?></a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Гигиена носика</a>
         </div>
@@ -20,9 +39,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <!-- Lots of hacks inside, beware -->
           <h3 class="complex__name">Что делать, если у малыша заложен носик?</h3>
           <div class="complex-cta">
-            <img src="./img/elephant-right.png" alt="Слоненок" class="complex-cta__img">
+            <img src="<? echo $source; ?>img/elephant-right.png" alt="Слоненок" class="complex-cta__img">
             <div class="complex-cta__header">Используйте комплекс Отривин бэби</div>
-            <img src="./img/elefant_twice.png" alt="Слоненок" class="complex-cta__img">
+            <img src="<? echo $source; ?>img/elefant_twice.png" alt="Слоненок" class="complex-cta__img">
           </div>
           <div class="complex-step _active" data-name="drops">
             <div class="complex-step__arrow"></div>
@@ -30,7 +49,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
               <div class="complex-step-wrapper">
                 <h2 class="complex-step__name">шаг 1</h2>
                 <p class="complex-step__about">Увлажните полость носика малыша <a href="">Каплями</a> или <a href="">Спреем</a> Отривин Бэби для того, чтобы размягчить корочки и слизь</p>
-                <img src="./img/complex-step1.png" alt="" class="complex-step__img">
+                <img src="<? echo $source; ?>img/complex-step1.png" alt="" class="complex-step__img">
               </div>
             </div>
           </div>
@@ -40,14 +59,14 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
               <div class="complex-step-wrapper">
                 <h2 class="complex-step__name">шаг 2</h2>
                 <p class="complex-step__about">Освободите полость носа от корочек и слизи с помощью <a href="">Аспиратора</a>. Во избежание повторного инфицирования, используйте насадки однократно</p>
-                <img src="./img/complex-step2.png" alt="" class="complex-step__img">
+                <img src="<? echo $source; ?>img/complex-step2.png" alt="" class="complex-step__img">
               </div>
             </div>
           </div>
         </div>
         <div class="product-about _active" data-name="drops">
           <h2 class="page-title">ОТРИВИН БЭБИ, капли назальные</h2>
-          <img src="./img/nasal-drops-about.png" alt="" class="product__img">
+          <img src="<? echo $source; ?>img/nasal-drops-about.png" alt="" class="product__img">
           <ul class="product-steps">
             <li class="product__step">Капли Отривин бэби – это стерильный изотонический солевой раствор без консервантов  в удобных одноразовых флаконах-капельницах.  Уровень pH близок к уровню слизистой носа.</li>
             <li class="product__step">Применяются у младенцев с первых дней жизни для размягчения носовой слизи и корочек.</li>
@@ -100,12 +119,12 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             </ul>
           </div>
         </div>
-        <img src="./img/disclaimer.jpg" alt="Имеются противопоказания. Необходимо проконсультироваться со специалистом" class="disclaimer">
+        <img src="<? echo $source; ?>img/disclaimer.jpg" alt="Имеются противопоказания. Необходимо проконсультироваться со специалистом" class="disclaimer">
       </div>
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
  <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

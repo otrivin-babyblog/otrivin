@@ -7,13 +7,13 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
         <div class="content">
           <div class="title-img">
-            <img src="./img/title-img-contests.jpg" alt="Сохраняй важное">
+            <img src="<? echo $source; ?>img/title-img-contests.jpg" alt="Сохраняй важное">
             <h1 class="main-title">Сохраняй важное</h1>
           </div>
           <div class="breadcrumb">
             <a href="/" class="breadcrumb__link">Главная</a>
             <span class="breadcrumb__separator">/</span>
-            <a href="" class="breadcrumb__link breadcrumb__link_current">Развлекай ребенка</a>
+            <a href="" class="breadcrumb__link breadcrumb__link_current">Сохраняй важное</a>
           </div>
           <h1 class="page-title">Важный носик знает толк</h1>
           <p class="page-about page-about_short">Нужно запомнить телефон соседки, адрес поликлиники или время занятий по рисованию? Записывай напоминания, прикрепляй стикеры на доску и сохраняй их прямо в режиме онлайн! Когда шпаргалка потеряет актуальность, сотри ее одним нажатием на крестик.
@@ -170,14 +170,14 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <!--script src="./js/save.js"></script-->
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <!--script src="/js/save.js"></script-->
 	
 	
 	<script type="text/javascript" src="http://st.babyblog.ru/st1/v4_bem/js/apps/bbapiclient.js"></script>
-	 <script src="./js/api-save.js"></script>
+	 <script src="<? echo $source; ?>js/api-save.js"></script>
 	
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

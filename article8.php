@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-article.jpg" alt="Статьи">
+          <img src="<? echo $source; ?>img/title-img-article.jpg" alt="Статьи">
           <h1 class="main-title">Дыхательная гимнастика – детям</h1>
         </div>
          <div class="breadcrumb">
@@ -17,7 +17,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <h1 class="page-title">Дыхательная гимнастика – детям</h1>
         <div class="article-wrapper">
-          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="img/Depositphotos_12302401_m-2015.jpg" alt="" class="article__img article__img_left">
+          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/Depositphotos_12302401_m-2015.jpg" alt="" class="article__img article__img_left">
           <p class="article__text">Вряд ли кого-то надо убеждать в пользе гимнастики и массажа для детского здоровья. Но задумывались ли вы когда-нибудь о гимнастике для… носов? Дыхательная гимнастика и массаж зон, связанных с работой органов дыхания, являются отличной помощью в лечении и профилактике ЛОР-заболеваний. И их основными приемами лучше овладеть, не дожидаясь, когда у малыша заложит нос и начнется сильный насморк.</p>
           
 			<p class="article__text"><strong>Для чего?</strong>
@@ -31,7 +31,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 Итак, приготовились, начали!
 
 
-<img src="img/8.jpg" alt="" class="article__img article__img_left">
+<img src="<? echo $source; ?>img/8.jpg" alt="" class="article__img article__img_left">
 
 Первое упражнение является базовым, его можно повторить еще разок и после двух других.
 
@@ -73,8 +73,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

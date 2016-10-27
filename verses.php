@@ -1,5 +1,24 @@
 <? 
 $title ='Потешки';
+
+$ref = $_SERVER['HTTP_REFERER'];
+$ref_title = explode('/',$ref);
+if (count($ref_title) > 1){
+$ref_title = $ref_title[count($ref_title)-1];
+
+		if ($ref_title == 'calendar.php'){
+			$ref_title = 'Планируй день';
+		}else
+		{
+			$ref_title = 'Развлекай ребенка';	
+		}
+
+}else
+{
+$ref_title = 'Главная';	
+}
+
+
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>
@@ -7,11 +26,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-verses.jpg" alt="Потешки">
+          <img src="<? echo $source; ?>img/title-img-verses.jpg" alt="Потешки">
           <h1 class="main-title">Потешки</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/" class="breadcrumb__link">Главная</a>
+          <a href="<? echo $ref;?>" class="breadcrumb__link"><? echo $ref_title;?></a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Потешки</a>
         </div>
@@ -398,7 +417,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		
 		  
           <div class="verse verse_whale">
-            <img src="./img/whale-and-sea-reversed.png" alt="" class="verse__img">
+            <img src="<? echo $source; ?>img/whale-and-sea-reversed.png" alt="" class="verse__img">
           </div>
         </div>
 		
@@ -431,11 +450,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 	  
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
    
 	
-	  <script src="./js/masonry.pkgd.min.js"></script>
-    <script src="./js/masonry.js"></script>
+	  <script src="<? echo $source; ?>js/masonry.pkgd.min.js"></script>
+    <script src="<? echo $source; ?>js/masonry.js"></script>
  <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

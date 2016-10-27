@@ -5,7 +5,7 @@
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
         <div class="content">
           <div class="title-img">
-            <img src="./img/title-img-contests.jpg" alt="Конкурсы">
+            <img src="<? echo $source; ?>img/title-img-contests.jpg" alt="Конкурсы">
             <h1 class="main-title">Планируй день</h1>
           </div>
           <div class="breadcrumb">
@@ -25,9 +25,9 @@
             </div>
             <div class="calendar-images">
               <ul>
-                <li><img src="./img/calendar-image-1.png" alt=""></li>
-                <li><img src="./img/calendar-image-2.png" alt=""></li>
-                <li><img src="./img/calendar-image-3.png" alt=""></li>
+                <li><img src="<? echo $source; ?>img/calendar-image-1.png" alt=""></li>
+                <li><img src="<? echo $source; ?>img/calendar-image-2.png" alt=""></li>
+                <li><img src="<? echo $source; ?>img/calendar-image-3.png" alt=""></li>
               </ul>
             </div>
             <div class="calendar-table">
@@ -132,10 +132,10 @@
 				  
                 </ul>
 				 <!--button class="print-btn"><span>распечатать</span></button-->
-				
+				<button class="print-btn"><span>распечатать</span></button>
               </div>
               <div class="calendar-image">
-                <img src="./img/calendar-elephant.png" alt="">
+                <img src="<? echo $source; ?>img/calendar-elephant.png" alt="">
               </div>
             </div>
           </div>
@@ -156,11 +156,11 @@
         </div>
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap-datepicker.min.js"></script>
-    <script src="./js/bootstrap-datepicker.ru.min.js"></script>
-    <script src="./js/calendar.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/bootstrap-datepicker.min.js"></script>
+    <script src="<? echo $source; ?>js/bootstrap-datepicker.ru.min.js"></script>
+    <script src="<? echo $source; ?>js/calendar.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

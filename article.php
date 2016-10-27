@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-article.jpg" alt="Статьи">
+          <img src="<? echo $source; ?>img/title-img-article.jpg" alt="Статьи">
           <h1 class="main-title">Все о детском дыхании</h1>
         </div>
         <div class="breadcrumb">
@@ -17,7 +17,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <h1 class="page-title">Все о детском дыхании</h1>
         <div class="article-wrapper">
-          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="img/Depositphotos_12302401_m-2015.jpg" alt="" class="article__img article__img_left">
+          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/Depositphotos_12302401_m-2015.jpg" alt="" class="article__img article__img_left">
           <p class="article__text">Малыши часто дышат ртом: не только когда дыхание затруднено из-за простуды или аллергии, но и когда, например, задумаются. С детства ребенка нужно приучать к носовому дыханию, потому что оно защищает организм от вирусов и простудных заболеваний.</p>
           <p class="article__text"><strong>Что происходит при носовом дыхании. </strong> 
 В носу расположено много маленьких волосков — ресничек. Когда мы вдыхаем, воздух проходит через них, а затем попадает в легкие. Пыль, бактерии и вредоносные организмы задерживаются на ресничках и не проникают в организм.
@@ -53,8 +53,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

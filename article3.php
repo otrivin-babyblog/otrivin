@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-article.jpg" alt="Статьи">
+          <img src="<? echo $source; ?>img/title-img-article.jpg" alt="Статьи">
           <h1 class="main-title">Как помочь носику</h1>
         </div>
         <div class="breadcrumb">
@@ -17,7 +17,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <h1 class="page-title">Как помочь носику</h1>
         <div class="article-wrapper">
-          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="img/3.jpg" alt="" class="article__img article__img_left">
+          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/3.jpg" alt="" class="article__img article__img_left">
           <p class="article__text">В жизни бывает всякое. Бывает и так: родители старались, как могли, поддерживали в детской хороший микроклимат, много гуляли с ребенком, старались не кутать и в меру закаливать, а насморк — вот он, тут как тут, несмотря на все профилактические меры. Что же делать в таком случае?</p>
           
 			<p class="article__text"><strong>Для чего?</strong>
@@ -39,7 +39,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 Как ни странно, это не так уж плохо. Во всяком случае, лучше, чем, когда слизь густеет, засыхает и скапливается в носу. Если выделения из носа обильные и жидкие, нужно проверить, не аллергического ли они происхождения, и при необходимости подключить антигистаминные препараты. 
 
 В остальных случаях достаточно минимизировать раздражение кожи, возникающее при частом высмаркивании: используйте как можно более мягкие носовые платки. </p>
- <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="img/3_2.jpg" alt="" class="article__img article__img_left">
+ <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/3_2.jpg" alt="" class="article__img article__img_left">
  
 		<p class="article__text"><strong>Вариант третий — слизь загустела, плохо отходит, мешает дышать, вызывает кашель. </strong>
 
@@ -69,8 +69,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

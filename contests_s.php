@@ -7,11 +7,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-contests.jpg" alt="Конкурсы">
+          <img src="<? echo $source; ?>img/title-img-contests.jpg" alt="Конкурсы">
           <h1 class="main-title">Конкурсы</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/entertain.php" class="breadcrumb__link">Развлекая ребенка</a>
+          <a href="/entertain.php" class="breadcrumb__link">Развлекай ребенка</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Конкурсы</a>
         </div>
@@ -25,17 +25,17 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           </div>
           <div class="contest-prizes">
             <div class="contest-prize">
-              <img src="./img/ozon-card.png" alt="" class="contest-prize__img">
+              <img src="<? echo $source; ?>img/ozon-card.png" alt="" class="contest-prize__img">
               <h3 class="contest-prize__standing">1 место</h3>
               <p class="contest-prize__about">Сертификат на 4000р в магазине «Озон»</p>
             </div>
             <div class="contest-prize">
-              <img src="./img/ozon-card.png" alt="" class="contest-prize__img">
+              <img src="<? echo $source; ?>img/ozon-card.png" alt="" class="contest-prize__img">
               <h3 class="contest-prize__standing">2 место</h3>
               <p class="contest-prize__about">Сертификат на 4000р в магазине «Озон»</p>
             </div>
             <div class="contest-prize">
-              <img src="./img/ozon-card.png" alt="" class="contest-prize__img">
+              <img src="<? echo $source; ?>img/ozon-card.png" alt="" class="contest-prize__img">
               <h3 class="contest-prize__standing">3 место</h3>
               <p class="contest-prize__about">Сертификат на 4000р в магазине «Озон»</p>
             </div>
@@ -138,9 +138,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <button class="popup-close"></button>
       <div class="participants">
         <div class="participant">
-          <img src="./img/participant-1.jpg" alt="" class="participant__img">
+          <img src="<? echo $source; ?>img/participant-1.jpg" alt="" class="participant__img">
           <div class="participant-author">
-            <img src="./img/participant-author.jpg" alt="" class="author__img">
+            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
             <h3 class="author__name">Катерина</h3>
             <p class="author__location">Москва</p>
           </div>
@@ -148,9 +148,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <a href="" class="btn btn__vote">голосовать</a>
         </div>
         <div class="participant">
-          <img src="./img/participant-2.jpg" alt="" class="participant__img">
+          <img src="<? echo $source; ?>img/participant-2.jpg" alt="" class="participant__img">
           <div class="participant-author">
-            <img src="./img/participant-author.jpg" alt="" class="author__img">
+            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
             <h3 class="author__name">Катерина</h3>
             <p class="author__location">Москва</p>
           </div>
@@ -158,9 +158,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <a href="" class="btn btn__vote">голосовать</a>
         </div>
         <div class="participant">
-          <img src="./img/participant-3.jpg" alt="" class="participant__img">
+          <img src="<? echo $source; ?>img/participant-3.jpg" alt="" class="participant__img">
           <div class="participant-author">
-            <img src="./img/participant-author.jpg" alt="" class="author__img">
+            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
             <h3 class="author__name">Катерина</h3>
             <p class="author__location">Москва</p>
           </div>
@@ -168,9 +168,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <a href="" class="btn btn__vote">голосовать</a>
         </div>
         <div class="participant">
-          <img src="./img/participant-1.jpg" alt="" class="participant__img">
+          <img src="<? echo $source; ?>img/participant-1.jpg" alt="" class="participant__img">
           <div class="participant-author">
-            <img src="./img/participant-author.jpg" alt="" class="author__img">
+            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
             <h3 class="author__name">Катерина</h3>
             <p class="author__location">Москва</p>
           </div>
@@ -178,9 +178,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <a href="" class="btn btn__vote">голосовать</a>
         </div>
         <div class="participant">
-          <img src="./img/participant-2.jpg" alt="" class="participant__img">
+          <img src="<? echo $source; ?>img/participant-2.jpg" alt="" class="participant__img">
           <div class="participant-author">
-            <img src="./img/participant-author.jpg" alt="" class="author__img">
+            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
             <h3 class="author__name">Катерина</h3>
             <p class="author__location">Москва</p>
           </div>
@@ -188,9 +188,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <a href="" class="btn btn__vote">голосовать</a>
         </div>
         <div class="participant">
-          <img src="./img/participant-3.jpg" alt="" class="participant__img">
+          <img src="<? echo $source; ?>img/participant-3.jpg" alt="" class="participant__img">
           <div class="participant-author">
-            <img src="./img/participant-author.jpg" alt="" class="author__img">
+            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
             <h3 class="author__name">Катерина</h3>
             <p class="author__location">Москва</p>
           </div>
@@ -210,10 +210,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </ul>
       </div>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/jquery.bpopup.min.js"></script>
+    <script src="<? echo $source; ?>js/jquery.validate.min.js"></script>
+    <script src="<? echo $source; ?>js/jquery.bpopup.min.js"></script>
  <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

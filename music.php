@@ -1,5 +1,23 @@
 <? 
 $title ='Музыка';
+
+$ref = $_SERVER['HTTP_REFERER'];
+$ref_title = explode('/',$ref);
+if (count($ref_title) > 1){
+$ref_title = $ref_title[count($ref_title)-1];
+
+		if ($ref_title == 'calendar.php'){
+			$ref_title = 'Планируй день';
+		}else
+		{
+			$ref_title = 'Развлекай ребенка';	
+		}
+
+}else
+{
+$ref_title = 'Главная';	
+}
+
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?>
 <body>
@@ -7,11 +25,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-music.jpg" alt="Музыка">
+          <img src="<? echo $source; ?>img/title-img-music.jpg" alt="Музыка">
           <h1 class="main-title">Музыка</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/" class="breadcrumb__link">Главная</a>
+          <a href="<? echo $ref;?>" class="breadcrumb__link"><? echo $ref_title;?></a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Музыка</a>
         </div>
@@ -21,85 +39,68 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		
 		
           <div class="music-item">
-            <h3 class="music__name">Twinkle Twinkle Little Star</h3>
-            <audio src="./files/audio/Twinkle Twinkle Little Star.wav" preload="auto"></audio>
+            <h3 class="music__name">Колыбельная 1 (Twinkle Twinkle Little Star)
+			 <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139392-twinkle-twinkle-little-star-lullaby-license.pdf" >авторские права</a></h3>
+			
+            <audio src="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="./files/audio/Twinkle Twinkle Little Star.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
           </div>
 		  
           <div class="music-item">
-            <h3 class="music__name">Chopin Nocturn Op9 No2</h3>
-            <audio src="./files/audio/Chopin Nocturn Op9 No2.wav" preload="auto"></audio>
+            <h3 class="music__name">Колыбельная 2 (Chopin Nocturn Op9 No2)
+			 <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139393-chopin-nocturne-op9-no2-license.pdf" >авторские права</a></h3>
+			
+            <audio src="<? echo $source; ?>files/audio/Chopin Nocturn Op9 No2.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="./files/audio/Chopin Nocturn Op9 No2.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/Chopin Nocturn Op9 No2.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
           </div>
 		  
           <div class="music-item">
-            <h3 class="music__name">10 LULLABY</h3>
-            <audio src="./files/audio/10 LULLABY.wav" preload="auto"></audio>
+            <h3 class="music__name">Колыбельная 3 (10 LULLABY)  <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139395-lullaby-license.pdf" >авторские права</a></h3>
+			
+            <audio src="<? echo $source; ?>files/audio/10 LULLABY.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="./files/audio/10 LULLABY.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/10 LULLABY.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
           </div>
 		  
           <div class="music-item">
-            <h3 class="music__name">Fairy Orchestral Lullaby</h3>
-            <audio src="./files/audio/Fairy Orchestral Lullaby.wav" preload="auto"></audio>
+            <h3 class="music__name">Колыбельная 4 (Fairy Orchestral Lullaby)
+			<a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139394-fairy-orchestral-lullaby-license.pdf" >авторские права</a></h3>
+			
+            <audio src="<? echo $source; ?>files/audio/Fairy Orchestral Lullaby.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="./files/audio/Fairy Orchestral Lullaby.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/Fairy Orchestral Lullaby.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
           </div>
 		  
           <div class="music-item">
-            <h3 class="music__name">Lullaby</h3>
-            <audio src="./files/audio/Lullaby.wav" preload="auto"></audio>
+            <h3 class="music__name">Колыбельная 5 (Lullaby)
+			<!--a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="/files/34139395-lullaby10-license.pdf" >авторские права</a--></h3>
+			
+			
+            <audio src="<? echo $source; ?>files/audio/Lullaby.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="./files/audio/Lullaby.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/Lullaby.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
           </div>
 		  
-          <!--div class="music-item">
-            <h3 class="music__name">Сказочные сны</h3>
-            <audio src="./files/audio/PHA_Date_With_Destiny.mp3" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="./files/audio/PHA_Date_With_Destiny.mp3" class="music-download">
-              <div class="music-download__image"></div>
-              <span class="music-download__text">скачать</span>
-            </a>
-          </div>
-          <div class="music-item">
-            <h3 class="music__name">Сказочные сны</h3>
-            <audio src="./files/audio/PHA_Date_With_Destiny.mp3" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="./files/audio/PHA_Date_With_Destiny.mp3" class="music-download">
-              <div class="music-download__image"></div>
-              <span class="music-download__text">скачать</span>
-            </a>
-          </div>
-          <div class="music-item">
-            <h3 class="music__name">Сказочные сны</h3>
-            <audio src="./files/audio/PHA_Date_With_Destiny.mp3" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="./files/audio/PHA_Date_With_Destiny.mp3" class="music-download">
-              <div class="music-download__image"></div>
-              <span class="music-download__text">скачать</span>
-            </a>
-          </div-->
         </div>
         <div class="content-footer content-footer_music">
-          <img src="img/penguins.png" alt="" class="music-penguins">
+          <img src="<? echo $source; ?>img/penguins.png" alt="" class="music-penguins">
           <ul class="pagination pagination_music" style="visibility: hidden;">
             <li class="pagination-page"><a href="" class="pagination__link">&lt;</a></li>
             <li class="pagination-page"><a href="" class="pagination__link pagination__link_active">1</a></li>
@@ -124,9 +125,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./files/audio.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>files/audio.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
     <script>

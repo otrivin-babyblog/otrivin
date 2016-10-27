@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-article.jpg" alt="Статьи">
+          <img src="<? echo $source; ?>img/title-img-article.jpg" alt="Статьи">
           <h1 class="main-title">Наука и искусство сморкания</h1>
         </div>
        <div class="breadcrumb">
@@ -17,7 +17,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <h1 class="page-title">Наука и искусство сморкания</h1>
         <div class="article-wrapper">
-          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="img/6.jpg" alt="" class="article__img article__img_left">
+          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/6.jpg" alt="" class="article__img article__img_left">
           <p class="article__text">Казалось бы, нет ничего более естественного, чем при выделениях из носа взять носовой платок и хорошенько высморкаться. Но таким простым процесс выглядит только с нашей, взрослой точки зрения. Маленького ребенка этому нужно учить, как и многому другому. И делать это проще и эффективней всего в виде игры. Точный возраст, когда малыш «должен» научиться сморкаться, назвать невозможно, но начинать можно в любой момент, когда ребенок уже хорошо понимает обращенную к нему речь и готов следовать несложным инструкциями.
 
 Задача проста: научиться дуть носом. Чтобы увлечь ею ребенка, надо сделать все наглядным: задувайте носом свечи, сдувайте кусочек ватки или бумажной салфетки, создавайте «туман» на зеркале. 
@@ -31,7 +31,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 Ни в коем случае не учите ребенка дуть носом «изо всех сил» — так можно запросто «надуть» себе отит, поскольку повышенное давление направляет слизь вместе с болезнетворными микробами совсем не туда, куда нужно, а в евстахиеву трубу. 
 
 Носовой платок должен быть максимально мягким, а еще лучше пользоваться одноразовыми бумажными — это правильнее и с точки зрение гигиены.
- <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="img/6_2.jpg" alt="" class="article__img article__img_left">
+ <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/6_2.jpg" alt="" class="article__img article__img_left">
 Если при попытках научиться важному искусству высмаркивания малыш не вполне понимает, чего от него хотят, и лишь с силой втягивает слизь обратно, лучше приостановить «уроки», чтобы опять же не получить осложнение на уши. 
 
 Аспираторы (приборы для удаления слизи из носа) различных типов никто не отменял, а безопасность в данном случае важнее самостоятельности. Важно лишь соблюдать правила их использования, чтобы не причинить вреда. Кстати, дети настолько не любят эти устройства, что при одном только их виде порой начинают делать быстрые успехи в сморкании. Разумеется, это не значит, что малыша надо пугать аспиратором — от страха и слез никто еще здоровее не становился. 
@@ -62,8 +62,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/jquery.min.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

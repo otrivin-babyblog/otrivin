@@ -1,5 +1,24 @@
 <? 
 $title ='Игры с ребенком';
+
+$ref = $_SERVER['HTTP_REFERER'];
+$ref_title = explode('/',$ref);
+if (count($ref_title) > 1){
+$ref_title = $ref_title[count($ref_title)-1];
+
+		if ($ref_title == 'calendar.php' ){
+			$ref_title = 'Планируй день';
+		}else
+		{
+			$ref_title = 'Главная';	
+		}
+
+}else
+{
+$ref_title = 'Главная';	
+}
+
+
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
  ?>
 <body>
@@ -7,11 +26,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="./img/title-img-child-games.jpg" alt="Игры с ребенком">
+          <img src="<? echo $source; ?>img/title-img-child-games.jpg" alt="Игры с ребенком">
           <h1 class="main-title">Игры с ребенком</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/" class="breadcrumb__link">Главная</a>
+          <a href="<? echo $ref;?>" class="breadcrumb__link"><? echo $ref_title;?></a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Игры с ребенком</a>
         </div>
@@ -99,13 +118,13 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <div class="other-games-wrapper">
           <div class="other-games-item">
-            <img src="./img/penguins.png" alt="Здоровый зоопарк" class="other-games__img">
+            <img src="<? echo $source; ?>img/penguins.png" alt="Здоровый зоопарк" class="other-games__img">
             <h3 class="other-games__name">поиграйте в “Здоровый зоопарк”</h3>
             <p class="other-games__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi</p>
             <a href="" class="btn btn_other-games">начать игру</a>
           </div>
           <div class="other-games-item">
-            <img src="./img/gift.png" alt="Конкурсы" class="other-games__img other-games__img_offset">
+            <img src="<? echo $source; ?>img/gift.png" alt="Конкурсы" class="other-games__img other-games__img_offset">
             <h3 class="other-games__name">у нас для вас замечательные конкурсы</h3>
             <p class="other-games__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi</p>
             <a href="" class="btn btn_other-games">перейти к конкурсам</a>
@@ -127,7 +146,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
