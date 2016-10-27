@@ -57,8 +57,7 @@ $(document).ready(function() {
 
 
     $.ajax({
-        url: '//bb.loc/user/ajax_get_info',
-        // url: 'https://www.babyblog.ru/user/ajax_get_info',
+        url: 'https://www.babyblog.ru/user/ajax_get_info',
 
         xhrFields: {
             withCredentials: true
