@@ -63,7 +63,7 @@
 								<li><a href="https://www.babyblog.ru/agreement"><span>Соглашение</span></a></li>
 								<li><a href="https://www.babyblog.ru/agreement/copyrights"><span>Правообладателям</span></a></li>
 							</ul>
-							<script type="text/javascript" src="js/script_new.js"></script>
+							<script type="text/javascript" src="<? echo $source; ?>js/script_new.js"></script>
 						</div>
 						<p>Бэбиблог — сайт о беременности и материнстве. Дневники беременности и развития детей, календарь беременности, отзывы о товарах, роддома, а также множество других полезных разделов и сервисов.</p>
 						<p>&#169; 2005 &#8212; 2016</p>
