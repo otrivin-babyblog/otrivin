@@ -31,7 +31,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 									<div class="main_info_link">
 										<p><img src="<? echo $source; ?>img/main-line.png" alt=""></p>
 										<a href="/otrivin_baby/entertain.php" class="info_a">Развлекай ребёнка <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
-										<div class="main_but"><a href="/entertain.php"><span>Перейти в раздел</span></a> <img src="<? echo $source; ?>img/elefant_twice.png" alt=""></div>
+										<div class="main_but"><a href="/otrivin_baby/entertain.php"><span>Перейти в раздел</span></a> <img src="<? echo $source; ?>img/elefant_twice.png" alt=""></div>
 									</div>
 
 								</div>
@@ -44,7 +44,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 									<div class="main_info_link">
 										<p><img src="<? echo $source; ?>img/main-line.png" alt=""></p>
 										<a href="/otrivin_baby/save.php" class="info_a">Сохраняй важное <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
-										<div class="main_but"><a href="/save.php"><span>Создать заметки</span></a> <img src="<? echo $source; ?>img/while.png" alt=""></div>
+										<div class="main_but"><a href="/otrivin_baby/save.php"><span>Создать заметки</span></a> <img src="<? echo $source; ?>img/while.png" alt=""></div>
 									</div>
 
 								</div>
@@ -57,7 +57,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 									<div class="main_info_link">
 										<p><img src="<? echo $source; ?>img/main-line.png" alt=""></p>
 										<a href="/otrivin_baby/calendar.php" class="info_a">Планируй день <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
-										<div class="main_but"><a href="/calendar.php"><span>Начать планировать</span></a> <img src="<? echo $source; ?>img/penguim.png" alt=""></div>
+										<div class="main_but"><a href="/otrivin_baby/calendar.php"><span>Начать планировать</span></a> <img src="<? echo $source; ?>img/penguim.png" alt=""></div>
 									</div>
 
 								</div>
