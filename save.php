@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h1 class="main-title">Сохраняй важное</h1>
           </div>
           <div class="breadcrumb">
-            <a href="/" class="breadcrumb__link">Главная</a>
+            <a href="/otrivin_baby/" class="breadcrumb__link">Главная</a>
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Сохраняй важное</a>
           </div>

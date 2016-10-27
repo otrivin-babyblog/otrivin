@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <h1 class="main-title">Наука и искусство сморкания</h1>
         </div>
        <div class="breadcrumb">
-          <a href="/no_more_cold.php" class="breadcrumb__link">Прощай, насморк</a>
+          <a href="/otrivin_baby/no_more_cold.php" class="breadcrumb__link">Прощай, насморк</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Наука и искусство сморкания</a>
         </div>

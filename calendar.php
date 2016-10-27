@@ -9,7 +9,7 @@
             <h1 class="main-title">Планируй день</h1>
           </div>
           <div class="breadcrumb">
-            <a href="/" class="breadcrumb__link">Главная</a>
+            <a href="/otrivin_baby/" class="breadcrumb__link">Главная</a>
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Планируй день</a>
           </div>
@@ -101,14 +101,14 @@
               <div class="calendar-actions">
                 <p>Выберите необходимые дела ниже и просто перетащите в нужное время вашего календаря</p>
                 <ul>
-                  <li><a href="/nose_hygiene.php">Гигиена носика</a></li>
-                  <li><a href="/igry_s_rebenkom.php">Игры с ребенком</a></li>
-                  <li><a href="/music.php">Музыка</a></li>
-                  <li><a href="/verses.php">Потешки</a></li>
+                  <li><a href="/otrivin_baby/nose_hygiene.php">Гигиена носика</a></li>
+                  <li><a href="/otrivin_baby/igry_s_rebenkom.php">Игры с ребенком</a></li>
+                  <li><a href="/otrivin_baby/music.php">Музыка</a></li>
+                  <li><a href="/otrivin_baby/verses.php">Потешки</a></li>
 				  
-				  <li><a href="/uroki_dlya_mam.php">Уроки для мам</a></li>
-				  <li><a href="/domestic_chores.php">Домашние дела</a></li>
-				  <li><a href="/tales.php">Сказки на ночь</a></li>
+				  <li><a href="/otrivin_baby/uroki_dlya_mam.php">Уроки для мам</a></li>
+				  <li><a href="/otrivin_baby/domestic_chores.php">Домашние дела</a></li>
+				  <li><a href="/otrivin_baby/tales.php">Сказки на ночь</a></li>
 				  
 				  
                   <li>

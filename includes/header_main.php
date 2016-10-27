@@ -122,7 +122,7 @@
 								<a href="https://sp.babyblog.ru" title="Совместные покупки"><span>Совместные покупки</span></a>
 							</li>
 							<li class="left_ul_li_6">
-								<a href="/" title="Беременным"><span>Беременным</span></a>
+								<a href="/otrivin_baby/" title="Беременным"><span>Беременным</span></a>
 							</li>
 						</ul>
 					</div>
@@ -159,10 +159,10 @@
 							</div>
 							<ul>
 								<li class="header_bot_menu_li_0"><a href="#"><img src="<? echo $source; ?>img/logo_bot_320.png" alt="" class="logo_bot_320"></a><a href="javascript:void(0);" class="closse_menu_320"><span></span></a></li>
-								<li class="header_bot_menu_li_1"><a href="/no_more_cold.php">Прощай, насморк</a></li>
-								<li class="header_bot_menu_li_2"><a href="/entertain.php">Развлекай ребёнка</a></li>
-								<li class="header_bot_menu_li_3"><a href="/save.php">Сохраняй важное</a></li>
-								<li class="header_bot_menu_li_4"><a href="/calendar.php">Планируй день</a></li>
+								<li class="header_bot_menu_li_1"><a href="/otrivin_baby/no_more_cold.php">Прощай, насморк</a></li>
+								<li class="header_bot_menu_li_2"><a href="/otrivin_baby/entertain.php">Развлекай ребёнка</a></li>
+								<li class="header_bot_menu_li_3"><a href="/otrivin_baby/save.php">Сохраняй важное</a></li>
+								<li class="header_bot_menu_li_4"><a href="/otrivin_baby/calendar.php">Планируй день</a></li>
 							</ul>
 						</div>
 					</div>

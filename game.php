@@ -12,7 +12,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h1 class="main-title">Игра “Здоровый зоопарк”</h1>
           </div>
           <div class="breadcrumb">
-            <a href="/entertain.php" class="breadcrumb__link">Развлекай ребенка</a>
+            <a href="/otrivin_baby/entertain.php" class="breadcrumb__link">Развлекай ребенка</a>
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Игра “Здоровый зоопарк”</a>
           </div>
