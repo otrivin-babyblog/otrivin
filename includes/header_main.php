@@ -37,7 +37,8 @@
 					<div class="right">
 						<div class="enter">
 							<div class="enter_item">
-								<a href="https://www.babyblog.ru/?ref=http%3A%2F%2Fpromo.babyblog.ru%2Fotrivin_baby#signin"><img src="<? echo $source; ?>img/lock-main.png" alt=""><span>Войти</span></a>
+								<span id="auth-button-container">Загрузка...</span>
+								<!--<a href="https://www.babyblog.ru/?ref=http%3A%2F%2Fpromo.babyblog.ru%2Fotrivin_baby#signin"><img src="<? echo $source; ?>img/lock-main.png" alt=""><span>Войти</span></a>-->
 								
 							</div>
 						</div>
