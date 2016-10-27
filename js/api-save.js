@@ -2,7 +2,7 @@
 
 var url = 'http://otrivindata.pdigit.top';
 //var obj;
-var userid = '1';
+var userid = '';
 var count = 0;
 
 
@@ -45,7 +45,27 @@ $(function(){
                 //Ваш код обработки ошибки
             }
         );*/
+		$.ajax({
+			type: "GET",
+			url: "https://www.babyblog.ru/user/ajax_get_info",
+			success: function(msg) {
+				
+				var uid = msg.user_id;
+				if (uid)
+				{
+					user_id = uid;
+				}
+				
+				
+			},
+			error: function(errmsg){
+				console.log(errmsg);
+			} 
+		});
+		
 	
+	
+	if (user_id != ''){
 	$.ajax({
 			type: "GET",
 			url: url+"/api/post/get/"+userid,
@@ -74,7 +94,7 @@ $(function(){
 				console.log(errmsg);
 			} 
 		});
-	
+	}
 	
 	
 });
