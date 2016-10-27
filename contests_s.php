@@ -176,7 +176,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
       </div>
       <div class="content-footer">
-        <ul class="pagination">
+        <!--ul class="pagination">
           <li class="pagination-page"><a href="" class="pagination__link">&lt;</a></li>
           <li class="pagination-page"><a href="" class="pagination__link pagination__link_active">1</a></li>
           <li class="pagination-page"><a href="" class="pagination__link">2</a></li>
@@ -184,7 +184,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <li class="pagination-page"><a href="" class="pagination__link">4</a></li>
           <li class="pagination-page"><a href="" class="pagination__link">5</a></li>
           <li class="pagination-page"><a href="" class="pagination__link">&gt;</a></li>
-        </ul>
+        </ul-->
       </div>
     </div>
     <script src="<? echo $source; ?>js/jquery.min.js"></script>
