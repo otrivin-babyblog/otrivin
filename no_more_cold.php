@@ -86,34 +86,34 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <h2 class="useful__name">полезные статьи</h2>
           <ul class="useful-list">
             <li class="useful__item">
-              <a href="/article.php" class="useful__link"><span>Урок 1</span>"Все о детском дыхании"</a>
+              <a href="/otrivin_baby/article.php" class="useful__link"><span>Урок 1</span>"Все о детском дыхании"</a>
             </li>
             <li class="useful__item">
-              <a href="/article2.php" class="useful__link"><span>Урок 2</span>"Аллергия"</a>
+              <a href="/otrivin_baby/article2.php" class="useful__link"><span>Урок 2</span>"Аллергия"</a>
             </li>
             <li class="useful__item">
-              <a href="/article3.php" class="useful__link"><span>Урок 3</span>"Как помочь носику"</a>
+              <a href="/otrivin_baby/article3.php" class="useful__link"><span>Урок 3</span>"Как помочь носику"</a>
             </li>
             <li class="useful__item">
-              <a href="/article4.php" class="useful__link"><span>Урок 4</span>"Почему возникает насморк"</a>
+              <a href="/otrivin_baby/article4.php" class="useful__link"><span>Урок 4</span>"Почему возникает насморк"</a>
             </li>
             <li class="useful__item">
-              <a href="/article5.php" class="useful__link"><span>Урок 5</span>"Правила закаливания"</a>
+              <a href="/otrivin_baby/article5.php" class="useful__link"><span>Урок 5</span>"Правила закаливания"</a>
             </li>
           </ul>
           <ul class="useful-list">
             <li class="useful__item">
-              <a href="/article6.php" class="useful__link"><span>Урок 6</span>"Наука и искусство сморкания"</a>
+              <a href="/otrivin_baby/article6.php" class="useful__link"><span>Урок 6</span>"Наука и искусство сморкания"</a>
            	
 		   <li class="useful__item">
-              <a href="/article7.php" class="useful__link"><span>Урок 7</span>"Чтобы хорошо дышалось"</a>
+              <a href="/otrivin_baby/article7.php" class="useful__link"><span>Урок 7</span>"Чтобы хорошо дышалось"</a>
             </li>
            </li>
 			  <li class="useful__item">
-              <a href="/article8.php" class="useful__link"><span>Урок 8</span>"Дыхательная гимнастика – детям!"</a>
+              <a href="/otrivin_baby/article8.php" class="useful__link"><span>Урок 8</span>"Дыхательная гимнастика – детям!"</a>
             </li>
             <li class="useful__item">
-              <a href="/article9.php" class="useful__link"><span>Урок 9</span>"Как устроен детский носик"</a>
+              <a href="/otrivin_baby/article9.php" class="useful__link"><span>Урок 9</span>"Как устроен детский носик"</a>
             </li>
             <li class="useful__item">
               <a  class="useful__link"><span></span></a>
