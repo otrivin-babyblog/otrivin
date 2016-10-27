@@ -62,32 +62,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
     <div class="popup _upload">
-      <h2 class="popup-title">Для участия в конкурсе:</h2>
+	<h2 class="popup-title">Для участия в конкурсе:</h2>
       <button class="popup-close"></button>
-      <form action="" class="js-validate" id="contest-upload">
-        <fieldset>
-          <div class="input-row">
-            <p class="input__name">1. Загрузите фотографию</p>
-            <label for="attachment" class="input__label input__label_file">
-              <span class="input-btn">ВЫБРАТЬ (jpg, png)</span>
-              <input required type="file" class="input-file" id="attachment" name="attachment">
-            </label>
-            <p class="input__current-file"></p>
-          </div>
-          <div class="input-row">
-            <p class="input__name">2. напишите  комментарий</p>
-            <textarea required class="input-comment" id="commentary" name="commentary"></textarea>
-            <label for="commentary" class="input__label input__label_textarea">Максимальное количество символов 120</label>
-          </div>
-          <div class="input-row">
-            <input required type="checkbox" class="input-checkbox" id="terms" name="terms">
-            <label for="terms" class="input-label_checkbox">Я согласен с условиями конкурса</label>
-          </div>
-          <div class="input-row">
-            <input type="submit" class="btn btn_submit">
-          </div>
-        </fieldset>
-      </form>
+     <iframe style="border: 0px; width: 100%; height: 550px;" src="http://otrivindata.pdigit.top/api/images/form"></iframe>
     </div>
     <div class="popup _thanks">
       <h2 class="popup-title">Спасибо, Ваша работа на премодерации</h2>
@@ -211,7 +188,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
     </div>
     <script src="<? echo $source; ?>js/jquery.min.js"></script>
-    <script src="<? echo $source; ?>js/script.js"></script>
+    <script src="/js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
     <script src="<? echo $source; ?>js/jquery.validate.min.js"></script>
