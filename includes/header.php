@@ -1,3 +1,10 @@
+<?
+$source = 'http://promo.babyblog.ru/otrivin_baby/';
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +25,15 @@
 	
 	
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700|PT+Sans+Caption:400,700&subset=cyrillic-ext,latin-ext">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/styles_main.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="<? echo $source; ?>css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="<? echo $source; ?>css/styles_main.css">
+	<link rel="stylesheet" type="text/css" href="<? echo $source; ?>css/responsive.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i" rel="stylesheet">
-    <link href="./css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="./css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css">
-    <link href="./css/styles.css" rel="stylesheet" type="text/css"/>
-    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="<? echo $source; ?>css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="<? echo $source; ?>css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css">
+    <link href="<? echo $source; ?>css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="<? echo $source; ?>css/main.css" rel="stylesheet" type="text/css">
 	
-	  <script src="./js/jquery.min.js"></script>
+	  <script src="<? echo $source; ?>js/jquery.min.js"></script>
 </head>

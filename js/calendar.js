@@ -2,6 +2,13 @@
 
 $(function () {
 
+
+$('.print-btn').on('click', function (e) {
+    e.preventDefault;
+    window.print();
+  });
+
+
   // callbacks
   var callbacks = {
     changeDate: function changeDate(date) {

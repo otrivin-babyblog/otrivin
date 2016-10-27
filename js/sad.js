@@ -46,7 +46,7 @@ $(document).ready(function () {
 		}else
 			if (act == '1')
 			{
-				$('#'+did).height(120);
+				$('#'+did).height(130);
 				$(this).html('Развернуть');
 			$(this).data('act','0');
 			}
