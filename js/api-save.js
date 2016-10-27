@@ -50,7 +50,25 @@ $(function(){
 			type: "GET",
 			url: url+"/api/post/get/"+userid,
 			success: function(msg) {
-				alert(msg);
+				//console.log(msg); 
+				/**/
+				msg.forEach(function(item, i, arr) {
+				 // console.log( i + ": " + item.name + " (массив:" + arr + ")" );
+				 count = count+1;
+				
+				  $('#notes-list').prepend(
+				  
+							'<li data-id="'+item.id+'" id="save'+count+'">'+
+						  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
+						  '<div class="content">'+
+							'<p class="title">'+item.name+'</p>'+
+						   ' <p class="phone">'+item.phone+'</p>'+
+							'<p class="description">'+item.description+'</p>'+
+						  '</div>'+
+					   ' </li>' );
+				});
+				/*
+				*/
 			},
 			error: function(errmsg){
 				console.log(errmsg);
@@ -64,6 +82,21 @@ $(function(){
 
 function remSave(param1)
 {
+	var did = $('#save'+param1).data('id');
+	
+	$.ajax({
+			type: "GET",
+			url: url+"/api/post/"+did+"/delete",
+			success: function(msg) {
+				console.log(msg); 
+				
+			},
+			error: function(errmsg){
+				console.log(errmsg);
+			} 
+		});
+	
+	
 	$('#save'+param1).remove();
 }	
 	
@@ -95,21 +128,44 @@ $(document).ready(function () {
 			
 			if (phone!='' && t!='')
 			{
-      count = count+1;
-	  $('#notes-list').prepend(
-	  
-				'<li id="save'+count+'">'+
-              '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
-              '<div class="content">'+
-                '<p class="title">'+t+'</p>'+
-               ' <p class="phone">'+phone+'</p>'+
-                '<p class="description">'+desc+'</p>'+
-              '</div>'+
-           ' </li>' );
+     
+		   
+		   var mas = {name:t, phone:phone, description: desc, user_id:'1'};
+		   
+		   /* сохранение в  базу*/
+		   
+		   $.ajax({
+			type: "POST",
+			url: url+"/api/post/save",
+			data: mas,
+			success: function(msg) {
+				console.log(msg); 
+					count = count+1;
+					$('#notes-list').prepend(
+			  
+						'<li data-id="'+msg+'" id="save'+count+'">'+
+					  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
+					  '<div class="content">'+
+						'<p class="title">'+t+'</p>'+
+					   ' <p class="phone">'+phone+'</p>'+
+						'<p class="description">'+desc+'</p>'+
+					  '</div>'+
+				   ' </li>' );
+				
+				
+			},
+			error: function(errmsg){
+				console.log('Error');
+				console.log(errmsg);
+			} 
+		});
+		   
 		   
 		   $('#title25').val('');  
 		  $('#phone25').val('');  
 		   $('#desc25').val('');  
+		   
+		   
 		   
 			}else
 			{
