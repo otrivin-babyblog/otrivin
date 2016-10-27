@@ -54,9 +54,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h3 class="music__name">Колыбельная 2 (Chopin Nocturn Op9 No2)
 			 <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139393-chopin-nocturne-op9-no2-license.pdf" >авторские права</a></h3>
 			
-            <audio src="<? echo $source; ?>files/audio/Chopin Nocturn Op9 No2.wav" preload="auto"></audio>
+            <audio src="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Chopin Nocturn Op9 No2.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -65,9 +65,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="music-item">
             <h3 class="music__name">Колыбельная 3 (10 LULLABY)  <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139395-lullaby-license.pdf" >авторские права</a></h3>
 			
-            <audio src="<? echo $source; ?>files/audio/10 LULLABY.wav" preload="auto"></audio>
+            <audio src="<? echo $source; ?>files/audio/10_LULLABY.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/10 LULLABY.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/10_LULLABY.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -77,9 +77,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h3 class="music__name">Колыбельная 4 (Fairy Orchestral Lullaby)
 			<a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139394-fairy-orchestral-lullaby-license.pdf" >авторские права</a></h3>
 			
-            <audio src="<? echo $source; ?>files/audio/Fairy Orchestral Lullaby.wav" preload="auto"></audio>
+            <audio src="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" preload="auto"></audio>
             <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Fairy Orchestral Lullaby.wav" class="music-download">
+            <a href="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" class="music-download">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
