@@ -104,6 +104,9 @@ function remSave(param1)
 {
 	var did = $('#save'+param1).data('id');
 	
+	
+	// не можем удалить, если не авторизованы
+	if (user_id != ''){
 	$.ajax({
 			type: "GET",
 			url: url+"/api/post/"+did+"/delete",
@@ -115,6 +118,9 @@ function remSave(param1)
 				console.log(errmsg);
 			} 
 		});
+	}
+	
+	
 	
 	
 	$('#save'+param1).remove();
@@ -140,7 +146,7 @@ $(document).ready(function () {
 	
 	
     $('#btnSave').click(function () {
-		
+		ga('send', 'event', 'important', 'click', 'save_phone');
 		var t = $('#title25').val(),
 			phone = $('#phone25').val(),
 			desc = $('#desc25').val();
@@ -154,31 +160,34 @@ $(document).ready(function () {
 		   
 		   /* сохранение в  базу*/
 		   
-		   $.ajax({
-			type: "POST",
-			url: url+"/api/post/save",
-			data: mas,
-			success: function(msg) {
-				console.log(msg); 
-					count = count+1;
-					$('#notes-list').prepend(
-			  
-						'<li data-id="'+msg+'" id="save'+count+'">'+
-					  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
-					  '<div class="content">'+
-						'<p class="title">'+t+'</p>'+
-					   ' <p class="phone">'+phone+'</p>'+
-						'<p class="description">'+desc+'</p>'+
-					  '</div>'+
-				   ' </li>' );
-				
-				
-			},
-			error: function(errmsg){
-				console.log('Error');
-				console.log(errmsg);
-			} 
-		});
+		   // не можем сохранить, если не авторизованы
+			if (user_id != ''){
+				   $.ajax({
+					type: "POST",
+					url: url+"/api/post/save",
+					data: mas,
+					success: function(msg) {
+						console.log(msg); 
+							count = count+1;
+							$('#notes-list').prepend(
+					  
+								'<li data-id="'+msg+'" id="save'+count+'">'+
+							  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
+							  '<div class="content">'+
+								'<p class="title">'+t+'</p>'+
+							   ' <p class="phone">'+phone+'</p>'+
+								'<p class="description">'+desc+'</p>'+
+							  '</div>'+
+						   ' </li>' );
+						
+						
+					},
+					error: function(errmsg){
+						console.log('Error');
+						console.log(errmsg);
+					} 
+					});
+			}
 		   
 		   
 		   $('#title25').val('');  
