@@ -1527,7 +1527,7 @@ img {
     .complex-step._active:after {
       display: none; }
   .product-about._active {
-    display: none; }
+    /*display: none;*/ }
   .product-video {
     max-width: initial;
     margin: 0 auto 25px; }
