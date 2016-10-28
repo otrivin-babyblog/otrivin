@@ -175,7 +175,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 	
 	
 	<script type="text/javascript" src="http://st.babyblog.ru/st1/v4_bem/js/apps/bbapiclient.js"></script>
-	 <script src="/js/api-save.js"></script>
+	 <script src="<? echo $source; ?>js/api-save.js"></script>
 	
     <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
