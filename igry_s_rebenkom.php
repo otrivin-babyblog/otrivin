@@ -65,42 +65,34 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="child-games-item">
             <h2 class="child-games__name">Положить 5-10 игрушек, ребенок отворачивается, убираем одну, нужно угадать какую.</h2>
             <p class="child-games__excerpt">Положить 5-10 игрушек, ребенок отворачивается, убираем одну, нужно угадать какую.</p>
-            <p class="child-games__excerpt">Положить 5-10 игрушек, ребенок отворачивается, убираем одну, нужно угадать какую.</p>
           </div>
 		   <div class="child-games-item">
             <h2 class="child-games__name">Съедобное-несъедобное. С мячом, ловим, если съедобное.</h2>
-            <p class="child-games__excerpt">Съедобное-несъедобное. С мячом, ловим, если съедобное.</p>
-            <p class="child-games__excerpt">Съедобное-несъедобное. С мячом, ловим, если съедобное.</p>
+           <p class="child-games__excerpt">Съедобное-несъедобное. С мячом, ловим, если съедобное.</p>
           </div>
           <div class="child-games-item">
             <h2 class="child-games__name">Гениальный художник.</h2>
-            <p class="child-games__excerpt">По очереди рисовать детали картины.</p>
             <p class="child-games__excerpt">По очереди рисовать детали картины.</p>
           </div>
           <div class="child-games-item">
             <h2 class="child-games__name">Угадай слово</h2>
             <p class="child-games__excerpt">Задается тема, например “Фрукты”. По очереди загадываете слова, чтобы угадать, надо задавать вопросы. Отвечать только да-нет.</p>
-            <p class="child-games__excerpt">Задается тема, например “Фрукты”. По очереди загадываете слова, чтобы угадать, надо задавать вопросы. Отвечать только да-нет.</p>
           </div>
 		  <div class="child-games-item">
             <h2 class="child-games__name">Польза</h2>
-            <p class="child-games__excerpt">Выберите любой предмет и предложите ребенку придумать, где он может пригодиться (можно придумывать фантастические случаи).</p>
-            <p class="child-games__excerpt">Выберите любой предмет и предложите ребенку придумать, где он может пригодиться (можно придумывать фантастические случаи).</p>
+             <p class="child-games__excerpt">Выберите любой предмет и предложите ребенку придумать, где он может пригодиться (можно придумывать фантастические случаи).</p>
           </div>
          <div class="child-games-item">
             <h2 class="child-games__name">Я сказочный герой</h2>
-            <p class="child-games__excerpt">Попросите ребенка изобразить героя сказки, а сами угадайте, кто это.</p>
             <p class="child-games__excerpt">Попросите ребенка изобразить героя сказки, а сами угадайте, кто это.</p>
           </div>
          <div class="child-games-item">
             <h2 class="child-games__name">Сравни предметы</h2>
             <p class="child-games__excerpt">Ставим перед ребенком 2 предмета, малышу нужно найти общие признаки и отличия.</p>
-            <p class="child-games__excerpt">Ставим перед ребенком 2 предмета, малышу нужно найти общие признаки и отличия.</p>
           </div>
 		  <div class="child-games-item">
             <h2 class="child-games__name">Что бывает липким?</h2>
-            <p class="child-games__excerpt">Спрашиваете у ребенка про какой-то признак — липкое, большое, маленькое, тяжелое… Он придумывает, что таким бывает.</p>
-            <p class="child-games__excerpt">Спрашиваете у ребенка про какой-то признак — липкое, большое, маленькое, тяжелое… Он придумывает, что таким бывает.</p>
+           <p class="child-games__excerpt">Спрашиваете у ребенка про какой-то признак — липкое, большое, маленькое, тяжелое… Он придумывает, что таким бывает.</p>
           </div>
 		  
 		  
@@ -120,14 +112,14 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="other-games-item">
             <img src="<? echo $source; ?>img/penguins.png" alt="Здоровый зоопарк" class="other-games__img">
             <h3 class="other-games__name">поиграйте в “Здоровый зоопарк”</h3>
-            <p class="other-games__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi</p>
-            <a href="" class="btn btn_other-games">начать игру</a>
+            <p class="other-games__about"></p>
+            <a href="/otrivin_baby/game.php" class="btn btn_other-games">начать игру</a>
           </div>
           <div class="other-games-item">
             <img src="<? echo $source; ?>img/gift.png" alt="Конкурсы" class="other-games__img other-games__img_offset">
             <h3 class="other-games__name">у нас для вас замечательные конкурсы</h3>
-            <p class="other-games__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi</p>
-            <a href="" class="btn btn_other-games">перейти к конкурсам</a>
+            <p class="other-games__about"></p>
+            <a href="/otrivin_baby/contests_s.php" class="btn btn_other-games">перейти к конкурсам</a>
           </div>
         </div>
         <div class="content-footer">
