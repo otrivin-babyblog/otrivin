@@ -164,7 +164,7 @@ $(document).ready(function () {
 		}else
 		{
 			//alert('Необходимо авторизоваться!');
-			//$('.js_contest').hide();
+			$('.js_contest').hide();
 		}
       
      });
