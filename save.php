@@ -19,9 +19,29 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <p class="page-about page-about_short">Нужно запомнить телефон соседки, адрес поликлиники или время занятий по рисованию? Записывай напоминания, прикрепляй стикеры на доску и сохраняй их прямо в режиме онлайн! Когда шпаргалка потеряет актуальность, сотри ее одним нажатием на крестик.
 А если малыш приболел или ему просто прописали лекарства для профилактики, рецепт лечения всегда будет под рукой в нашем онлайн списке лекарств. Под названием для вашего удобства доступно описание средства.</p>
           <div class="save-wrapper">
+		  
             <div class="phones-wrapper">
               <p class="title">Важные телефоны</p>
               <ul id="notes-list">
+			  
+						<li>
+						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
+						  <div class="content">
+							<p class="title">Участковый, Полиция</p>
+						    <p class="phone">8 495 111 22 33</p>
+							<p class="description">Участковый Иванов И.Д., каб. 303 вт-пт 9-18ч<br> сб-вс 11-17ч</p>
+						  </div>
+					    </li>
+					   
+				<li>
+						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
+						  <div class="content">
+							<p class="title">Скорая помощь</p>
+						    <p class="phone">112</p>
+							<p class="description"></p>
+						  </div>
+					    </li>
+			  
 				<li class="form">
                     <form id="add-note">
                       <div class="input">
@@ -153,7 +173,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
                
               </ul>
             </div>
+			
           </div>
+		  <button class="print-btn"><span>распечатать</span></button>
           <div class="content-footer">
             <div class="social">
               <p class="social__text">Поделиться в социальных сетях</p>
@@ -175,7 +197,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 	
 	
 	<script type="text/javascript" src="http://st.babyblog.ru/st1/v4_bem/js/apps/bbapiclient.js"></script>
-	 <script src="<? echo $source; ?>js/api-save.js"></script>
+	 <script src="/js/api-save.js"></script>
 	
     <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
