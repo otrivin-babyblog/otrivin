@@ -17,7 +17,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <h1 class="page-title">Дыхательная гимнастика – детям</h1>
         <div class="article-wrapper">
-          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/Depositphotos_12302401_m-2015.jpg" alt="" class="article__img article__img_left">
+          <img style="float:left; margin-right: 20px; margin-bottom: 20px;" src="<? echo $source; ?>img/425374847_2-03.png" alt="" class="article__img article__img_left">
           <p class="article__text">Вряд ли кого-то надо убеждать в пользе гимнастики и массажа для детского здоровья. Но задумывались ли вы когда-нибудь о гимнастике для… носов? Дыхательная гимнастика и массаж зон, связанных с работой органов дыхания, являются отличной помощью в лечении и профилактике ЛОР-заболеваний. И их основными приемами лучше овладеть, не дожидаясь, когда у малыша заложит нос и начнется сильный насморк.</p>
           
 			<p class="article__text"><strong>Для чего?</strong>
