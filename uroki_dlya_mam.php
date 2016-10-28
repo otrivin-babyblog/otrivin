@@ -50,10 +50,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php") ?>
             </ul>
           </div>
         </div>
-        <div class="article-preview">
+        <!--div class="article-preview">
           <h3 class="article-preview__name">Мы подготовил для вас интересные статьи</h3>
           <a href="" class="preview-btn">ознакомиться</a>
-        </div>
+        </div-->
       </div>
        <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
