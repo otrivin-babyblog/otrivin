@@ -21,124 +21,126 @@ $.ajax({
 			} 
 		});
 
+$('#otrivin-logo').click( function(){
+	ga('send', 'event', 'Main_menu', 'to_client', 'logo');
+});
+
+$('.otrivin-no-more-cold').click( function(){
+	ga('send', 'event', 'Main', 'to_nasmork', 'anons_nasmork');
+});
+
+$('.otrivin-entertain').click( function(){
+	ga('send', 'event', 'Main', 'to_fun', 'anons_fun');
+});
+
+$('.otrivin-save').click( function(){
+	ga('send', 'event', 'Main', 'to_important', 'anons_important');
+});
+
+$('.otrivin-plan-day').click( function(){
+	ga('send', 'event', 'Main', 'to_planning', 'anons_planning');
+});
+
+$('.otrivin-step-1').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'first_step');
+});
+
+$('.otrivin-step-2').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'second_step');
+});
+
+$('.otrivin-play-video').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'play_video');
+});
+
+$('.otrivin-lesson-1').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_1');
+});
+
+$('.otrivin-lesson-2').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_2');
+});
+
+$('.otrivin-lesson-3').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_3');
+});
+
+$('.otrivin-lesson-4').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_4');
+});
+
+$('.otrivin-lesson-5').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_5');
+});
+
+$('.otrivin-lesson-6').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_6');
+});
+
+$('.otrivin-lesson-7').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_7');
+});
+
+$('.otrivin-lesson-8').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_8');
+});
+
+$('.otrivin-lesson-9').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_9');
+});
+
+$('.otrivin-instructions').click( function(){
+	ga('send', 'event', 'nasmork', 'click', 'instructions');
+});
+
+$('.otrivin-start-game').click( function(){
+	ga('send', 'event', 'fun', 'click', 'game');
+});
+
+$('.otrivin-contest').click( function(){
+	ga('send', 'event', 'fun', 'to_fk', 'second_step');
+});
+
+$('.otrivin-tales').click( function(){
+	ga('send', 'event', 'fun', 'click', 'fairy_tale');
+});
+
+$('.otrivin-music').click( function(){
+	ga('send', 'event', 'fun', 'to_music', 'anons_music');
+});
+
+$('.otrivin-poems').click( function(){
+	ga('send', 'event', 'fun', 'click', 'poem');
+});
+
+$('.otrivin-photo-upload').click( function(){
+	ga('send', 'event', 'FK', 'click', 'upload_photo');
+});
+
+$('.otrivin-song-1').click( function(){
+	ga('send', 'event', 'music', 'click', 'song_1');
+});
+
+$('.otrivin-song-2').click( function(){
+	ga('send', 'event', 'music', 'click', 'song_2');
+});
+
+$('.otrivin-song-3').click( function(){
+	ga('send', 'event', 'music', 'click', 'song_3');
+});
+
+$('.otrivin-song-4').click( function(){
+	ga('send', 'event', 'music', 'click', 'song_4');
+});
+
+$('.otrivin-song-5').click( function(){
+	ga('send', 'event', 'music', 'click', 'song_5');
+});
+
+
+
+
 $(document).ready(function () {
-	
-	$('#otrivin-logo').click( function(){
-		ga('send', 'event', 'Main_menu', 'to_client', 'logo');
-	});
-
-	$('.otrivin-no-more-cold').click( function(){
-		ga('send', 'event', 'Main', 'to_nasmork', 'anons_nasmork');
-	});
-
-	$('.otrivin-entertain').click( function(){
-		ga('send', 'event', 'Main', 'to_fun', 'anons_fun');
-	});
-
-	$('.otrivin-save').click( function(){
-		ga('send', 'event', 'Main', 'to_important', 'anons_important');
-	});
-
-	$('.otrivin-plan-day').click( function(){
-		ga('send', 'event', 'Main', 'to_planning', 'anons_planning');
-	});
-
-	$('.otrivin-step-1').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'first_step');
-	});
-
-	$('.otrivin-step-2').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'second_step');
-	});
-
-	$('.otrivin-play-video').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'play_video');
-	});
-
-	$('.otrivin-lesson-1').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_1');
-	});
-
-	$('.otrivin-lesson-2').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_2');
-	});
-
-	$('.otrivin-lesson-3').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_3');
-	});
-
-	$('.otrivin-lesson-4').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_4');
-	});
-
-	$('.otrivin-lesson-5').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_5');
-	});
-
-	$('.otrivin-lesson-6').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_6');
-	});
-
-	$('.otrivin-lesson-7').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_7');
-	});
-
-	$('.otrivin-lesson-8').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_8');
-	});
-
-	$('.otrivin-lesson-9').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'lesson_9');
-	});
-
-	$('.otrivin-instructions').click( function(){
-		ga('send', 'event', 'nasmork', 'click', 'instructions');
-	});
-
-	$('.otrivin-start-game').click( function(){
-		ga('send', 'event', 'fun', 'click', 'game');
-	});
-
-	$('.otrivin-contest').click( function(){
-		ga('send', 'event', 'fun', 'to_fk', 'second_step');
-	});
-
-	$('.otrivin-tales').click( function(){
-		ga('send', 'event', 'fun', 'click', 'fairy_tale');
-	});
-
-	$('.otrivin-music').click( function(){
-		ga('send', 'event', 'fun', 'to_music', 'anons_music');
-	});
-
-	$('.otrivin-poems').click( function(){
-		ga('send', 'event', 'fun', 'click', 'poem');
-	});
-
-	$('.otrivin-photo-upload').click( function(){
-		ga('send', 'event', 'FK', 'click', 'upload_photo');
-	});
-
-	$('.otrivin-song-1').click( function(){
-		ga('send', 'event', 'music', 'click', 'song_1');
-	});
-
-	$('.otrivin-song-2').click( function(){
-		ga('send', 'event', 'music', 'click', 'song_2');
-	});
-
-	$('.otrivin-song-3').click( function(){
-		ga('send', 'event', 'music', 'click', 'song_3');
-	});
-
-	$('.otrivin-song-4').click( function(){
-		ga('send', 'event', 'music', 'click', 'song_4');
-	});
-
-	$('.otrivin-song-5').click( function(){
-		ga('send', 'event', 'music', 'click', 'song_5');
-	});
-
     $('.header_bot_menu_320_icon').click(function () {
         $('.header_bot_link_menu ul').fadeIn(700);
     });
@@ -148,7 +150,7 @@ $(document).ready(function () {
 
     /*amuse_baby*/
     $('.contest_link div a').click(function () {
-    	$('.contest_link p').css('-webkit-line-clamp', '20');
+        $('.contest_link p').css('-webkit-line-clamp', '20');
         $('.contest_link div a').text('Свернуть');
     });
 	
@@ -168,6 +170,40 @@ $(document).ready(function () {
 		}
       
      });
+	 
+	 /*------------------------------------------*/
+	 /*--------     участики конкурса    -------*/
+	 $.ajax({
+			type: "GET",
+			url: "http://otrivindata.pdigit.top/api/images/getall",
+			success: function(msg) {
+				//console.log(msg); 
+				msg.forEach(function(item, i, arr) {
+				 
+				  $('#part443').prepend(
+				  
+				  '<div class="participant">'+
+				 ' <img src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img">'+
+				  '<div class="participant-author">'+
+					/*'<img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">'+
+					'<h3 class="author__name">Катерина</h3>'+
+					'<p class="author__location">Москва</p>'+*/
+				 '</div>'+
+				  '<p class="participant__comment">'+item.description+'</p>'+
+				
+				'</div>'
+					   );
+				});
+				/*
+				*/
+			},
+			error: function(errmsg){
+				console.log(errmsg);
+			} 
+		});
+	 /*--------------------------------------------------*/
+	 /*--------------------------------------------------*/
+	 
 });
 	
 
