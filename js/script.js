@@ -1,6 +1,6 @@
 'use strict';
 var files;
- var fileName = '';
+var fileName = '';
 var user_id = '';
 
 $.ajax({
@@ -20,6 +20,123 @@ $.ajax({
 				console.log(errmsg);
 			} 
 		});
+
+$('#otrivin-logo').onclick( function(){
+	ga('send', 'event', 'Main_menu', 'to_client', 'logo');
+});
+
+$('.otrivin-no-more-cold').onclick( function(){
+	ga('send', 'event', 'Main', 'to_nasmork', 'anons_nasmork');
+});
+
+$('.otrivin-entertain').onclick( function(){
+	ga('send', 'event', 'Main', 'to_fun', 'anons_fun');
+});
+
+$('.otrivin-save').onclick( function(){
+	ga('send', 'event', 'Main', 'to_important', 'anons_important');
+});
+
+$('.otrivin-plan-day').onclick( function(){
+	ga('send', 'event', 'Main', 'to_planning', 'anons_planning');
+});
+
+$('.otrivin-step-1').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'first_step');
+});
+
+$('.otrivin-step-2').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'second_step');
+});
+
+$('.otrivin-play-video').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'play_video');
+});
+
+$('.otrivin-lesson-1').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_1');
+});
+
+$('.otrivin-lesson-2').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_2');
+});
+
+$('.otrivin-lesson-3').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_3');
+});
+
+$('.otrivin-lesson-4').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_4');
+});
+
+$('.otrivin-lesson-5').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_5');
+});
+
+$('.otrivin-lesson-6').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_6');
+});
+
+$('.otrivin-lesson-7').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_7');
+});
+
+$('.otrivin-lesson-8').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_8');
+});
+
+$('.otrivin-lesson-9').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'lesson_9');
+});
+
+$('.otrivin-instructions').onclick( function(){
+	ga('send', 'event', 'nasmork', 'click', 'instructions');
+});
+
+$('.otrivin-start-game').onclick( function(){
+	ga('send', 'event', 'fun', 'click', 'game');
+});
+
+$('.otrivin-contest').onclick( function(){
+	ga('send', 'event', 'fun', 'to_fk', 'second_step');
+});
+
+$('.otrivin-tales').onclick( function(){
+	ga('send', 'event', 'fun', 'click', 'fairy_tale');
+});
+
+$('.otrivin-music').onclick( function(){
+	ga('send', 'event', 'fun', 'to_music', 'anons_music');
+});
+
+$('.otrivin-poems').onclick( function(){
+	ga('send', 'event', 'fun', 'click', 'poem');
+});
+
+$('.otrivin-photo-upload').onclick( function(){
+	ga('send', 'event', 'FK', 'click', 'upload_photo');
+});
+
+$('.otrivin-song-1').onclick( function(){
+	ga('send', 'event', 'music', 'click', 'song_1');
+});
+
+$('.otrivin-song-2').onclick( function(){
+	ga('send', 'event', 'music', 'click', 'song_2');
+});
+
+$('.otrivin-song-3').onclick( function(){
+	ga('send', 'event', 'music', 'click', 'song_3');
+});
+
+$('.otrivin-song-4').onclick( function(){
+	ga('send', 'event', 'music', 'click', 'song_4');
+});
+
+$('.otrivin-song-5').onclick( function(){
+	ga('send', 'event', 'music', 'click', 'song_5');
+});
+
 
 
 

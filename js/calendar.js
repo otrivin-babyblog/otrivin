@@ -4,6 +4,7 @@ $(function () {
 
 
 $('.print-btn').on('click', function (e) {
+    ga('send', 'event', 'planning', 'click', 'print');
     e.preventDefault;
     window.print();
   });
