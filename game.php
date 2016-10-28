@@ -38,9 +38,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
+    <script src="<? echo $source; ?>js/es5-shims.min.js"></script>
     <script src="<? echo $source; ?>js/jquery.min.js"></script>
     <script src="<? echo $source; ?>js/game.js"></script>
     <script src="<? echo $source; ?>js/script.js"></script>
-    <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
