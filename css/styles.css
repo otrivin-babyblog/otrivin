@@ -2085,7 +2085,7 @@ label.input-error {
     margin: 0 0 30px;
     padding: 0 20px; }
   .article__img, .article-wrapper img {
-   /* display: none;*/ }
+    display: none; }
   .article__text, .article-wrapper p {
     line-height: 20px;
     margin: 0 0 15px; }
@@ -2454,37 +2454,3 @@ label.input-error {
       background-color: #f5f2e9; }
     .verse:nth-of-type(3n) {
       background-color: #fdeae4; } }
-
-	  
-	  
-.calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-transform: uppercase;
-  text-align: center;
-  width: 25%;
-  margin: 10px 0 10px auto;
-  padding: 10px;
-}
-
-
-.calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn span {
-  width: 100%;
-  line-height: 60px;
-  background: #f3937e;
-  color: #fff;
-  transition: all .3s;
-}
-.calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn span:hover {
-  background: #e9baad;
-}
-
-@media print {
-  .header, .footer, .title-img, .breadcrumb, .page-about, .content-footer, .calendar-more-articles, .calendar-wrapper .calendar-actions-wrapper
-  .calendar-actions{
-   display: none;  } 
-}
