@@ -29,7 +29,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <p class="activity__about">Поделись фотоисторией о своем ребенке и выиграй подарки! ...</p>
             <a href="/contests.php" class="activity__link">Подробнее</a>
           </div-->
-          <div class="activity">
+          <div class="activity"     style="width: 100%; text-align: center;">
             <h3 class="activity__name">поразительное сходство</h3>
             <p class="activity__about">Участвуй в семейном конкурсе и получай подарки! ...</p>
             <a href="/otrivin_baby/contests_s.php" class="activity__link otrivin-contest">Подробнее</a>
