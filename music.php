@@ -43,8 +43,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			 <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139392-twinkle-twinkle-little-star-lullaby-license.pdf" >авторские права</a></h3>
 			
             <audio src="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" class="music-download">
+            <span class="music__listen otrivin-song-1">Слушать</span>
+            <a href="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" class="music-download otrivin-song-1">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -55,8 +55,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			 <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139393-chopin-nocturne-op9-no2-license.pdf" >авторские права</a></h3>
 			
             <audio src="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" class="music-download">
+            <span class="music__listen otrivin-song-2">Слушать</span>
+            <a href="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" class="music-download otrivin-song-2">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -66,8 +66,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h3 class="music__name">Колыбельная 3 (10 LULLABY)  <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139395-lullaby-license.pdf" >авторские права</a></h3>
 			
             <audio src="<? echo $source; ?>files/audio/10_LULLABY.wav" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/10_LULLABY.wav" class="music-download">
+            <span class="music__listen otrivin-song-3">Слушать</span>
+            <a href="<? echo $source; ?>files/audio/10_LULLABY.wav" class="music-download otrivin-song-3">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -78,8 +78,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			<a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139394-fairy-orchestral-lullaby-license.pdf" >авторские права</a></h3>
 			
             <audio src="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" class="music-download">
+            <span class="music__listen otrivin-song-4">Слушать</span>
+            <a href="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" class="music-download otrivin-song-4">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -91,8 +91,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			
 			
             <audio src="<? echo $source; ?>files/audio/Lullaby.wav" preload="auto"></audio>
-            <span class="music__listen">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Lullaby.wav" class="music-download">
+            <span class="music__listen otrivin-song-5">Слушать</span>
+            <a href="<? echo $source; ?>files/audio/Lullaby.wav" class="music-download otrivin-song-5">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>

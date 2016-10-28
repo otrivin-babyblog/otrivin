@@ -17,8 +17,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 								<div class="main_info_item">
 									<div class="main_info_link">
 										<p><img src="<? echo $source; ?>img/main-line.png" alt=""></p>
-										<a href="/otrivin_baby/no_more_cold.php" class="info_a">Прощай, насморк <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
-										<div class="main_but"><a href="/otrivin_baby/nose_hygiene.php"><span>Ознакомиться</span></a> <img src="<? echo $source; ?>img/elephant.png" alt=""></div>
+										<a href="/otrivin_baby/no_more_cold.php" class="info_a otrivin-no-more-cold">Прощай, насморк <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
+										<div class="main_but"><a href="/otrivin_baby/nose_hygiene.php" class="otrivin-no-more-cold"><span>Ознакомиться</span></a> <img src="<? echo $source; ?>img/elephant.png" alt=""></div>
 									</div>
 
 								</div>
@@ -30,8 +30,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 								<div class="main_info_item">
 									<div class="main_info_link">
 										<p><img src="<? echo $source; ?>img/main-line.png" alt=""></p>
-										<a href="/otrivin_baby/entertain.php" class="info_a">Развлекай ребёнка <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
-										<div class="main_but"><a href="/otrivin_baby/entertain.php"><span>Перейти в раздел</span></a> <img src="<? echo $source; ?>img/elefant_twice.png" alt=""></div>
+										<a href="/otrivin_baby/entertain.php" class="info_a otrivin-entertain">Развлекай ребёнка <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
+										<div class="main_but"><a href="/otrivin_baby/entertain.php" class="otrivin-entertain"><span>Перейти в раздел</span></a> <img src="<? echo $source; ?>img/elefant_twice.png" alt=""></div>
 									</div>
 
 								</div>
@@ -43,8 +43,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 								<div class="main_info_item">
 									<div class="main_info_link">
 										<p><img src="<? echo $source; ?>img/main-line.png" alt=""></p>
-										<a href="/otrivin_baby/save.php" class="info_a">Сохраняй важное <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
-										<div class="main_but"><a href="/otrivin_baby/save.php"><span>Создать заметки</span></a> <img src="<? echo $source; ?>img/while.png" alt=""></div>
+										<a href="/otrivin_baby/save.php" class="info_a otrivin-save">Сохраняй важное <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
+										<div class="main_but"><a href="/otrivin_baby/save.php" class="otrivin-save"><span>Создать заметки</span></a> <img src="<? echo $source; ?>img/while.png" alt=""></div>
 									</div>
 
 								</div>
@@ -56,8 +56,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 								<div class="main_info_item">
 									<div class="main_info_link">
 										<p><img src="<? echo $source; ?>img/main-line.png" alt=""></p>
-										<a href="/otrivin_baby/calendar.php" class="info_a">Планируй день <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
-										<div class="main_but"><a href="/otrivin_baby/calendar.php"><span>Начать планировать</span></a> <img src="<? echo $source; ?>img/penguim.png" alt=""></div>
+										<a href="/otrivin_baby/calendar.php" class="info_a otrivin-plan-day">Планируй день <i><img src="<? echo $source; ?>img/down-arrow.svg" alt=""></i></a>
+										<div class="main_but"><a href="/otrivin_baby/calendar.php" class="otrivin-plan-day"><span>Начать планировать</span></a> <img src="<? echo $source; ?>img/penguim.png" alt=""></div>
 									</div>
 
 								</div>

@@ -18,7 +18,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <div class="complex-cta__header">Используйте комплекс Отривин Бэби</div>
             <img src="<? echo $source; ?>img/elefant_twice.png" alt="Слоненок" class="complex-cta__img">
           </div>
-          <div class="complex-step _active" data-name="drops">
+          <div class="complex-step _active otrivin-step-1" data-name="drops">
             <div class="complex-step__arrow"></div>
             <div class="complex-step-content">
               <div class="complex-step-wrapper">
@@ -28,7 +28,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
               </div>
             </div>
           </div>
-          <div class="complex-step" data-name="aspirator">
+          <div class="complex-step otrivin-step-2" data-name="aspirator">
             <div class="complex-step__arrow complex-step__arrow_reversed"></div>
             <div class="complex-step-content">
               <div class="complex-step-wrapper">
@@ -75,45 +75,45 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="product-video__name">Как правильно пользоваться комплексом Отривин Бэби?</div>
           <h3 class="product-video__title">Смотрите видео-инструкцию</h3>
           <div class="product-video">
-            <div class="responsive-video">
-              <iframe width="911" height="512" src="https://www.youtube.com/embed/9hKbR32sEMo?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+            <div class="responsive-video ">
+              <iframe class="otrivin-play-video" width="911" height="512" src="https://www.youtube.com/embed/9hKbR32sEMo?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
-          <a href="http://www.otrivin.ru/products/otrivin-baby-aspirator-instruktsiya.html" target="_blank" class="btn btn_product-video">смотреть инструкцию по применению</a>
+          <a class="otrivin-instructions" href="http://www.otrivin.ru/products/otrivin-baby-aspirator-instruktsiya.html" target="_blank" class="btn btn_product-video">смотреть инструкцию по применению</a>
         </div>
         <!-- Hardcoded, proper columns requires either dropping IE8 or adding  scripts -->
         <div class="useful-articles">
           <h2 class="useful__name">полезные статьи</h2>
           <ul class="useful-list">
             <li class="useful__item">
-              <a href="/otrivin_baby/article.php" class="useful__link"><span>Урок 1</span>"Все о детском дыхании"</a>
+              <a href="/otrivin_baby/article.php" class="useful__link otrivin-lesson-1"><span>Урок 1</span>"Все о детском дыхании"</a>
             </li>
             <li class="useful__item">
-              <a href="/otrivin_baby/article2.php" class="useful__link"><span>Урок 2</span>"Аллергия"</a>
+              <a href="/otrivin_baby/article2.php" class="useful__link otrivin-lesson-2"><span>Урок 2</span>"Аллергия"</a>
             </li>
             <li class="useful__item">
-              <a href="/otrivin_baby/article3.php" class="useful__link"><span>Урок 3</span>"Как помочь носику"</a>
+              <a href="/otrivin_baby/article3.php" class="useful__link otrivin-lesson-3"><span>Урок 3</span>"Как помочь носику"</a>
             </li>
             <li class="useful__item">
-              <a href="/otrivin_baby/article4.php" class="useful__link"><span>Урок 4</span>"Почему возникает насморк"</a>
+              <a href="/otrivin_baby/article4.php" class="useful__link otrivin-lesson-4"><span>Урок 4</span>"Почему возникает насморк"</a>
             </li>
             <li class="useful__item">
-              <a href="/otrivin_baby/article5.php" class="useful__link"><span>Урок 5</span>"Правила закаливания"</a>
+              <a href="/otrivin_baby/article5.php" class="useful__link otrivin-lesson-5"><span>Урок 5</span>"Правила закаливания"</a>
             </li>
           </ul>
           <ul class="useful-list">
             <li class="useful__item">
-              <a href="/otrivin_baby/article6.php" class="useful__link"><span>Урок 6</span>"Наука и искусство сморкания"</a>
+              <a href="/otrivin_baby/article6.php" class="useful__link otrivin-lesson-6"><span>Урок 6</span>"Наука и искусство сморкания"</a>
            	
 		   <li class="useful__item">
-              <a href="/otrivin_baby/article7.php" class="useful__link"><span>Урок 7</span>"Чтобы хорошо дышалось"</a>
+              <a href="/otrivin_baby/article7.php" class="useful__link otrivin-lesson-7"><span>Урок 7</span>"Чтобы хорошо дышалось"</a>
             </li>
            </li>
 			  <li class="useful__item">
-              <a href="/otrivin_baby/article8.php" class="useful__link"><span>Урок 8</span>"Дыхательная гимнастика – детям!"</a>
+              <a href="/otrivin_baby/article8.php" class="useful__link otrivin-lesson-8"><span>Урок 8</span>"Дыхательная гимнастика – детям!"</a>
             </li>
             <li class="useful__item">
-              <a href="/otrivin_baby/article9.php" class="useful__link"><span>Урок 9</span>"Как устроен детский носик"</a>
+              <a href="/otrivin_baby/article9.php" class="useful__link otrivin-lesson-9"><span>Урок 9</span>"Как устроен детский носик"</a>
             </li>
             <li class="useful__item">
               <a  class="useful__link"><span></span></a>

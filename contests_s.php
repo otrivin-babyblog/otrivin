@@ -21,7 +21,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		среди читателей работ выйдут в финал. Жюри BabyBlog выберет из их числа трех победителей и наградит призами!</p>
         <div class="contest-wrapper">
           <div class="contest-sender">
-            <a class="btn btn_border js_contest">отправить фотографии</a>
+            <a class="btn btn_border js_contest otrivin-photo-upload">отправить фотографии</a>
           </div>
           <div class="contest-prizes">
             <div class="contest-prize">
