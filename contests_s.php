@@ -191,67 +191,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     <div class="popup _participants">
       <h2 class="popup-title">участники конкурса</h2>
       <button class="popup-close"></button>
-      <div class="participants">
-        <div class="participant">
-          <img src="<? echo $source; ?>img/participant-1.jpg" alt="" class="participant__img">
-          <div class="participant-author">
-            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
-            <h3 class="author__name">Катерина</h3>
-            <p class="author__location">Москва</p>
-          </div>
-          <p class="participant__comment">Дима обожает опыты и мечтает стать химиком, когда вырастет, на фотографии он улыбается, на фотографии он улыбается</p>
-          <a href="" class="btn btn__vote">голосовать</a>
-        </div>
-        <div class="participant">
-          <img src="<? echo $source; ?>img/participant-2.jpg" alt="" class="participant__img">
-          <div class="participant-author">
-            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
-            <h3 class="author__name">Катерина</h3>
-            <p class="author__location">Москва</p>
-          </div>
-          <p class="participant__comment">Дима обожает опыты и мечтает стать химиком, когда вырастет, на фотографии он улыбается, на фотографии он улыбается</p>
-          <a href="" class="btn btn__vote">голосовать</a>
-        </div>
-        <div class="participant">
-          <img src="<? echo $source; ?>img/participant-3.jpg" alt="" class="participant__img">
-          <div class="participant-author">
-            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
-            <h3 class="author__name">Катерина</h3>
-            <p class="author__location">Москва</p>
-          </div>
-          <p class="participant__comment">Дима обожает опыты и мечтает стать химиком, когда вырастет, на фотографии он улыбается, на фотографии он улыбается</p>
-          <a href="" class="btn btn__vote">голосовать</a>
-        </div>
-        <div class="participant">
-          <img src="<? echo $source; ?>img/participant-1.jpg" alt="" class="participant__img">
-          <div class="participant-author">
-            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
-            <h3 class="author__name">Катерина</h3>
-            <p class="author__location">Москва</p>
-          </div>
-          <p class="participant__comment">Дима обожает опыты и мечтает стать химиком, когда вырастет, на фотографии он улыбается, на фотографии он улыбается</p>
-          <a href="" class="btn btn__vote">голосовать</a>
-        </div>
-        <div class="participant">
-          <img src="<? echo $source; ?>img/participant-2.jpg" alt="" class="participant__img">
-          <div class="participant-author">
-            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
-            <h3 class="author__name">Катерина</h3>
-            <p class="author__location">Москва</p>
-          </div>
-          <p class="participant__comment">Дима обожает опыты и мечтает стать химиком, когда вырастет, на фотографии он улыбается, на фотографии он улыбается</p>
-          <a href="" class="btn btn__vote">голосовать</a>
-        </div>
-        <div class="participant">
-          <img src="<? echo $source; ?>img/participant-3.jpg" alt="" class="participant__img">
-          <div class="participant-author">
-            <img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">
-            <h3 class="author__name">Катерина</h3>
-            <p class="author__location">Москва</p>
-          </div>
-          <p class="participant__comment">Дима обожает опыты и мечтает стать химиком, когда вырастет, на фотографии он улыбается</p>
-          <a href="" class="btn btn__vote">голосовать</a>
-        </div>
+      <div id="part443" class="participants">
       </div>
       <div class="content-footer">
         <!--ul class="pagination">
