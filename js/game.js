@@ -29,7 +29,7 @@ $(function () {
       }
     },
     animal: './img/game-animal-1.jpg',
-    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Молокосос', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
+    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
   }, {
     problem: 'Слоненок Кеша заболел, у него насморк :(',
     solution: 'Помоги Кеше очистить носик',
@@ -44,7 +44,7 @@ $(function () {
       }
     },
     animal: './img/game-animal-2.jpg',
-    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Молокосос', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
+    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
   }, {
     problem: 'Кит Вася заболел, у него насморк :(',
     solution: 'Помоги Васе очистить носик',
@@ -59,7 +59,7 @@ $(function () {
       }
     },
     animal: './img/game-animal-3.jpg',
-    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Молокосос', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
+    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
   }];
 
   var game = new Game('#game', audio, 500, callback);
