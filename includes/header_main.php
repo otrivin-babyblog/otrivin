@@ -181,7 +181,7 @@
 					<div class="header_bot_menu">
 						<div class="header_bot_link_menu">
 							<div class="header_bot_item_menu_logo">
-								<a href="/otrivin_baby/"><img src="<? echo $source; ?>img/logo-menu-bot.png" alt=""></a>
+								<a href="http://www.otrivin.ru/otrivin-baby.html"><img src="<? echo $source; ?>img/logo-menu-bot.png" alt=""></a>
 							</div>
 							<div class="header_bot_menu_320_icon">
 								<a href="javascript:void(0);">
