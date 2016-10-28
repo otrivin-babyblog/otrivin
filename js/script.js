@@ -113,9 +113,7 @@ $('.otrivin-poems').click( function(){
 	ga('send', 'event', 'fun', 'click', 'poem');
 });
 
-$('.otrivin-photo-upload').click( function(){
-	ga('send', 'event', 'FK', 'click', 'upload_photo');
-});
+
 
 $('.otrivin-song-1').click( function(){
 	ga('send', 'event', 'music', 'click', 'song_1');
@@ -166,7 +164,7 @@ $(document).ready(function () {
 		}else
 		{
 			//alert('Необходимо авторизоваться!');
-			$('.js_contest').hide();
+			//$('.js_contest').hide();
 		}
       
      });
