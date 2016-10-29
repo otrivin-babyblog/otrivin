@@ -1213,6 +1213,18 @@ img {
   overflow: hidden;
   padding: 52px 0 48px; }
 
+.otrivin-instructions {
+    width: 320px!important;
+    margin: 0 auto;
+    display: block;
+    /* width: 172px; */
+    background-color: #eea494;
+    color: #fff;
+    text-transform: uppercase;
+    font: 14px/40px "Roboto Condensed", sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
 .other-games-item {
   float: left;
   width: 45%;
