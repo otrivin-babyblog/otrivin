@@ -20,7 +20,6 @@ $source = 'http://promo.babyblog.ru/otrivin_baby/';
  <meta property="og:title" content="БэбиБлог - беременность, календарь беременности, дневники" />
  <meta property="og:type" content="image" />
  <meta property="og:url" content="https://www.babyblog.ru/" />
- <!-- <meta property="og:image" content="http://wogcafe.ua/stickers-ru/img/box.png" />     -->
  <meta property="og:description" content="Встречайте БэбиБлог в мессенджерах!" />  
 	
 	
