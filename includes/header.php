@@ -34,8 +34,6 @@ $source = 'http://promo.babyblog.ru/otrivin_baby/';
     <link href="<? echo $source; ?>css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css">
     <link href="<? echo $source; ?>css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="<? echo $source; ?>css/main.css" rel="stylesheet" type="text/css">
-	
-	  <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 	  <script src="<? echo $source; ?>js/jquery.min.js"></script>
 
     <script src="https://st.babyblog.ru/st20330/js/api/build/babyblog/bbapi.min.js"></script>
