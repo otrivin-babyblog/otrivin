@@ -9,7 +9,7 @@
             <h1 class="main-title">Планируй день</h1>
           </div>
           <div class="breadcrumb">
-            <a href="/otrivin_baby/" class="breadcrumb__link">Главная</a>
+            <a href="<? echo $source; ?>" class="breadcrumb__link">Главная</a>
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Планируй день</a>
           </div>
@@ -99,16 +99,16 @@
             </div>
             <div class="calendar-actions-wrapper">
               <div class="calendar-actions">
-                <p>Выберите необходимые дела ниже и просто перетащите в нужное время вашего календаря</p>
-                <ul>
-                  <li><a href="/otrivin_baby/nose_hygiene.php">Гигиена носика</a></li>
-                  <li><a href="/otrivin_baby/igry_s_rebenkom.php">Игры с ребенком</a></li>
-                  <li><a href="/otrivin_baby/music.php">Музыка</a></li>
-                  <li><a href="/otrivin_baby/verses.php">Потешки</a></li>
+                <p>Выберите необходимые дела ниже и просто перетащите в нужное время вашего календаря (Или кликнете правой кнопкой мыши, чтобы перейти в раздел)</p>
+				<ul>
+                  <li><a href="<? echo $source; ?>nose_hygiene.php">Гигиена носика</a></li>
+                  <li><a href="<? echo $source; ?>igry_s_rebenkom.php">Игры с ребенком</a></li>
+                  <li><a href="<? echo $source; ?>music.php">Музыка</a></li>
+                  <li><a href="<? echo $source; ?>verses.php">Потешки</a></li>
 				  
-				  <li><a href="/otrivin_baby/uroki_dlya_mam.php">Уроки для мам</a></li>
-				  <li><a href="/otrivin_baby/domestic_chores.php">Домашние дела</a></li>
-				  <li><a href="/otrivin_baby/tales.php">Сказки на ночь</a></li>
+				  <li><a href="<? echo $source; ?>uroki_dlya_mam.php">Уроки для мам</a></li>
+				  <li><a href="<? echo $source; ?>domestic_chores.php">Домашние дела</a></li>
+				  <li><a href="<? echo $source; ?>tales.php">Сказки на ночь</a></li>
 				  
 				  
                   <li>
@@ -138,6 +138,150 @@
                 <img src="<? echo $source; ?>img/calendar-elephant.png" alt="">
               </div>
             </div>
+			
+			
+			
+			
+			
+			
+			 <div class="calendar-mobile-table">
+              <div class="one-time">
+                <p class="time">7:00-9:00</p>
+                <ul></ul>
+              </div>
+              <div class="one-time">
+                <p class="time">9:00-11:00</p>
+                <ul></ul>
+              </div>
+              <div class="one-time">
+                <p class="time">11:00-13:00</p>
+                <ul></ul>
+              </div>
+              <div class="one-time">
+                <p class="time">13:00-15:00</p>
+                <ul></ul>
+              </div>
+              <div class="one-time">
+                <p class="time">15:00-17:00</p>
+                <ul></ul>
+              </div>
+              <div class="one-time">
+                <p class="time">17:00-19:00</p>
+                <ul></ul>
+              </div>
+              <div class="one-time">
+                <p class="time">19:00-21:00</p>
+                <ul></ul>
+              </div>
+            </div>
+            <div class="calendar-actions-mobile">
+              <form class="form-actions-mobile">
+                <div class="tasks">
+                  <p class="title">Выберите задачу</p>
+                  <ul>
+                    <li>
+					<label>
+                        <input type="checkbox" name="tasks" value="Гигиена носика">
+                        <span>Гигиена носика</span>
+                      </label>
+					
+					<label>
+                        <input type="checkbox" name="tasks" value="Уроки для мам">
+                        <span>Уроки для мам</span>
+                      </label>
+					  <label>
+                        <input type="checkbox" name="tasks" value="Домашние дела">
+                        <span>Домашние дела</span>
+                      </label>
+					  <label>
+                        <input type="checkbox" name="tasks" value="Сказки">
+                        <span>Сказки</span>
+                      </label>
+					
+					
+                      <label>
+                        <input type="checkbox" name="tasks" value="Потешки">
+                        <span>Потешки</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" name="tasks" value="Игры">
+                        <span>Игры</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" name="tasks" value="Музыка">
+                        <span>Музыка</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="times">
+                  <p class="title">Выберите время</p>
+                  <div class="col">
+                    <ul>
+                      <li>
+                        <label>
+                          <input type="checkbox" name="times" value="1">
+                          <span>7:00-9:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" name="times" value="2">
+                          <span>9:00-11:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" name="times" value="3">
+                          <span>11:00-13:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" name="times" value="4">
+                          <span>13:00-15:00</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul>
+                      <li>
+                        <label>
+                          <input type="checkbox" name="times" value="5">
+                          <span>15:00-17:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" name="times" value="6">
+                          <span>17:00-19:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" name="times" value="7">
+                          <span>19:00-21:00</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <button type="submit">Добавить задачу</button>
+              </form>
+            </div>
+			
+			
+			
+			
+			
+			
+			
           </div>
 
           <div class="content-footer">
@@ -160,6 +304,7 @@
     <script src="<? echo $source; ?>js/jquery.min.js"></script>
     <script src="<? echo $source; ?>js/bootstrap-datepicker.min.js"></script>
     <script src="<? echo $source; ?>js/bootstrap-datepicker.ru.min.js"></script>
+	<script> var siteurl = '<? echo $source; ?>'; </script>
     <script src="<? echo $source; ?>js/calendar.js"></script>
     <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>

@@ -44,7 +44,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			
             <audio src="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_1');"></audio>
             <span class="music__listen otrivin-song-1">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" class="music-download otrivin-song-1">
+            <a href="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav"  download class="music-download otrivin-song-1">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -56,7 +56,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			
             <audio src="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_2');"></audio>
             <span class="music__listen otrivin-song-2">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" class="music-download otrivin-song-2">
+            <a href="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav"  download class="music-download otrivin-song-2">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -67,7 +67,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			
             <audio src="<? echo $source; ?>files/audio/10_LULLABY.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_3');"></audio>
             <span class="music__listen otrivin-song-3">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/10_LULLABY.wav" class="music-download otrivin-song-3">
+            <a href="<? echo $source; ?>files/audio/10_LULLABY.wav"  download class="music-download otrivin-song-3">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -79,7 +79,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			
             <audio src="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_4');"></audio>
             <span class="music__listen otrivin-song-4">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" class="music-download otrivin-song-4">
+            <a href="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav"  download class="music-download otrivin-song-4">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -92,7 +92,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			
             <audio src="<? echo $source; ?>files/audio/Lullaby.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_5');"></audio>
             <span class="music__listen otrivin-song-5">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Lullaby.wav" class="music-download otrivin-song-5">
+            <a href="<? echo $source; ?>files/audio/Lullaby.wav"   download class="music-download otrivin-song-5">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>

@@ -10,7 +10,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php") ?>
           <h1 class="main-title">Уроки для мамы</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/otrivin_baby/calendar.php" class="breadcrumb__link">Планируй день</a>
+          <a href="<? echo $source; ?>calendar.php" class="breadcrumb__link">Планируй день</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Уроки для мамы</a>
         </div>
@@ -20,19 +20,19 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php") ?>
         <div class="video-wrapper">
           <div class="video-item">
             <div class="responsive-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/EP8Lr4pbH9c?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+              <iframe class="otrivin-mom-video1" width="560" height="315" src="https://www.youtube.com/embed/EP8Lr4pbH9c?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
             </div>
             <p class="video-caption"></p>
           </div>
           <div class="video-item">
             <div class="responsive-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/19vd29zPnmA?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+              <iframe class="otrivin-mom-video2" width="560" height="315" src="https://www.youtube.com/embed/19vd29zPnmA?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
             </div>
             <p class="video-caption"></p>
           </div>
           <div class="video-item">
             <div class="responsive-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/mxz9muQhPb4?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+              <iframe class="otrivin-mom-video3" width="560" height="315" src="https://www.youtube.com/embed/mxz9muQhPb4?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
             </div>
             <p class="video-caption"></p>
           </div>

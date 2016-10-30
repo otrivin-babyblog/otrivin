@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <h1 class="main-title">Развлекай ребенка</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/otrivin_baby/" class="breadcrumb__link">Главная</a>
+          <a href="<? echo $source; ?>" class="breadcrumb__link">Главная</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Развлекай ребенка</a>
         </div>
@@ -20,7 +20,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <h2 class="zoo-links__title">Игра “Здоровый зоопарк”</h2>
           <p class="zoo-links__about">Животные в нашем зоопарке простудились, у них насморк: носик забит о совсем не дышит. Добрый доктор Айболит очень занят, но вы можете помочь ему вылечить зверят. Дайте питомцу правильное лекарство и он мигом поправится! <br>
           Поиграйте вместе с малышом, это поможет развить эмпатию, привить любовь к животным, и просто здорово развеселит. Выучите, как говорит каждый зверь, и повторяйте вместе с ним. К тому же, ребенок будет лучше относиться к лечению, когда вы скажите: “Закапаем в носик, как китенку”</p>
-          <a href="/otrivin_baby/game.php" class="btn btn__zoo otrivin-start-game">начать игру</a>
+          <a href="<? echo $source; ?>game.php" class="btn btn__zoo otrivin-start-game">начать игру</a>
         </div>
         <div class="activities-wrapper">
           <h2 class="page-title">наши конкурсы</h2>
@@ -32,7 +32,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="activity"     style="width: 100%; text-align: center;">
             <h3 class="activity__name">поразительное сходство</h3>
             <p class="activity__about">Участвуй в семейном конкурсе и получай подарки! ...</p>
-            <a href="/otrivin_baby/contests_s.php" class="activity__link otrivin-contest">Подробнее</a>
+            <a href="<? echo $source; ?>contests_s.php" class="activity__link otrivin-anons-contest">Подробнее</a>
           </div>
           <!--div class="activity">
             <h3 class="activity__name">папин сын</h3>
@@ -45,17 +45,17 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="activity">
             <h3 class="activity__name">сказки</h3>
             <p class="activity__about">Маша и медведь, Морозко, Теремок, Колобок и другие аудиосказки...</p>
-            <a href="/otrivin_baby/tales.php" class="activity__link otrivin-tales">Подробнее</a>
+            <a href="<? echo $source; ?>tales.php" class="activity__link otrivin-tales">Подробнее</a>
           </div>
           <div class="activity">
             <h3 class="activity__name">детские песенки</h3>
             <p class="activity__about">Включите ребенку спокойную музыку на ночь, и он быстрее уснет ...</p>
-            <a href="/otrivin_baby/music.php" class="activity__link otrivin-music">Подробнее</a>
+            <a href="<? echo $source; ?>music.php" class="activity__link otrivin-music">Подробнее</a>
           </div>
           <div class="activity">
             <h3 class="activity__name">забавные потешки</h3>
             <p class="activity__about">Малыши любят небольшие стишки, которые помогают сделать ...</p>
-            <a href="/otrivin_baby/verses.php" class="activity__link otrivin-poems">Подробнее</a>
+            <a href="<? echo $source; ?>verses.php" class="activity__link otrivin-poems">Подробнее</a>
           </div>
         </div>
         <div class="content-footer">

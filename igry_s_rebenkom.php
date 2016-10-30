@@ -113,13 +113,13 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <img src="<? echo $source; ?>img/penguins.png" alt="Здоровый зоопарк" class="other-games__img">
             <h3 class="other-games__name">поиграйте в “Здоровый зоопарк”</h3>
             <p class="other-games__about"></p>
-            <a href="/otrivin_baby/game.php" class="btn btn_other-games">начать игру</a>
+            <a href="<? echo $source; ?>game.php" class="btn btn_other-games">начать игру</a>
           </div>
           <div class="other-games-item">
             <img src="<? echo $source; ?>img/gift.png" alt="Конкурсы" class="other-games__img other-games__img_offset">
             <h3 class="other-games__name">у нас для вас замечательные конкурсы</h3>
             <p class="other-games__about"></p>
-            <a href="/otrivin_baby/contests_s.php" class="btn btn_other-games">перейти к конкурсам</a>
+            <a href="<? echo $source; ?>contests_s.php" class="btn btn_other-games">перейти к конкурсам</a>
           </div>
         </div>
         <div class="content-footer">

@@ -12,11 +12,26 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h1 class="main-title">Игра “Здоровый зоопарк”</h1>
           </div>
           <div class="breadcrumb">
-            <a href="/otrivin_baby/entertain.php" class="breadcrumb__link">Развлекай ребенка</a>
+            <a href="<? echo $source; ?>entertain.php" class="breadcrumb__link">Развлекай ребенка</a>
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Игра “Здоровый зоопарк”</a>
           </div>
           <div class="game-wrapper">
+		  
+		  <p class="page-about">
+Животные в нашем зоопарке простудились, у них насморк: носик забит о совсем не дышит. 
+Добрый доктор Айболит очень занят, но вы можете помочь ему вылечить зверят. 
+Дайте питомцу правильное лекарство и он мигом поправится! 
+</p>
+<p  class="page-about" style="margin-bottom: 30px;">
+<br><span>1. Нажми на нужное лекарство, чтобы дать его зверенку. </span><br>
+<span>2. Если лекарство подошло зверенок выздоровеет, а если нет тогда нужно попробовать выбрать другой вариант ответа!</span><br>
+<span>3. Нажми "играть еще раз", чтобы помочь другому обитателю нашего зоопарка.</span><br>
+		
+		  </p>
+        
+		  
+		  
             <div id="game"></div>
             <div class="game-button">
               <a href="#">Играть еще раз</a>

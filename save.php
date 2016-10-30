@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h1 class="main-title">Сохраняй важное</h1>
           </div>
           <div class="breadcrumb">
-            <a href="/otrivin_baby/" class="breadcrumb__link">Главная</a>
+            <a href="<? echo $source; ?>" class="breadcrumb__link">Главная</a>
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Сохраняй важное</a>
           </div>
@@ -24,7 +24,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
               <p class="title">Важные телефоны</p>
               <ul id="notes-list">
 			  
-						<li>
+						<li data-id="-1">
 						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
 						  <div class="content">
 							<p class="title">Участковый, Полиция</p>
@@ -33,7 +33,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 						  </div>
 					    </li>
 					   
-				<li>
+						<li data-id="-2">
 						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
 						  <div class="content">
 							<p class="title">Скорая помощь</p>

@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <h1 class="main-title">Чтобы дышалось хорошо</h1>
         </div>
          <div class="breadcrumb">
-          <a href="/otrivin_baby/no_more_cold.php" class="breadcrumb__link">Прощай, насморк</a>
+          <a href="<? echo $source; ?>no_more_cold.php" class="breadcrumb__link">Прощай, насморк</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Чтобы дышалось хорошо</a>
         </div>
@@ -42,7 +42,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		 </div>
 
         <div class="content-footer">
-          <a href="#" class="article-back" onclick="window.history.back()">Вернуться</a>
+          <a href="<? echo $source; ?>no_more_cold.php" class="article-back"  >Вернуться</a>
           <div class="social">
             <p class="social__text">Поделиться в социальных сетях</p>
             <ul class="social-wrap">

@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <h1 class="main-title">Домашние дела</h1>
         </div>
         <div class="breadcrumb">
-          <a href="/otrivin_baby/calendar.php" class="breadcrumb__link">Планируй день</a>
+          <a href="<? echo $source; ?>calendar.php" class="breadcrumb__link">Планируй день</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Домашние дела</a>
         </div>
