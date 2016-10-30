@@ -1,211 +1,276 @@
-'use strict';
+$(document).ready(function () {
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-$(function () {
 
-  var audio = {
-    success: './files/yes.mp3',
-    error: './files/no.mp3'
-  };
+$(() => {
 
-  var callback = function callback() {
+  const callback = () => {
     $('.game-button').addClass('show');
   };
 
-  var games = [{
-    problem: 'Пингвиненок Ларри заболел, у него <span>насморк :(</span>',
-    solution: 'Помоги Ларри очистить носик',
-    result: {
-      success: {
-        title: 'Ура!!!',
-        description: 'Теперь носик Ларри дышит!'
+  const games = [
+    {
+      problem: 'Пингвиненок Ларри заболел, у него насморк&nbsp;:&nbsp;(',
+      solution: 'Помоги Ларри очистить носик',
+      result: {
+        success: {
+          title: 'Ура!!!',
+          description: 'Теперь носик Ларри дышит!'
+        },
+        error: {
+          title: 'Не помогло:(',
+          description: 'попробуй другое лечение'
+        }
       },
-      error: {
-        title: 'Не помогло:(',
-        description: 'попробуй другое лечение'
-      }
-    },
-    animal: './img/game-animal-1.jpg',
-    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
-  }, {
-    problem: 'Слоненок Кеша заболел, у него насморк :(',
-    solution: 'Помоги Кеше очистить носик',
-    result: {
-      success: {
-        title: 'Ура!!!',
-        description: 'Теперь носик Кеши дышит!'
+      animal: {
+        success: './img/game-animal-1-success.jpg',
+        error: './img/game-animal-1.jpg',
       },
-      error: {
-        title: 'Не помогло:(',
-        description: 'попробуй другое лечение'
-      }
-    },
-    animal: './img/game-animal-2.jpg',
-    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
-  }, {
-    problem: 'Кит Вася заболел, у него насморк :(',
-    solution: 'Помоги Васе очистить носик',
-    result: {
-      success: {
-        title: 'Ура!!!',
-        description: 'Теперь носик Васи дышит!'
+      audio: {
+        success: './files/yes.mp3',
+        error: './files/no.mp3'
       },
-      error: {
-        title: 'Не помогло:(',
-        description: 'попробуй другое лечение'
-      }
+      drugs: [
+        { title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' },
+        { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' },
+        { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true },
+        { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }
+      ]
     },
-    animal: './img/game-animal-3.jpg',
-    drugs: [{ title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' }, { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' }, { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true }, { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }]
-  }];
+    {
+      problem: 'Слоненок Кеша заболел, у него насморк :(',
+      solution: 'Помоги Кеше очистить носик',
+      result: {
+        success: {
+          title: 'Ура!!!',
+          description: 'Теперь носик Кеши дышит!'
+        },
+        error: {
+          title: 'Не помогло:(',
+          description: 'попробуй другое лечение'
+        }
+      },
+      animal: {
+        success: './img/game-animal-2-success.jpg',
+        error: './img/game-animal-2.jpg',
+      },
+      audio: {
+        success: './files/yes.mp3',
+        error: './files/no.mp3'
+      },
+      drugs: [
+        { title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' },
+        { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' },
+        { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true },
+        { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }
+      ]
+    },
+    {
+      problem: 'Кит Вася заболел, у него насморк :(',
+      solution: 'Помоги Васе очистить носик',
+      result: {
+        success: {
+          title: 'Ура!!!',
+          description: 'Теперь носик Васи дышит!'
+        },
+        error: {
+          title: 'Не помогло:(',
+          description: 'попробуй другое лечение'
+        }
+      },
+      animal: {
+        success: './img/game-animal-3-success.jpg',
+        error: './img/game-animal-3.jpg',
+      },
+      audio: {
+        success: './files/yes.mp3',
+        error: './files/no.mp3'
+      },
+      drugs: [
+        { title: 'Шприц', image: './img/game-drugs-1.png', background: '#f3f3f3' },
+        { title: 'Бутылка', image: './img/game-drugs-2.png', background: '#fbe4dd' },
+        { title: 'Таблетки', image: './img/game-drugs-3.png', background: '#e8f8ff', success: true },
+        { title: 'Аспиратор', image: './img/game-drugs-4.png', background: '#f5f2e9' }
+      ]
+    }
+  ];
 
-  var game = new Game('#game', audio, 500, callback);
+  const game = new Game('#game', 500, callback);
 
-  var runGame = function runGame(e) {
+  const runGame = (e) => {
     if (e) {
       e.preventDefault();
     }
     $('.game-button').removeClass('show');
-    var gameId = Math.floor(Math.random() * games.length);
+    const gameId = Math.floor(Math.random() * (games.length));
     game.setGame(games[gameId]);
   };
 
   runGame();
   $('.game-button a').on('click', runGame);
+
 });
 
-var Game = function () {
-  function Game(wrapper, audio, time, callback) {
-    _classCallCheck(this, Game);
+class Game {
 
+  constructor (wrapper, time, callback) {
     this.wrapper = $(wrapper);
     this.wrapper.html('');
-    this.audio = {
-      success: new Audio(audio.success),
-      error: new Audio(audio.error)
-    };
     this.time = time;
     this.callback = callback;
   }
 
-  _createClass(Game, [{
-    key: 'setGame',
-    value: function setGame(game) {
-      this.busy = false;
-      this.status = false;
-      this.active = false;
-      this.wrapper.removeClass('success error');
-      this.game = Object.assign({}, game);
-      this.removeHandlers();
-      this.renderGame();
-      this.setHandlers();
-      this.play();
+  setGame (game) {
+    this.busy = false;
+    this.status = false;
+    this.active = false;
+    this.wrapper.removeClass('success error');
+    this.game = Object.assign({}, game);
+    if (this.audio) {
+      this.stop();
     }
-  }, {
-    key: 'renderGame',
-    value: function renderGame() {
+    this.audio = {
+      success: new Audio(game.audio.success),
+      error: new Audio(game.audio.error)
+    };
+    this.removeHandlers();
+    this.renderGame();
+    this.setHandlers();
+    this.play();
+  }
 
-      var drugs = this.game.drugs.reduce(function (drugs, drug, idx) {
-        if (idx < 4) {
-          drugs += '<li>\n                    <a data-id="' + idx + '" href="#" title="' + drug.title + '" style="background: ' + drug.background + '">\n\n                        <img src="' + drug.image + '" alt="' + drug.title + '">\n\n                    </a>\n                  </li>';
-        }
-        return drugs;
-      }, '');
+  renderGame () {
 
-      var html = '<div class="game-animal-wrapper">\n                    <p class="title">' + (this.game.problem || '') + '</p>\n                    <div class="game-animal" style="background-image: url(' + this.game.animal + ')">\n                      <img class="drugs" src="' + this.game.animal + '" alt="">\n                      <div class="message error">\n                        <p>' + this.game.result.error.title + '</p>\n                        <span>' + this.game.result.error.description + '</span>\n                      </div>\n                      <div class="message success">\n                        <p>' + this.game.result.success.title + '</p>\n                        <p>' + this.game.result.success.description + '</p>\n                      </div>\n                    </div>\n                  </div>\n                  <div class="game-drugs">\n                    <p class="title">' + (this.game.solution || '') + '</p>\n                    <ul>' + drugs + '</ul>\n                  </div>\n                  <img class="active-drug" src="" alt="">';
+    const drugs = this.game.drugs.reduce((drugs, drug, idx) => {
+      if (idx < 4) {
+        drugs += `<li>
+                    <a data-id="${idx}" href="#" title="${drug.title}" style="background: ${drug.background}">
+                      <img src="${drug.image}" alt="${drug.title}">
+                    </a>
+                  </li>`;
+      }
+      return drugs;
+    }, '');
 
-      this.wrapper.html(html);
-    }
-  }, {
-    key: 'setHandlers',
-    value: function setHandlers() {
-      var _this = this;
+    const html = `<div class="game-animal-wrapper">
+                    <p class="title" >${this.game.problem || ''}</p>
+                    <div class="game-animal" style="background-image: url(${this.game.animal.error})">
+                      <img class="drugs" src="" alt="">
+                      <div class="message error">
+                        <p>${this.game.result.error.title}</p>
+                        <span>${this.game.result.error.description}</span>
+                      </div>
+                      <div class="message success">
+                        <p>${this.game.result.success.title}</p>
+                        <p>${this.game.result.success.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="game-drugs">
+                    <p class="title">${this.game.solution || ''}</p>
+                    <ul>${drugs}</ul>
+                  </div>
+                  <img class="active-drug" src="" alt="">`;
 
-      this.wrapper.find('.game-animal').on('click', function (e) {
-        e.preventDefault();
-        if (!_this.busy) {
-          _this.play();
-        }
-      });
+    this.wrapper.html(html);
 
-      this.wrapper.find('.game-drugs ul li a').on('click', function (e) {
+  }
 
-        e.preventDefault();
-        var a = $(e.currentTarget);
-        var dataId = a.attr('data-id');
+  setHandlers () {
 
-        if (!_this.busy && _this.active !== dataId && !_this.status) {
-          (function () {
+    this.wrapper.find('.game-animal').on('click', e => {
+      e.preventDefault();
+      if (!this.busy) {
+        this.play();
+      }
+    });
 
-            _this.busy = true;
-            _this.active = dataId;
-            _this.stop();
-            var drug = _this.game.drugs[a.attr('data-id')];
-            var animalDrugImage = _this.wrapper.find('.game-animal img.drugs');
-            var activeDrug = _this.wrapper.find('.active-drug');
-            var start = a.position();
-            var startWidth = a.find('img').width();
-            var finish = _this.wrapper.find('.game-animal').position();
-            finish.top += animalDrugImage.position().top;
-            finish.left += animalDrugImage.position().left;
-            var finishWidth = animalDrugImage.width();
+    this.wrapper.find('.game-drugs ul li a').on('click', e => {
 
-            _this.wrapper.find('.game-drugs ul li a').removeClass('active');
-            a.addClass('active');
-			
-            //_this.status = drug.success || false;
-            if (dataId!='3'){
-				_this.status = false;
+      e.preventDefault();
+      const a = $(e.currentTarget);
+      const dataId = a.attr('data-id');
+
+      if (!this.busy && this.active !== dataId && !this.status) {
+
+        this.busy = true;
+        this.active = dataId;
+        this.stop();
+        const drug = this.game.drugs[a.attr('data-id')];
+        const animalDrugImage = this.wrapper.find('.game-animal img.drugs');
+        const activeDrug = this.wrapper.find('.active-drug');
+        const start = a.position();
+        const startWidth = a.find('img').width();
+        const finish = this.wrapper.find('.game-animal').position();
+        finish.top += animalDrugImage.position().top;
+        finish.left += animalDrugImage.position().left;
+        const finishWidth = animalDrugImage.width();
+
+        this.wrapper.find('.game-drugs ul li a').removeClass('active');
+        a.addClass('active');
+		
+		
+        //this.status = drug.success || false;
+		
+		 if (dataId!='3'){
+				this.status = false;
 			}else{
-				_this.status = true;
+				this.status = true;
 			}
 			
-			_this.wrapper.removeClass('success error');
+			
+        this.wrapper.removeClass('success error');
 
-            animalDrugImage.removeClass('show').attr('src', drug.image);
+        animalDrugImage.removeClass('show').attr('src', drug.image);
 
-            activeDrug.attr('src', drug.image).addClass('show').css({ top: start.top, left: start.left, width: startWidth }).animate({ top: finish.top, left: finish.left, width: finishWidth }, _this.time, function () {
-              activeDrug.removeClass('show');
-              animalDrugImage.addClass('show');
-              _this.busy = false;
-              _this.play();
-              _this.wrapper.addClass(_this.status ? 'success' : 'error');
-              if (_this.status) {
-                _this.callback.call(_this);
-              }
-            });
-          })();
-        }
-      });
-    }
-  }, {
-    key: 'removeHandlers',
-    value: function removeHandlers() {
-      this.wrapper.find('.game-animal').off('click');
-      this.wrapper.find('.game-drugs ul li a').off('click');
-    }
-  }, {
-    key: 'stop',
-    value: function stop() {
-      this.audio.success.pause();
-      this.audio.error.pause();
-      this.audio.success.currentTime = 0;
-      this.audio.error.currentTime = 0;
-    }
-  }, {
-    key: 'play',
-    value: function play() {
-      this.stop();
-      if (this.status) {
-        this.audio.success.play();
-      } else {
-        this.audio.error.play();
+        activeDrug
+          .attr('src', drug.image)
+          .addClass('show')
+          .css({ top: start.top, left: start.left, width: startWidth })
+          .animate({ top: finish.top, left: finish.left, width: finishWidth }, this.time, () => {
+            activeDrug.removeClass('show');
+            animalDrugImage.addClass('show');
+            this.busy = false;
+            this.play();
+            this.wrapper.addClass((this.status) ? 'success' : 'error');
+            if (this.status) {
+              this.wrapper.find('.game-animal').css('background-image', `url(${this.game.animal.success})`);
+              this.callback.call(this);
+            }
+          });
+
       }
-    }
-  }]);
 
-  return Game;
-}();
+    });
+
+  }
+
+  removeHandlers () {
+    this.wrapper.find('.game-animal').off('click');
+    this.wrapper.find('.game-drugs ul li a').off('click');
+  }
+
+  stop () {
+    this.audio.success.pause();
+    this.audio.error.pause();
+    this.audio.success.currentTime = 0;
+    this.audio.error.currentTime = 0;
+  }
+
+  play () {
+    this.stop();
+    if (this.status) {
+      this.audio.success.play();
+    } else {
+      this.audio.error.play();
+    }
+  }
+
+}
+
+
+
+
+
+});

@@ -97,10 +97,6 @@ $('.otrivin-start-game').click( function(){
 	ga('send', 'event', 'fun', 'click', 'game');
 });
 
-$('.otrivin-contest').click( function(){
-	ga('send', 'event', 'fun', 'to_fk', 'second_step');
-});
-
 $('.otrivin-tales').click( function(){
 	ga('send', 'event', 'fun', 'click', 'fairy_tale');
 });
@@ -134,6 +130,54 @@ $('.otrivin-song-4').click( function(){
 $('.otrivin-song-5').click( function(){
 	ga('send', 'event', 'music', 'click', 'song_5');
 });
+
+$('.otrivin-nasmork-anons').contextmenu( function(){
+	ga('send', 'event', 'planning', 'to_nasmork', 'anons_nasmork');
+});
+
+$('.otrivin-nasmork-play').contextmenu( function(){
+	ga('send', 'event', 'planning', 'to_play', 'anons_play');
+});
+
+$('.otrivin-nasmork-music').contextmenu( function(){
+	ga('send', 'event', 'planning', 'to_music', 'anons_music');
+});
+
+$('.otrivin-nasmork-poem').contextmenu( function(){
+	ga('send', 'event', 'planning', 'to_poem', 'anons_poem');
+});
+
+$('.otrivin-nasmork-mom-lessons').contextmenu( function(){
+	ga('send', 'event', 'planning', 'to_mom_lessons', 'anons_mom_lessons');
+});
+
+$('.otrivin-nasmork-house-cleaning').contextmenu( function(){
+ 	ga('send', 'event', 'planning', 'to_house_cleaning', 'anons_house_cleaning');
+});
+
+$('.otrivin-nasmork-fairy-tale').contextmenu( function(){
+ 	ga('send', 'event', 'planning', 'to_fairy_tale', 'anons_fairy_tale');
+});
+
+$('.otrivin-mom-video1').click( function(){
+	ga('send', 'event', 'mom_lessons', 'click', 'play_video_1');
+});
+
+$('.otrivin-mom-video2').click( function(){
+	ga('send', 'event', 'mom_lessons', 'click', 'play_video_2');
+});
+
+$('.otrivin-mom-video3').click( function(){
+	ga('send', 'event', 'mom_lessons', 'click', 'play_video_3');
+});
+
+$('.otrivin-anons-contest').click( function(){
+	ga('send', 'event', 'fun', 'to_fk', 'anons_fk');
+});
+
+
+
+
 
 
 

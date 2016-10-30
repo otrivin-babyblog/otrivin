@@ -1,11 +1,15 @@
 'use strict';
 
+
+
 $(function () {
 
 
 $('.print-btn').on('click', function (e) {
     ga('send', 'event', 'planning', 'click', 'print');
     e.preventDefault;
+	
+	$('.calendar-mobile-table , .calendar-actions-mobile').hide();
     window.print();
   });
 
@@ -175,12 +179,36 @@ $('.print-btn').on('click', function (e) {
     });
     times.forEach(function (time) {
       values.forEach(function (value) {
-        $('.calendar-mobile-table .one-time:eq(' + (time - 1) + ') ul').append('<li><a>' + value + '</a></li>');
+		  
+		  var v_link='';
+		  if (value=='Гигиена носика'){
+			  v_link = 'nose_hygiene.php';
+		  }else
+			  if(value=='Игры'){
+			  v_link = 'igry_s_rebenkom.php';
+		  }else
+			  if(value=='Музыка'){
+			  v_link = 'music.php';
+		  }else
+			  if(value=='Потешки'){
+			  v_link = 'verses.php';
+		  }else
+			  if(value=='Уроки для мам'){
+			  v_link = 'uroki_dlya_mam.php';
+		  }else
+			  if(value=='Домашние дела'){
+			  v_link = 'domestic_chores.php';
+		  }else
+			  if(value=='Сказки'){
+			  v_link = 'tales.php';
+		  }
+		  
+        $('.calendar-mobile-table .one-time:eq(' + (time - 1) + ') ul').append('<li><a target="_blank" href="'+siteurl+v_link+'" >' + value + '</a></li>');
         callbacks.add(time - 1, value);
       });
     });
   });
-
+/*
   $('.calendar-mobile-table .one-time').on('click', function (e) {
     var target = $(e.target);
     if (target.is('a')) {
@@ -188,7 +216,10 @@ $('.print-btn').on('click', function (e) {
       callbacks.remove(target.parents('.one-time').index(), target.text());
       target.parent('li').remove();
     }
-  });
+  });*/
+  
+  
+  
 });
 
 
