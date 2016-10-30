@@ -2853,7 +2853,7 @@
     background: #cbeafa;
   }
   .save-wrapper .phones-wrapper ul li:before {
-    content: '';
+    /*content: '';
     position: absolute;
     z-index: 1;
     top: auto;
@@ -2863,7 +2863,7 @@
     height: 0;
     border: 10px solid transparent;
     border-top: 10px solid #1765a5;
-    cursor: pointer;
+    cursor: pointer;*/
   }
   .save-wrapper .phones-wrapper ul li:after {
     display: none;
@@ -2876,10 +2876,10 @@
     margin: 0 0 25px;
   }
   .save-wrapper .phones-wrapper ul li .content .phone {
-    display: none;
+    /*display: none;*/
   }
   .save-wrapper .phones-wrapper ul li .content .description {
-    display: none;
+    /*display: none;*/
   }
   .save-wrapper .phones-wrapper ul li.open:before {
     display: none;
