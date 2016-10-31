@@ -62,7 +62,6 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
     </div>
     <div class="popup _upload" style="background: #f5f2e9;">
-	<h2 class="popup-title">Для участия в конкурсе:</h2>
       <button class="popup-close"></button>
      <iframe style="border: 0px; width: 100%; height: 550px;" src="http://otrivindata.pdigit.top/api/images/form"></iframe>
     </div>
