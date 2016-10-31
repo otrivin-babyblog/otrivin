@@ -34,18 +34,20 @@ $(function(){
         //....
         }
 	*/
-	/*BB.callMethod(
+	BB.callMethod(
             "getMyInfo",
             {},
             function(data){
                 //Ваш код обработки результата
-				userid = data.result.user_id;
+				user_id = data.result.user_id;
             },
             function(err){
                 //Ваш код обработки ошибки
             }
-        );*/
-		$.ajax({
+        );
+		
+		
+		/*$.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
 			success: function(msg) {
@@ -61,7 +63,7 @@ $(function(){
 			error: function(errmsg){
 				console.log(errmsg);
 			} 
-		});
+		});*/
 		
 	
 	
@@ -161,6 +163,7 @@ $(document).ready(function () {
 		   /* сохранение в  базу*/
 		   
 		   // не можем сохранить, если не авторизованы
+		   console.log('uid: '+user_id);
 			if (user_id != ''){
 				   $.ajax({
 					type: "POST",
