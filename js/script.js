@@ -131,31 +131,31 @@ $('.otrivin-song-5').click( function(){
 	ga('send', 'event', 'music', 'click', 'song_5');
 });
 
-$('.otrivin-nasmork-anons').contextmenu( function(){
+$('.otrivin-nasmork-anons').click( function(){
 	ga('send', 'event', 'planning', 'to_nasmork', 'anons_nasmork');
 });
 
-$('.otrivin-nasmork-play').contextmenu( function(){
+$('.otrivin-nasmork-play').click( function(){
 	ga('send', 'event', 'planning', 'to_play', 'anons_play');
 });
 
-$('.otrivin-nasmork-music').contextmenu( function(){
+$('.otrivin-nasmork-music').click( function(){
 	ga('send', 'event', 'planning', 'to_music', 'anons_music');
 });
 
-$('.otrivin-nasmork-poem').contextmenu( function(){
+$('.otrivin-nasmork-poem').click( function(){
 	ga('send', 'event', 'planning', 'to_poem', 'anons_poem');
 });
 
-$('.otrivin-nasmork-mom-lessons').contextmenu( function(){
+$('.otrivin-nasmork-mom-lessons').click( function(){
 	ga('send', 'event', 'planning', 'to_mom_lessons', 'anons_mom_lessons');
 });
 
-$('.otrivin-nasmork-house-cleaning').contextmenu( function(){
+$('.otrivin-nasmork-house-cleaning').click( function(){
  	ga('send', 'event', 'planning', 'to_house_cleaning', 'anons_house_cleaning');
 });
 
-$('.otrivin-nasmork-fairy-tale').contextmenu( function(){
+$('.otrivin-nasmork-fairy-tale').click( function(){
  	ga('send', 'event', 'planning', 'to_fairy_tale', 'anons_fairy_tale');
 });
 

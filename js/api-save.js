@@ -6,6 +6,15 @@ var userid = '';
 var count = 0;
 
 
+$('.print-btn').on('click', function (e) {
+    ga('send', 'event', 'planning', 'click', 'print');
+    e.preventDefault;
+	
+	window.print();
+  });
+
+
+
 $(function () {
 	 $('.drugs-wrapper ul li a').on('click', function (e) {
     e.preventDefault();
