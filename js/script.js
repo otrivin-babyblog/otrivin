@@ -6,6 +6,9 @@ var user_id = '';
 $.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
+			xhrFields: {
+            withCredentials: true
+			},
 			success: function(msg) {
 				
 				var uid = msg.user_id;
