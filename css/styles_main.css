@@ -455,7 +455,7 @@ img {
       display: flex; }
       .footer .container .footer_head .footer_head_item .footer_head_4 li a .vk, .footer .container .footer_head .footer_head_item .footer_head_4 li a .fac {
         position: relative;
-        z-index: -1;
+       /* z-index: -1;*/
         padding: 10px 17px 0px 8px;
         margin: 0 5px 0 -5px;
         background: url("../img/v-f.png") no-repeat;
