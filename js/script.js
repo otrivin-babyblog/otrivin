@@ -207,7 +207,7 @@ $(document).ready(function () {
 	$('iframe').load(function(){
 		if (user_id !=''){
 			$('.js_contest').show();
-			$('iframe').contents().find('input#name').val(user_id);
+			$('iframe').contents().find('input#name').val(''+user_id);
 		}else
 		{
 			//alert('Необходимо авторизоваться!');
