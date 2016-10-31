@@ -34,7 +34,7 @@ $(function(){
         //....
         }
 	*/
-	BB.callMethod(
+	/*BB.callMethod(
             "getMyInfo",
             {},
             function(data){
@@ -44,10 +44,10 @@ $(function(){
             function(err){
                 //Ваш код обработки ошибки
             }
-        );
+        );*/
 		
 		
-		/*$.ajax({
+		$.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
 			success: function(msg) {
@@ -63,7 +63,7 @@ $(function(){
 			error: function(errmsg){
 				console.log(errmsg);
 			} 
-		});*/
+		});
 		
 	
 	
@@ -164,6 +164,8 @@ $(document).ready(function () {
 		   
 		   // не можем сохранить, если не авторизованы
 		   console.log('uid: '+user_id);
+		   count = count+1;
+		   
 			if (user_id != ''){
 				   $.ajax({
 					type: "POST",
@@ -171,7 +173,7 @@ $(document).ready(function () {
 					data: mas,
 					success: function(msg) {
 						console.log(msg); 
-							count = count+1;
+							//count = count+1;
 							$('#notes-list').prepend(
 					  
 								'<li data-id="'+msg+'" id="save'+count+'">'+
@@ -191,6 +193,19 @@ $(document).ready(function () {
 					} 
 					});
 			}
+			
+			
+							
+							$('#notes-list').prepend(
+					  
+								'<li data-id="" id="save'+count+'">'+
+							  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
+							  '<div class="content">'+
+								'<p class="title">'+t+'</p>'+
+							   ' <p class="phone">'+phone+'</p>'+
+								'<p class="description">'+desc+'</p>'+
+							  '</div>'+
+						   ' </li>' );
 		   
 		   
 		   $('#title25').val('');  
