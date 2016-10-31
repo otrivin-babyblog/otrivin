@@ -9,7 +9,6 @@ var count = 0;
 $('.print-btn').on('click', function (e) {
     ga('send', 'event', 'planning', 'click', 'print');
     e.preventDefault;
-	
 	window.print();
   });
 
@@ -59,11 +58,15 @@ function remSave(param1)
 	
 	
 	$('#save'+param1).remove();
+	if ($("[id^='save']").length ==0)
+	{
+		$('.print-btn').hide();
+	}
 }	
 	
 
 $(document).ready(function () {
-	
+	$('.print-btn').hide();
 	$.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
@@ -87,7 +90,7 @@ $(document).ready(function () {
 							msg.forEach(function(item, i, arr) {
 							 // console.log( i + ": " + item.name + " (массив:" + arr + ")" );
 							 count = count+1;
-							
+							$('.print-btn').show();
 							  $('#notes-list').prepend(
 							  
 										'<li data-id="'+item.id+'" id="save'+count+'">'+
@@ -161,6 +164,7 @@ $(document).ready(function () {
 					url: url+"/api/post/save",
 					data: mas,
 					success: function(msg) {
+						$('.print-btn').show();
 						console.log(msg); 
 							//count = count+1;
 							$('#notes-list').prepend(
@@ -185,6 +189,7 @@ $(document).ready(function () {
 				
 			
 			{
+				$('.print-btn').show();
 				$('#notes-list').prepend(
 					  
 								'<li data-id="" id="save'+count+'">'+

@@ -23,6 +23,11 @@ $.ajax({
 				console.log(errmsg);
 			} 
 		});
+		
+$(document).bind('popup_close', function(){
+  	$(".popup _thanks").show();
+	$(".popup _upload").hide();
+});
 
 $('#otrivin-logo').click( function(){
 	ga('send', 'event', 'Main_menu', 'to_client', 'logo');

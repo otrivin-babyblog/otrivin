@@ -139,7 +139,7 @@ class Game {
     this.removeHandlers();
     this.renderGame();
     this.setHandlers();
-    this.play();
+    //this.play();
   }
 
   renderGame () {
