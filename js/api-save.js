@@ -32,86 +32,7 @@ $(function () {
 });
 
 
-/*--------------------------------------*/
-$(function(){
-	
-	
-	/*try {
-            BB.init("UR9MWcMuOXSpMvqVH4EeyQJFS7cpTp5ByOh97Emg");
-        }
-        catch(err) {
-        //....
-        }
-	*/
-	/*BB.callMethod(
-            "getMyInfo",
-            {},
-            function(data){
-                //Ваш код обработки результата
-				user_id = data.result.user_id;
-            },
-            function(err){
-                //Ваш код обработки ошибки
-            }
-        );*/
-		
-		
-		$.ajax({
-			type: "GET",
-			url: "https://www.babyblog.ru/user/ajax_get_info",
-			xhrFields: {
-            withCredentials: true
-			},
-			success: function(msg) {
-				
-				var uid = msg.user_id;
-				if (uid)
-				{
-					user_id = uid;
-				}
-				
-				
-			},
-			error: function(errmsg){
-				console.log(errmsg);
-			} 
-		});
-		
-	
-	
-	if (user_id != ''){
-	$.ajax({
-			type: "GET",
-			url: url+"/api/post/get/"+user_id,
-			success: function(msg) {
-				//console.log(msg); 
-				/**/
-				msg.forEach(function(item, i, arr) {
-				 // console.log( i + ": " + item.name + " (массив:" + arr + ")" );
-				 count = count+1;
-				
-				  $('#notes-list').prepend(
-				  
-							'<li data-id="'+item.id+'" id="save'+count+'">'+
-						  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
-						  '<div class="content">'+
-							'<p class="title">'+item.name+'</p>'+
-						   ' <p class="phone">'+item.phone+'</p>'+
-							'<p class="description">'+item.description+'</p>'+
-						  '</div>'+
-					   ' </li>' );
-				});
-				/*
-				*/
-			},
-			error: function(errmsg){
-				console.log(errmsg);
-			} 
-		});
-	}
-	
-	
-});
+
 
 
 function remSave(param1)
@@ -143,7 +64,60 @@ function remSave(param1)
 
 $(document).ready(function () {
 	
-	
+	$.ajax({
+			type: "GET",
+			url: "https://www.babyblog.ru/user/ajax_get_info",
+			xhrFields: {
+            withCredentials: true
+			},
+			success: function(msg) {
+				
+				var uid = msg.user_id;
+				if (uid)
+				{
+					user_id = uid;
+					
+					
+						$.ajax({
+						type: "GET",
+						url: url+"/api/post/get/"+user_id,
+						success: function(msg) {
+							//console.log(msg); 
+							/**/
+							msg.forEach(function(item, i, arr) {
+							 // console.log( i + ": " + item.name + " (массив:" + arr + ")" );
+							 count = count+1;
+							
+							  $('#notes-list').prepend(
+							  
+										'<li data-id="'+item.id+'" id="save'+count+'">'+
+									  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
+									  '<div class="content">'+
+										'<p class="title">'+item.name+'</p>'+
+									   ' <p class="phone">'+item.phone+'</p>'+
+										'<p class="description">'+item.description+'</p>'+
+									  '</div>'+
+								   ' </li>' );
+							});
+							/*
+							*/
+						},
+						error: function(errmsg){
+							console.log(errmsg);
+						} 
+						});
+					
+					
+					
+				}
+				
+				
+			},
+			error: function(errmsg){
+				console.log(errmsg);
+			} 
+		});
+		
 	
 	
 	
