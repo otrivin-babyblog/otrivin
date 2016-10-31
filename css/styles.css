@@ -2492,11 +2492,38 @@ label.input-error {
 }	
 
 @media print {
-	.calendar-table{
-	/*	display: block !important;*/
+	.form, .top{
+		display: none;
 	}
 	@page {
 		size: landscape;
 	} 
 	
 }  
+
+
+
+
+.print-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25%;
+  margin: 10px 0 10px auto;
+  padding: 10px;
+}
+.print-btn span {
+  width: 100%;
+  line-height: 60px;
+  background: #f3937e;
+  color: #fff;
+  transition: all .3s;
+}
+.print-btn span:hover {
+  background: #e9baad;
+}
