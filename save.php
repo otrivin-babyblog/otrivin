@@ -60,7 +60,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
                     </form>
                   </li>
 			  
-			  
+					  <button class="print-btn"><span>распечатать</span></button>
 			  
 			  </ul>
             </div>
@@ -175,7 +175,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             </div>
 			
           </div>
-		  <button class="print-btn"><span>распечатать</span></button>
+		
           <div class="content-footer">
             <div class="social">
               <p class="social__text">Поделиться в социальных сетях</p>
