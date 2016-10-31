@@ -159,16 +159,16 @@ $('.otrivin-nasmork-fairy-tale').click( function(){
  	ga('send', 'event', 'planning', 'to_fairy_tale', 'anons_fairy_tale');
 });
 
-$('.otrivin-mom-video1').click( function(){
-	ga('send', 'event', 'mom_lessons', 'click', 'play_video_1');
+$('.otrivin-mom-video1').load(function(){
+  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_1'); });
 });
 
-$('.otrivin-mom-video2').click( function(){
-	ga('send', 'event', 'mom_lessons', 'click', 'play_video_2');
+$('.otrivin-mom-video2').load(function(){
+  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_2'); });
 });
 
-$('.otrivin-mom-video3').click( function(){
-	ga('send', 'event', 'mom_lessons', 'click', 'play_video_3');
+$('.otrivin-mom-video3').load(function(){
+  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_3'); });
 });
 
 $('.otrivin-anons-contest').click( function(){
