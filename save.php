@@ -24,7 +24,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
               <p class="title">Важные телефоны</p>
               <ul id="notes-list">
 			  
-						<li data-id="-1">
+						<!--li data-id="-1">
 						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
 						  <div class="content">
 							<p class="title">Участковый, Полиция</p>
@@ -40,7 +40,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 						    <p class="phone">112</p>
 							<p class="description"></p>
 						  </div>
-					    </li>
+					    </li-->
 			  
 				<li class="form">
                     <form id="add-note">
