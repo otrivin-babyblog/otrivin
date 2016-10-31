@@ -1,7 +1,3 @@
-$(document).ready(function () {
-
-
-
 
 $(() => {
 
@@ -119,6 +115,9 @@ class Game {
     this.wrapper.html('');
     this.time = time;
     this.callback = callback;
+	    this.audioPlayer = new Audio();
+
+	
   }
 
   setGame (game) {
@@ -127,13 +126,16 @@ class Game {
     this.active = false;
     this.wrapper.removeClass('success error');
     this.game = Object.assign({}, game);
-    if (this.audio) {
+    /*if (this.audio) {
       this.stop();
     }
     this.audio = {
       success: new Audio(game.audio.success),
       error: new Audio(game.audio.error)
-    };
+    };*/
+	        this.audio = game.audio;
+
+
     this.removeHandlers();
     this.renderGame();
     this.setHandlers();
@@ -184,7 +186,7 @@ class Game {
       if (!this.busy) {
         this.play();
       }
-    });
+    })/*.trigger('click')*/;
 
     this.wrapper.find('.game-drugs ul li a').on('click', e => {
 
@@ -196,7 +198,7 @@ class Game {
 
         this.busy = true;
         this.active = dataId;
-        this.stop();
+        //this.stop();
         const drug = this.game.drugs[a.attr('data-id')];
         const animalDrugImage = this.wrapper.find('.game-animal img.drugs');
         const activeDrug = this.wrapper.find('.active-drug');
@@ -232,13 +234,14 @@ class Game {
             activeDrug.removeClass('show');
             animalDrugImage.addClass('show');
             this.busy = false;
-            this.play();
+           
             this.wrapper.addClass((this.status) ? 'success' : 'error');
             if (this.status) {
               this.wrapper.find('.game-animal').css('background-image', `url(${this.game.animal.success})`);
               this.callback.call(this);
             }
           });
+		   this.play();
 
       }
 
@@ -251,20 +254,26 @@ class Game {
     this.wrapper.find('.game-drugs ul li a').off('click');
   }
 
-  stop () {
+  /*stop () {
     this.audio.success.pause();
     this.audio.error.pause();
     this.audio.success.currentTime = 0;
     this.audio.error.currentTime = 0;
-  }
+  }*/
 
   play () {
-    this.stop();
+    //this.stop();
     if (this.status) {
-      this.audio.success.play();
+     // this.audio.success.play();
+	       this.audioPlayer.src = this.audio.success;
+
     } else {
-      this.audio.error.play();
+     // this.audio.error.play();
+	       this.audioPlayer.src = this.audio.error;
+
     }
+	    this.audioPlayer.play();
+
   }
 
 }
@@ -272,5 +281,3 @@ class Game {
 
 
 
-
-});
