@@ -2,7 +2,7 @@
 
 var url = 'http://otrivindata.pdigit.top';
 //var obj;
-var userid = '';
+var user_id = '';
 var count = 0;
 
 
@@ -82,7 +82,7 @@ $(function(){
 	if (user_id != ''){
 	$.ajax({
 			type: "GET",
-			url: url+"/api/post/get/"+userid,
+			url: url+"/api/post/get/"+user_id,
 			success: function(msg) {
 				//console.log(msg); 
 				/**/
@@ -170,7 +170,7 @@ $(document).ready(function () {
 			{
      
 		   
-		   var mas = {name:t, phone:phone, description: desc, user_id:'1'};
+		   
 		   
 		   /* сохранение в  базу*/
 		   
@@ -179,6 +179,9 @@ $(document).ready(function () {
 		   count = count+1;
 		   
 			if (user_id != ''){
+				
+				var mas = {name:t, phone:phone, description: desc, user_id:user_id};
+				
 				   $.ajax({
 					type: "POST",
 					url: url+"/api/post/save",
