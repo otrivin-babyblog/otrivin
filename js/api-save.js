@@ -192,11 +192,11 @@ $(document).ready(function () {
 						console.log(errmsg);
 					} 
 					});
-			}
+			}else
+				
 			
-			
-							
-							$('#notes-list').prepend(
+			{
+				$('#notes-list').prepend(
 					  
 								'<li data-id="" id="save'+count+'">'+
 							  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
@@ -206,6 +206,11 @@ $(document).ready(function () {
 								'<p class="description">'+desc+'</p>'+
 							  '</div>'+
 						   ' </li>' );
+			}
+			
+			
+							
+							
 		   
 		   
 		   $('#title25').val('');  
