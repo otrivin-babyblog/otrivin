@@ -675,7 +675,7 @@ img {
               display: flex;
               position: relative; }
               .footer .container .footer_bot .footer_bot_item .footer_bot_item_ul ul li a i {
-                width: 22px;
+                width: 18px;
                 height: 33px;
                 position: absolute;
                 top: -8px;
@@ -1298,7 +1298,8 @@ img {
   color: #1765a5;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 300; }
+  font-family: 'Roboto_light';
+  font-weight: 700; }
 
 .complex-cta {
   text-align: center;
@@ -1312,7 +1313,7 @@ img {
     vertical-align: top;
     margin: 0 10px;
     padding: 0 45px;
-    background-color: #eea494;
+    background-color: #f3937e;
     color: #fff;
     text-transform: uppercase;
     font-size: 35px;
@@ -1395,20 +1396,20 @@ img {
     max-width: 100%; }
   .complex-step._active .complex-step-content:before, .complex-step._active .complex-step-content:after, .complex-step._active .complex-step-wrapper:before, .complex-step._active .complex-step-wrapper:after {
     background-image: url(../img/border-img-orange.png); }
-  .complex-step._active .complex-step__name {
-    text-decoration: underline; }
+  .complex-step._active .complex-step__name span{
+    border-bottom: 3px solid #4bb6ee; }
   .complex-step._active:after {
-    content: '';
+    content: url('../img/deg-noise.png');
     display: block;
-    width: 0;
-    height: 0;
-    border: 40px solid;
-    border-color: transparent;
-    border-top-color: #e3faff;
+    width: 80px;
+    height: 40px;
+    // border: 40px solid;
+    // border-color: transparent;
+    // border-top-color: #e3faff;
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -95px;
+    bottom: -54px;
     margin: 0 auto; }
 
 .product-about {
@@ -1454,13 +1455,14 @@ img {
   .product-video__title {
     font-size: 25px;
     margin: 0 0 50px;
-    color: #eea494;
+    color: #f3937e;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700; }
 
 .btn_product-video {
   width: 380px;
+  background: #F3937E;
   margin: 0 auto; }
 
 .disclaimer {
@@ -2474,9 +2476,7 @@ label.input-error {
     .verse:nth-of-type(3n) {
       background-color: #fdeae4; } }
 
-	  
-	  
-	  
+
 .btnsave {
     display: block;
     width: 100%;
@@ -2492,9 +2492,33 @@ label.input-error {
 }	
 
 @media print {
-	.form, .top{
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+	.form{
 		display: none;
 	}
+  .choose-date{
+    display: none;
+  }
+  .calendar-images{
+    margin: 15px 0 0 !important;
+  }
+  .header_bot_link_menu{
+    background: none !important;
+  }
+  .page-title{
+    text-align: right;
+  }
+  .calendar-images ul li img{
+    width: 50%;
+  }
+	.calendar-table table{
+    outline: 40px solid #E3FBFF;
+	}
+	
+	
 	@page {
 		size: landscape;
 	} 
@@ -2526,4 +2550,29 @@ label.input-error {
 }
 .print-btn span:hover {
   background: #e9baad;
+}
+.otriv-medic-save{
+  width: 100%;
+  display: flex;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  display: none;
+}
+.otriv-medic-save-img{
+  width: 30%;
+  height: 30%;
+}
+.otriv-calend-pr{
+  width: 100%;
+  display: flex;
+-webkit-justify-content: space-between;
+        justify-content: space-between;
+  display: none;
+  position:relative;
+  top: -40px;
+}
+.otriv-calend-pr img{
+  width: 25%;
+  height: 25%;
+  margin: auto 0;
 }

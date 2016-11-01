@@ -2914,6 +2914,7 @@
   height: 36px;
   background: #f5f2e9;
   transition: .3s;
+  z-index: 2;
 }
 .calendar-wrapper .choose-date .datepicker-wrapper:hover {
   background: #d9d6ce;
@@ -2943,6 +2944,8 @@
 }
 .calendar-wrapper .calendar-images {
   margin: 0 0 20px;
+  position: relative;
+  z-index: 2;
 }
 .calendar-wrapper .calendar-images ul {
   display: -ms-flexbox;

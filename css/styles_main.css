@@ -378,7 +378,8 @@ img {
               background: #F3937E; }
               .main .container .main_item ul li .main_info .main_info_item .main_info_link .main_but a span {
                 margin: auto;
-                color: #fef2ef; }
+                color: #fef2ef; 
+                text-transform: uppercase;}
             .main .container .main_item ul li .main_info .main_info_item .main_info_link .main_but img {
               margin-left: 30px;
               width: 18%;
