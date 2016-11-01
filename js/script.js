@@ -232,12 +232,12 @@ $(document).ready(function () {
     });
 	
 	
-	    if (user_id !=''){
-			callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id);
+	    if (user_id !='' && ajaxgetinfo!=''){
+			callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id+'/'+ajaxgetinfo.fio+'/'+ajaxgetinfo.avatar);
 	
 		}else
 		{
-			callIframe('http://otrivindata.pdigit.top/api/images/form/-1');
+			callIframe('http://otrivindata.pdigit.top/api/images/form/-1/-1/-1');
 	
 		}
 		
@@ -249,17 +249,17 @@ $(document).ready(function () {
 			type: "GET",
 			url: "http://otrivindata.pdigit.top/api/images/getall",
 			success: function(msg) {
-				console.log(msg); 
+				//console.log(msg); 
 				msg.forEach(function(item, i, arr) {
 				 
 				  $('#part443').prepend(
 				  
 				  '<div class="participant">'+
-				 ' <img src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img">'+
+				 ' <img src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img" >'+
 				  '<div class="participant-author">'+
-					/*'<img src="<? echo $source; ?>img/participant-author.jpg" alt="" class="author__img">'+
-					'<h3 class="author__name">Катерина</h3>'+
-					'<p class="author__location">Москва</p>'+*/
+					'<img src="'+item.avatar+'" alt="" class="author__img">'+
+					'<h3 class="author__name">'+item.fio+'</h3>'+
+					/*'<p class="author__location">Москва</p>'+*/
 				 '</div>'+
 				  '<p class="participant__comment">'+item.description+'</p>'+
 				
