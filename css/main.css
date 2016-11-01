@@ -2404,12 +2404,15 @@
   padding: 2px 0;
   font-size: 26px;
   white-space: nowrap;
+  color: #1765A5;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .game-wrapper #game .game-animal-wrapper .game-animal .message span {
   display: block;
   padding: 2px 0;
   font-size: 18px;
+  font-family: 'Conv_RobotoCondensed-Regular';
   white-space: nowrap;
 }
 .game-wrapper #game.success .game-animal-wrapper .message.success,
@@ -2702,6 +2705,8 @@
   border: 2px solid #fff;
   background: #fff;
   font-size: 12px;
+  color: #5A5A5A;
+  font-family: 'Roboto_Regular';
   text-transform: uppercase;
   text-align: center;
   transition: .3s;
