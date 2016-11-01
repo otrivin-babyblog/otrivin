@@ -1212,6 +1212,7 @@ img {
   font-size: 18px;
   margin: 0 0 14px;
   text-transform: uppercase;
+  font-family: 'Conv_RobotoCondensed-Regular';
   color: #1765a5; }
 
 .child-games__excerpt, .child-games-item > p {
@@ -1462,6 +1463,7 @@ img {
     margin: 0 0 10px;
     color: #1765a5;
     text-transform: uppercase;
+    font-family: 'Conv_RobotoCondensed-Regular';
     text-align: center; }
   .product-video__title {
     font-size: 25px;
@@ -2168,12 +2170,12 @@ label.input-error {
   .activities-wrapper .page-title, .activities-wrapper .content > h2, .activities-wrapper .content > h3, .activities-wrapper .content > h4 {
     margin-bottom: 50px;
     font-weight: 400; }
-.bird_amuse_ent{
-  position: absolute;
-  top: 18.2%;
-  left: 0;
-  width: 60px;
-}
+// .bird_amuse_ent{
+//   position: absolute;
+//   top: 18.2%;
+//   left: 0;
+//   width: 60px;
+// }
 .activity {
   display: inline-block;
   vertical-align: top;
@@ -2182,6 +2184,14 @@ label.input-error {
   width: 31%;
   margin: 0 2% 20px 0;
   padding: 25px 30px; }
+  .activity-bird:after{
+    position: absolute;
+    content: url("../img/bird_amuse.png");
+    top: -61px;
+    left: 0;
+    width: 70px;
+    height: 62px;
+  }
   .activity:last-of-type {
     margin-right: 0; }
   .activity_bird:before {
@@ -2318,7 +2328,9 @@ label.input-error {
     display: block;
     width: auto;
     margin: 0 auto; } }
-
+.activity-bird:after{
+  content: none;
+}
 .chores-wrapper {
   overflow: hidden;
   margin: 0 0 80px; }
@@ -2350,9 +2362,10 @@ label.input-error {
     margin: 0 0 14px;
     color: #1765a5;
     text-transform: uppercase;
+    font-family: 'Conv_RobotoCondensed-Regular';
     font-weight: 400; }
   .chore__about, .chore > p {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto_Regular', sans-serif;
     line-height: 25px; }
   .chore-extend, .chore > button {
     position: absolute;

@@ -2937,6 +2937,8 @@
   color: #1765a5;
   text-align: center;
   text-transform: lowercase;
+  font-family: 'Conv_RobotoCondensed-Regular';
+  font-weight: normal;
 }
 .calendar-wrapper .choose-date .datepicker-wrapper i {
   position: absolute;
@@ -2978,6 +2980,9 @@
 }
 .calendar-wrapper .calendar-table table td.head {
   background: #c5f0fd;
+  font-size: 15px;
+  color: #1765a5 !important;
+  font-family: 'Conv_RobotoCondensed-Regular';
 }
 .calendar-wrapper .calendar-table table td.action {
   border-right: 2px dotted #c5f0fd;
@@ -3046,6 +3051,14 @@
   min-height: 60px;
   background: #ffcec0;
   color: #8d574c;
+  font-weight: normal;
+  font-family: 'Conv_RobotoCondensedBold';
+}
+.calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li:last-child a {
+  text-decoration: none;
+}
+.calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a span{
+  border-bottom: 1px solid #a97469;
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a:hover {
   background: #e9baad;
