@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Отривин Бэби';
+$og_title = '';
+$og_url = '';
+$og_image = '';
+$og_description = '';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 
 

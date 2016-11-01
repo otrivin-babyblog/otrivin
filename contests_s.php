@@ -8,7 +8,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
         <div class="title-img">
-          <img src="<? echo $source; ?>img/title-img-contests.jpg" alt="Конкурсы">
+          <img src="<? echo $source; ?>img/koncurs-1.png" alt="Конкурсы">
           <h1 class="main-title">Конкурсы</h1>
         </div>
         <div class="breadcrumb">
@@ -64,8 +64,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     </div>
     <div class="popup _upload" style="background: #f5f2e9;">
       <button class="popup-close"></button>
-	  <iframe style="border: 0px; width: 100%; height: 550px;" src="http://otrivindata.pdigit.top/api/images/form"></iframe>
-     </div>
+	</div>
     <div class="popup _thanks">
       <h2 class="popup-title">Спасибо, Ваша работа на премодерации</h2>
       <button class="popup-close"></button>

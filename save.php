@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
         <div class="content">
           <div class="title-img">
-            <img src="<? echo $source; ?>img/title-img-contests.jpg" alt="Сохраняй важное">
+            <img src="<? echo $source; ?>img/save-top.png" alt="Сохраняй важное">
             <h1 class="main-title">Сохраняй важное</h1>
           </div>
           <div class="breadcrumb">
@@ -15,8 +15,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Сохраняй важное</a>
           </div>
-          <h1 class="page-title">Сохраняй важное</h1>
-          <p class="page-about page-about_short">Нужно запомнить телефон соседки, адрес поликлиники или время занятий по рисованию? Записывай напоминания, прикрепляй стикеры на доску и сохраняй их прямо в режиме онлайн! Когда шпаргалка потеряет актуальность, сотри ее одним нажатием на крестик.
+          <h1 class="page-title">ваша личная записная книжка</h1>
+          <p class="page-about page-about_short font-save">Нужно запомнить телефон соседки, адрес поликлиники или время занятий по рисованию? Записывай напоминания, прикрепляй стикеры на доску и сохраняй их прямо в режиме онлайн! Когда шпаргалка потеряет актуальность, сотри ее одним нажатием на крестик.
 А если малыш приболел или ему просто прописали лекарства для профилактики, рецепт лечения всегда будет под рукой в нашем онлайн списке лекарств. Под названием для вашего удобства доступно описание средства.</p>
           <div class="save-wrapper">
 		  

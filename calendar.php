@@ -5,7 +5,7 @@
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
         <div class="content">
           <div class="title-img">
-            <img src="<? echo $source; ?>img/title-img-contests.jpg" alt="Конкурсы">
+            <img src="<? echo $source; ?>img/plan-day.png" alt="Конкурсы">
             <h1 class="main-title">Планируй день</h1>
           </div>
           <div class="breadcrumb">

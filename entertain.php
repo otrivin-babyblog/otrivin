@@ -24,6 +24,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <div class="activities-wrapper">
           <h2 class="page-title">наши конкурсы</h2>
+          <img src="img/bird_amuse.png" alt="" class="bird_amuse_ent">
           <!--div class="activity activity_bird">
             <h3 class="activity__name">Важный носик знает толк</h3>
             <p class="activity__about">Поделись фотоисторией о своем ребенке и выиграй подарки! ...</p>
@@ -49,7 +50,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           </div>
           <div class="activity">
             <h3 class="activity__name">детские песенки</h3>
-            <p class="activity__about">Включите ребенку спокойную музыку на ночь, и он быстрее уснет ...</p>
+            <p class="activity__about">Включите ребенку спокойную музыку на ночь, и он быстрее ...</p>
             <a href="<? echo $source; ?>music.php" class="activity__link otrivin-music">Подробнее</a>
           </div>
           <div class="activity">

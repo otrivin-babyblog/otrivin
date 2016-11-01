@@ -8,8 +8,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
         <div class="content">
           <div class="title-img">
-            <img src="<? echo $source; ?>img/title-img-contests.jpg" alt="Игра “Здоровый зоопарк”">
-            <h1 class="main-title">Игра “Здоровый зоопарк”</h1>
+            <img src="<? echo $source; ?>img/game-img-top.png" alt="Игра “Здоровый зоопарк”">
+            <h1 class="main-title">Здоровый зоопарк</h1>
           </div>
           <div class="breadcrumb">
             <a href="<? echo $source; ?>entertain.php" class="breadcrumb__link">Развлекай ребенка</a>
@@ -19,6 +19,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="game-wrapper">
 		  
 		  <p class="page-about">
+		  Зоопарк
 Животные в нашем зоопарке простудились, у них насморк: носик забит о совсем не дышит. 
 Добрый доктор Айболит очень занят, но вы можете помочь ему вылечить зверят. 
 Дайте питомцу правильное лекарство и он мигом поправится! 
