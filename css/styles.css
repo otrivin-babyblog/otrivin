@@ -2245,6 +2245,9 @@ label.input-error {
     margin: 0 auto; } }
 
 @media screen and (max-width: 767px) {
+  .activity-bird:after{
+    content: none;
+  }
   .zoo-links-wrapper {
     margin: 0;
     padding: 20px 20px 40px; }
@@ -2328,9 +2331,7 @@ label.input-error {
     display: block;
     width: auto;
     margin: 0 auto; } }
-.activity-bird:after{
-  content: none;
-}
+
 .chores-wrapper {
   overflow: hidden;
   margin: 0 0 80px; }
