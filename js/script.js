@@ -2,6 +2,8 @@
 var files;
 var fileName = '';
 var user_id = '';
+var ajaxgetinfo = '';
+
 
 $.ajax({
 			type: "GET",
@@ -11,6 +13,7 @@ $.ajax({
 			},
 			success: function(msg) {
 				
+				ajaxgetinfo = msg;
 				var uid = msg.user_id;
 				if (uid)
 				{
@@ -23,6 +26,11 @@ $.ajax({
 				console.log(errmsg);
 			} 
 		});
+	
+
+		
+	
+	
 		
 $(document).bind('popup_close', function(){
   	$(".popup _thanks").show();
@@ -184,13 +192,32 @@ $('.otrivin-anons-contest').click( function(){
 });
 
 
-
+function callIframe(url) {
+    $('.popup._upload').append(' <iframe id="f200" src="'+url+'" style="border: 0px; width: 100%; height: 550px;" ></iframe>');
+   // $('iframe#f200').attr('src', url);
+    $('iframe#f200').load(function()
+    {
+		if (user_id !=''){
+			$('.js_contest').show();
+			
+			
+			
+		}else
+		{
+			$('.js_contest').hide();
+		}
+       // console.log('iframe !!!!');
+    });
+}
 
 
 
 
 
 $(document).ready(function () {
+	
+	
+	
     $('.header_bot_menu_320_icon').click(function () {
         $('.header_bot_link_menu ul').fadeIn(700);
     });
@@ -205,21 +232,16 @@ $(document).ready(function () {
     });
 	
 	
+	    if (user_id !=''){
+			callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id);
 	
-		
-	
-	
-	$('iframe').load(function(){
-		if (user_id !=''){
-			$('.js_contest').show();
-			$('iframe').contents().find('input#name').val(''+user_id);
 		}else
 		{
-			//alert('Необходимо авторизоваться!');
-			$('.js_contest').hide();
+			callIframe('http://otrivindata.pdigit.top/api/images/form/-1');
+	
 		}
-      
-     });
+		
+		
 	 
 	 /*------------------------------------------*/
 	 /*--------     участики конкурса    -------*/
@@ -227,7 +249,7 @@ $(document).ready(function () {
 			type: "GET",
 			url: "http://otrivindata.pdigit.top/api/images/getall",
 			success: function(msg) {
-				//console.log(msg); 
+				console.log(msg); 
 				msg.forEach(function(item, i, arr) {
 				 
 				  $('#part443').prepend(

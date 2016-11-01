@@ -9,8 +9,15 @@ $('.print-btn').on('click', function (e) {
     ga('send', 'event', 'planning', 'click', 'print');
     e.preventDefault;
 	
+  $('.otriv-calend-pr').css({'display':'flex'});
+  // $('.header_bot_link_menu').css({'background':'none'});
+  $('.calendar-images').css({'display':'block'});
+	
 	$('.calendar-mobile-table , .calendar-actions-mobile').hide();
     window.print();
+	
+	$('.otriv-calend-pr').css({'display':'none'});
+	
   });
 
 

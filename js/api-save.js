@@ -6,11 +6,19 @@ var user_id = '';
 var count = 0;
 
 
+
 $('.print-btn').on('click', function (e) {
     ga('send', 'event', 'planning', 'click', 'print');
+	
+	
+	$('.otriv-medic-save').css({'display':'flex'});
+	
+	
     e.preventDefault;
 	window.print();
-  });
+	$('.otriv-medic-save').css({'display':'none'});
+	
+});
 
 
 
