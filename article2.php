@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Аллергия';
+$og_title = 'Аллергия';
+$og_url = 'article2.php';
+$og_image = 'img/shares/share_st_allergy.jpg';
+$og_description = 'Если ребенок каждый день чихает или кашляет, первое подозрение у родителей падает на простуду. Но кроме простуды причиной воспаления слизистой носа и затрудненного дыхания может быть аллергия.';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>

@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Наука и искусство сморкания';
+$og_title = 'Наука и искусство сморкания';
+$og_url = 'article6.php';
+$og_image = 'img/shares/share_st_nauka_i_iskusstvo_smork.jpg';
+$og_description = 'Казалось бы, нет ничего более естественного, чем при выделениях из носа взять носовой платок и хорошенько высморкаться. Но таким простым процесс выглядит только с нашей, взрослой точки зрения.';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>

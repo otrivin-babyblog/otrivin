@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Дыхательная гимнастика – детям';
+$og_title = 'Дыхательная гимнастика - детям';
+$og_url = 'article8.php';
+$og_image = 'img/shares/share_st_dyhatelnaya_gimnastika.jpg';
+$og_description = 'Вряд ли кого-то надо убеждать в пользе гимнастики и массажа для детского здоровья. Но задумывались ли вы когда-нибудь о гимнастике для… носов?';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>

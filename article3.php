@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Как помочь носику';
+$og_title = 'Как помочь носику';
+$og_url = 'article3.php';
+$og_image = 'img/shares/share_st_kak_pomoc_nosiku.jpg';
+$og_description = 'В жизни бывает всякое. Бывает и так: родители старались, как могли, поддерживали в детской хороший микроклимат, много гуляли с ребенком, старались не кутать и в меру закаливать, а насморк — вот он, тут как тут';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>

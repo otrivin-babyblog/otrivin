@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Конкурсы';
+$og_title = 'Участвуй в семейном конкурсе и получай подарки!';
+$og_url = 'contests_s.php';
+$og_image = 'img/shares/share_main.jpg';
+$og_description = 'Загрузи фотографию на тему «Поразительное сходство - на кого больше похож носик - на мамин или на папин». 10 наиболее популярных среди читателей работ выйдут в финал.';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>
@@ -304,6 +308,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <h2 class="popup-title">участники конкурса</h2>
       <button class="popup-close"></button>
       <div id="part443" class="participants">
+	  
+	  
+	   <ul id="pag_part142" class="pagination">
+           
+          </ul>
       </div>
       <div class="content-footer">
         <!--ul class="pagination">

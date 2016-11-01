@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Чтобы дышалось хорошо';
+$og_title = 'Чтобы хорошо дышалось';
+$og_url = 'article7.php';
+$og_image = 'img/shares/share_st_chtob_dyshalos_horocho.jpg';
+$og_description = 'Представьте себе такую картину: мама с новорожденным приезжают домой из роддома. В квартире все сверкает чистотой, все заранее подготовлено к приему нового жильца.';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>

@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Прощай, насморк';
+$og_title = 'Прощай, насморк';
+$og_url = 'no_more_cold.php';
+$og_image = 'img/shares/share_goodbuy_nasmork.jpg';
+$og_description = 'Что делать, если у малыша заложен носик? Используйте комплекс Отривин Бэби';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?>  
   <body>  

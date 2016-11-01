@@ -1,6 +1,9 @@
-<? 
+<?
 $title ='Гигиена носика';
-
+$og_title = 'Гигиена носика';
+$og_url = 'nose_hygiene.php';
+$og_image = 'img/shares/share_gigiena_nosika.jpg';
+$og_description = 'Как помочь малышу, если у него заложен носик? Каждая мама довольно часто задаётся этим вопросом. Кроха в таком состоянии капризничает, плачет, плохо спит, мало кушает...';
 $ref = $_SERVER['HTTP_REFERER'];
 $ref_title = explode('/',$ref);
 if (count($ref_title) > 1){

@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Развлекай ребенка';
+$og_title = 'Чем занять ребенка?';
+$og_url = 'entertain.php';
+$og_image = 'img/shares/share_entertain_baby.jpg';
+$og_description = 'Вы устали каждый день катать машинки и собирать пирамидки? Тогда мы предлагаем вам несколько интересных забав, которые точно не оставят равнодушными вас и малыша.';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
   <body>
@@ -24,16 +28,17 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         </div>
         <div class="activities-wrapper">
           <h2 class="page-title">наши конкурсы</h2>
-          <img src="img/bird_amuse.png" alt="" class="bird_amuse_ent">
+          <!-- <img src="img/bird_amuse.png" alt="" class="bird_amuse_ent"> -->
           <!--div class="activity activity_bird">
             <h3 class="activity__name">Важный носик знает толк</h3>
             <p class="activity__about">Поделись фотоисторией о своем ребенке и выиграй подарки! ...</p>
             <a href="/contests.php" class="activity__link">Подробнее</a>
           </div-->
-          <div class="activity"     style="width: 100%; text-align: center;">
-            <h3 class="activity__name">поразительное сходство</h3>
-            <p class="activity__about">Участвуй в семейном конкурсе и получай подарки! ...</p>
-            <a href="<? echo $source; ?>contests_s.php" class="activity__link otrivin-anons-contest">Подробнее</a>
+          <div class="activity activity-bird"     style="width: 100%; text-align: center;">
+            <!--<h3 class="activity__name">поразительное сходство</h3>
+            <p class="activity__about">Участвуй в семейном конкурсе и получай подарки! ...</p-->
+			 <h3 class="activity__name">Конкурс … совсем скоро! Следи за обновлениями!</h3>
+            <!--a href="<? echo $source; ?>contests_s.php" class="activity__link otrivin-anons-contest">Подробнее</a-->
           </div>
           <!--div class="activity">
             <h3 class="activity__name">папин сын</h3>

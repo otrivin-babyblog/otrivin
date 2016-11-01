@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Уроки для мамы';
+$og_title = 'Познавательные видео-уроки для мамы';
+$og_url = 'uroki_dlya_mam.php';
+$og_image = 'img/shares/share_lessons.jpg';
+$og_description = 'Оказывается, научить сморкаться и правильно дышать можно с помощью игры! Не откладывайте этот процесс до болезни, когда ребенок будет уставшим и капризным. Лучше сразу покажите ему простые приемы дыхания и высмаркивания в увлекательной форме.';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php") ?>
  <body>
     <div class="wrapper lessons">
@@ -34,7 +38,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php") ?>
             <div class="responsive-video">
               <iframe class="otrivin-mom-video3" width="560" height="315" src="https://www.youtube.com/embed/mxz9muQhPb4?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
             </div>
-            <p class="video-caption">Какую температуру поддерживат в доме?</p>
+            <p class="video-caption">Какую температуру поддерживать в доме?</p>
           </div>
         </div>
         <div class="content-footer">

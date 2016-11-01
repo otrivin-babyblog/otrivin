@@ -1,9 +1,9 @@
 <?
 $title ='Отривин Бэби';
-$og_title = '';
+$og_title = 'Отривин Бэби на проекте babyblog.ru';
 $og_url = '';
-$og_image = '';
-$og_description = '';
+$og_image = 'img/shares/share_main.jpg';
+$og_description = 'Играй с ребенком, сохраняй важное и планируй день вместе с Отривин Бэби и babyblog.ru';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 
 

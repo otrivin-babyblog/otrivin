@@ -1,5 +1,9 @@
-<? 
+<?
 $title ='Все о детском дыхании';
+$og_title = 'Все о детском дыхании';
+$og_url = 'article.php';
+$og_image = 'img/shares/share_st_vse_o_det_dyhanii.jpg';
+$og_description = 'Малыши часто дышат ртом: не только когда дыхание затруднено из-за простуды или аллергии, но и когда, например, задумаются.';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>
