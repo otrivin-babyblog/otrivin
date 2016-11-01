@@ -17,10 +17,23 @@ $source = 'http://promo.babyblog.ru/otrivin_baby/';
 	};?></title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta property="og:title" content="БэбиБлог - беременность, календарь беременности, дневники" />
- <meta property="og:type" content="image" />
- <meta property="og:url" content="https://www.babyblog.ru/" />
- <meta property="og:description" content="Встречайте БэбиБлог в мессенджерах!" />  
+ <meta property="og:title" content="<?= (!empty($og_title) ? $og_title : '') ?>" />
+<?php
+if (!empty($og_image)) {
+    ?>
+    <meta property="og:type" content="image" />
+    <?php
+}
+?>
+<meta property="og:url" content="<? echo $source; ?><?= (!empty($og_url) ? $og_url : '') ?>" />
+<?php
+if (!empty($og_image)) {
+    ?>
+    <meta property="og:image" content="<? echo $source; ?><?= (!empty($og_image) ? $og_image : '') ?>">
+    <?php
+}
+?>
+<meta property="og:description" content="<?= (!empty($og_description) ? $og_description : '') ?>" />
 	
 	
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700|PT+Sans+Caption:400,700&subset=cyrillic-ext,latin-ext">
