@@ -21,6 +21,7 @@ $ref_title = 'Главная';
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
  ?>
+ <link href="<? echo $source; ?>css/style_active_noise.css" rel="stylesheet" type="text/css"/>
 <body>
     <div class="wrapper nose_hygiene">
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
@@ -47,7 +48,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <div class="complex-step__arrow"></div>
             <div class="complex-step-content">
               <div class="complex-step-wrapper">
-                <h2 class="complex-step__name">шаг 1</h2>
+                <h2 class="complex-step__name"><span>шаг 1</span></h2>
                 <p class="complex-step__about">Увлажните полость носика малыша <a href="">Каплями</a> или <a href="">Спреем</a> Отривин Бэби для того, чтобы размягчить корочки и слизь</p>
                 <img src="<? echo $source; ?>img/complex-step1.png" alt="" class="complex-step__img">
               </div>
@@ -57,7 +58,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <div class="complex-step__arrow complex-step__arrow_reversed"></div>
             <div class="complex-step-content">
               <div class="complex-step-wrapper">
-                <h2 class="complex-step__name">шаг 2</h2>
+                <h2 class="complex-step__name"><span>шаг 2</span></h2>
                 <p class="complex-step__about">Освободите полость носа от корочек и слизи с помощью <a href="">Аспиратора</a>. Во избежание повторного инфицирования, используйте насадки однократно</p>
                 <img src="<? echo $source; ?>img/complex-step2.png" alt="" class="complex-step__img">
               </div>

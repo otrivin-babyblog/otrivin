@@ -34,7 +34,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Игры с ребенком</a>
         </div>
-        <h1 class="page-title">список занимательных игр для вас и малыша</h1>
+        <h1 class="page-title xor_isr_subtitle_class">список занимательных игр для вас и малыша</h1>
         <p class="page-about">Когда мы играем с ребенком, мы учим его выражать эмоции, быть добрым и открытым, общаться и познавать мир. Вы устали каждый день катать машинки и собирать пирамидки? Тогда мы предлагаем вам несколько интересных забав, которые точно не оставят равнодушными вас и малыша.</p>
         <div class="child-games-wrapper">
           <div class="child-games-item">

@@ -173,8 +173,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
                
               </ul>
             </div>
-			
           </div>
+			 <div class="otriv-medic-save"><img src="img/otriv_medic_save.png" alt="" class="otriv-medic-save-img"></div>
 		
           <div class="content-footer">
             <div class="social">

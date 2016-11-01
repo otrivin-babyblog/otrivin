@@ -285,7 +285,7 @@
 			
 			
           </div>
-
+          <div class="otriv-calend-pr"><img src="img/elephant_family.png" alt=""><img src="img/otriv_medic_save.png" alt="" ></div>
           <div class="content-footer">
             <div class="social">
               <p class="social__text">Поделиться в социальных сетях</p>

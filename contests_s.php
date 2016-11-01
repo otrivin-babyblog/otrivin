@@ -3,6 +3,7 @@ $title ='Конкурсы';
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?> 
 <body>
+
     <div class="wrapper contests">
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
       <div class="content">
@@ -63,8 +64,8 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     </div>
     <div class="popup _upload" style="background: #f5f2e9;">
       <button class="popup-close"></button>
-     <iframe style="border: 0px; width: 100%; height: 550px;" src="http://otrivindata.pdigit.top/api/images/form"></iframe>
-    </div>
+	  <iframe style="border: 0px; width: 100%; height: 550px;" src="http://otrivindata.pdigit.top/api/images/form"></iframe>
+     </div>
     <div class="popup _thanks">
       <h2 class="popup-title">Спасибо, Ваша работа на премодерации</h2>
       <button class="popup-close"></button>
