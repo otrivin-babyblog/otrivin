@@ -2682,4 +2682,5 @@ label.input-error {
 
 .li {
 	min-height: 225px;
+	margin-right: 10px !important;
 }
