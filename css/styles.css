@@ -2679,3 +2679,7 @@ label.input-error {
     width: 20px;
     height: 20px;
 }
+
+.li {
+	min-height: 225px;
+}
