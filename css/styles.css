@@ -2548,6 +2548,42 @@ label.input-error {
   .header_bot_link_menu{
     background: none !important;
   }
+  .save-wrapper .phones-wrapper{
+    width: 100% !important;
+    padding: 0 !important;
+    margin-right: 0 !important;
+    background: none !important;
+  }
+  .save-wrapper{
+    padding: 20px 0 0 !important;
+  }
+  .print-btn{
+    display: none;
+  }
+  .header_bot_item_menu_logo a img{
+    width: 75%;
+    margin: 0;
+  }
+  .page-save{
+    display: none;
+  }
+  // .header_bot_link_menu{
+  //   padding: 0;
+  //   margin: 0;
+  // }
+  .title{
+    margin: 0;
+    text-align: right;
+  }
+  .content-save{
+    padding: 0;
+  }
+  #notes-list li{
+    margin: 0 0 5px;
+  }
+  #save1{
+    page-break-after: always;
+  }
   .page-title{
     text-align: right;
   }
@@ -2592,15 +2628,19 @@ label.input-error {
   background: #e9baad;
 }
 .otriv-medic-save{
-  width: 100%;
   display: flex;
-  -webkit-justify-content: flex-end;
-          justify-content: flex-end;
+-webkit-justify-content: space-between;
+        justify-content: space-between;
   display: none;
+  position: relative;
+  // bottom: 12vh;
+  // right: 2vw;
+  // top: -20px;
 }
 .otriv-medic-save-img{
-  width: 30%;
-  height: 30%;
+  margin-top: 5px;
+  width: 20%;
+  height: 17%;
 }
 .otriv-calend-pr{
   width: 100%;
@@ -2615,4 +2655,27 @@ label.input-error {
   width: 25%;
   height: 25%;
   margin: auto 0;
+  // top: -10px;
+}
+
+.popuplb {
+  position: absolute;
+  top: 0px;
+  left: 0px; 
+  z-index:12000;  
+  display: none;
+  padding: 47px 80px 17px;
+  background-color: #000;
+  // opacity: 0.9;
+  height:100%;
+  width: 100%; 
+}
+
+.popuplb_close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    background: url(../img/popup-close.png) center center no-repeat;
+    width: 20px;
+    height: 20px;
 }
