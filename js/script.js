@@ -22,6 +22,11 @@ $.ajax({
 				if (uid)
 				{
 					user_id = uid;
+					
+					
+					
+					
+					
 				}
 				
 				
@@ -32,8 +37,7 @@ $.ajax({
 		});
 	
 
-		
-	
+
 	
 		
 $(document).bind('popup_close', function(){
@@ -216,6 +220,50 @@ function callIframe(url) {
 
 
 
+function vote(param1,param2){
+	$.ajax({
+			type: "GET",
+			url: "http://otrivindata.pdigit.top/api/vote/"+param1+"/"+param2,
+			success: function(msg) {
+				console.log(msg);
+				
+					if (msg=='200')
+												{
+													$('.vote').css({'display':'none'});
+													// vote +
+													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Спасибо, голос засчитан!</h2>');
+													
+												}else if (msg=='201'){
+													
+													// vote+
+													$('.vote').css({'display':'none'});
+													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Спасибо, голос засчитан!</h2>');
+													
+												}else
+												{
+													$('.vote').css({'display':'none'});
+													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Извините, Вы не можете голосовать!</h2>');
+													
+												}
+								 $('#vote99').css({'display':'block'});
+							console.log('pvote block');
+
+							
+					$('.popupvote_close').click(function () {
+					$('#vote99').css({'display':'none'});
+					$('#vote2').remove();
+					console.log('vote close');
+				});
+				
+				},
+			error: function(errmsg){
+				console.log(errmsg);
+			} 
+		});
+	
+}
+
+
 
 
 $(document).ready(function () {
@@ -269,38 +317,98 @@ $(document).ready(function () {
 					 // console.log('nl  ---');
 				 }
 				 
-				 
-				  $('#part443').prepend(
+				 if (user_id != ''){
+				  $('#part443').append(
 				  
 				  '<div class="participant">'+
-				 '<div style="height: 400px; min-height: 400px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" "src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
+				 '<div style="height: 300px; min-height: 300px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
 				  '<div class="participant-author">'+
 					'<img src="'+ava+'" alt="" class="author__img">'+
 					'<h3 class="author__name">'+str+'</h3>'+
 					/*'<p class="author__location">Москва</p>'+*/
 				 '</div>'+
 				  '<p class="participant__comment">'+item.description+'</p>'+
+					
+					'<a onclick="javascript:vote(\''+user_id+'\',\''+item.url+'\');" class="btn vote" style="width:100%;">Голосовать</a>'+
 				
 				'</div>'
 					   );
+					   
+				 }else
+				 {
+					  $('#part443').append(
+				  
+				  '<div class="participant">'+
+				 '<div style="height: 300px; min-height: 300px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
+				  '<div class="participant-author">'+
+					'<img src="'+ava+'" alt="" class="author__img">'+
+					'<h3 class="author__name">'+str+'</h3>'+
+					/*'<p class="author__location">Москва</p>'+*/
+				 '</div>'+
+				  '<p class="participant__comment">'+item.description+'</p>'+
+				  
+					/*'<a href="javascript:void(0);" class="btn" style="width:100%; background: #fff;">Голосовать</a>'+*/
+					'<a onclick="javascript:vote(\'1\',\''+item.url+'\');" class="btn vote" style="width:100%;">Голосовать</a>'+
+				'</div>'
+					   );
+					   
+				 }
+					   
 				});
+				
+				
+				
+				
+				if (user_id!='')
+				{
+					$.ajax({
+									type: "GET",
+									url: "http://otrivindata.pdigit.top/api/voteinfo/"+user_id,
+									success: function(msg) {
+												console.log(msg);
+												if (msg=='info 301')
+												{
+													$('.vote').css({'display':'none'});
+												}else if (msg=='info 200'){
+													$('.vote').css({'display':'block'});
+												}
+												
+												
+										},
+									error: function(errmsg){
+										console.log(errmsg);
+									} 
+									});
+				}	
+				else
+					
+					{
+						$('.vote').css({'display':'none'});
+					}
+				
+				
+				
 				/*
 				*/
 				
 				// TEST NEW EL
 				// сгенерировать  тестовые элементы
-				/*for(var j=0; j<10; j++)
+			/*	var id2 = '1';
+				var id12 = 'gPGRuZUY';
+			for(var j=0; j<10; j++)
 				{
-						$('#part443').prepend(
+						$('#part443').append(
 				  
 				  '<div class="participant">'+
-				 '<div style="height: 400px; min-height: 400px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="NAME'+j+'" src="http://otrivin.pdigit.top/img/user.png" alt="" class="participant__img prewLB" ></div>'+
+				 '<div style="height: 300px; min-height: 300px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="NAME'+j+'" src="http://otrivin.pdigit.top/img/user.png" alt="" class="participant__img prewLB" ></div>'+
 				  '<div class="participant-author">'+
 					'<img src="http://otrivin.pdigit.top/img/user.png" alt="" class="author__img">'+
 					'<h3 class="author__name">NAME'+j+'</h3>'+
 					//'<p class="author__location">Москва</p>'+
 				 '</div>'+
 				  '<p class="participant__comment">DESC'+j+'</p>'+
+				
+					'<a onclick="javascript:vote(\''+id2+'\',\''+id12+'\');" class="btn vote" style="width:100%;">Голосовать</a>'+
 				
 				'</div>'
 					   );
