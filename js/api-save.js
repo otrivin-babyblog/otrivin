@@ -37,16 +37,18 @@ $('.print-btn').on('click', function (e) {
 						}
 						//console.log(c);
 						
-					});
+	});
 	
 	if (co % 8 == 0){
 	$('#b'+block).remove();
 	}
 	
-	
+	$('.li').css({'margin':'5px'});
 	window.print();
 	$('.otriv-medic-save').css({'display':'none'});
 	$('.d12').remove();
+	$('.li').css({'margin':'0 0 25px'});
+	//$('.li').css({'margin-right':'10px'});
 });
 
 
@@ -105,7 +107,7 @@ function remSave(param1)
 $(document).ready(function () {
 	
 	// генерируем тестовые блоки 
-	/*for(var i=0; i<32; i++){
+	/*for(var i=0; i<12; i++){
 		
 		$('#notes-list').prepend(
 							  
