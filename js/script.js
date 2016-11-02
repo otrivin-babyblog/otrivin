@@ -5,6 +5,10 @@ var user_id = '';
 var ajaxgetinfo = '';
 
 
+function div(val, by){
+    return (val - val % by) / by;
+}
+
 $.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
@@ -218,6 +222,7 @@ $(document).ready(function () {
 	
 	
 	
+	
     $('.header_bot_menu_320_icon').click(function () {
         $('.header_bot_link_menu ul').fadeIn(700);
     });
@@ -268,7 +273,7 @@ $(document).ready(function () {
 				  $('#part443').prepend(
 				  
 				  '<div class="participant">'+
-				 '<div style="height: 400px; min-height: 400px; overflow: hidden; margin-bottom: 20px;"> <img src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img" ></div>'+
+				 '<div style="height: 400px; min-height: 400px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" "src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
 				  '<div class="participant-author">'+
 					'<img src="'+ava+'" alt="" class="author__img">'+
 					'<h3 class="author__name">'+str+'</h3>'+
@@ -281,46 +286,195 @@ $(document).ready(function () {
 				});
 				/*
 				*/
-				var count_on_page = 1,
-				    count_el = 0,
-					cur_p = 0,
-					cp = 1;
-				var	count_page = 0;
+				
+				// TEST NEW EL
+				// сгенерировать  тестовые элементы
+				for(var j=0; j<10; j++)
+				{
+						$('#part443').prepend(
+				  
+				  '<div class="participant">'+
+				 '<div style="height: 400px; min-height: 400px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="NAME'+j+'" src="http://otrivin.pdigit.top/img/user.png" alt="" class="participant__img prewLB" ></div>'+
+				  '<div class="participant-author">'+
+					'<img src="http://otrivin.pdigit.top/img/user.png" alt="" class="author__img">'+
+					'<h3 class="author__name">NAME'+j+'</h3>'+
+					//'<p class="author__location">Москва</p>'+
+				 '</div>'+
+				  '<p class="participant__comment">DESC'+j+'</p>'+
+				
+				'</div>'
+					   );
+						
+						
+				}
+				
+				$('.prewLB').click(function(){
+					var s = $(this).attr('src');
+					var d = $(this).data('desc');
+					
+					$('#lb99').append('<img id="imgprew" src="'+s+'" alt="" style="width: 100%; ">');
+					$('#lb99').append('<h2 id="imgprew2" class="popup-title" style="color: #fff;">'+d+'</h2>');
+					
+					 $('.popuplb').css({'display':'block'});
+					console.log('prewLB');
+					
+				});
+				
+				$('.popuplb_close').click(function () {
+					$('.popuplb').css({'display':'none'});
+					$('#imgprew').remove();
+					$('#imgprew2').remove();
+					console.log('prewLB close');
+				});
+				
+				
+				// paginator start
+				
+				var count_on_page = 3, // кол-во элементов на странице
+				    count_el = 0, // кол-во элементов
+					cur_p = 0, // дополнительные переменные для 
+					cp = 1; // добавления соот. класса(номера страниц по сути) элементам
+				var	count_page = 0; // кол-во страниц
+				
+				
 				
 				$('.participant').each(function(i,el){
-					count_el = count_el + 1;
-					cur_p = cur_p +1;
+					count_el = count_el + 1; // считаем элементы
+					cur_p = cur_p +1; //отсчитываем какой класс (номер страницы по сути) присвоить элементу.
 					$(el).addClass('pp142_p'+cp);
 					
+					// если ушли на следующую страницу
 					if (cur_p >= count_on_page){
 						cur_p = 0;
 						cp = cp +1;
 					}
 				});
 				
-				count_page = (count_el % count_on_page) +1;
-				console.log('el: '+count_el+' page: '+count_page);
-				 $('#pag_part142').append('<li class="pagination-page pp142_min" data-id="pp" ><a id="pp" class="pagination__link">&lt;</a></li>');
+				count_page = div(count_el, count_on_page);// считаем кол-ко страниц
+				if (count_on_page * count_page < count_el)
+				{
+					count_page = count_page +1;
+				}
+				
+				if (count_page <=1){
+					$('#pag_part142').css({'display':'none'});
+				}else
+				{
+					$('#pag_part142').css({'display':'inline-block'});
+				}
+				
+				
+				//console.log('el: '+count_el+' page: '+count_page); // отладочный код
+				 $('#pag_part142').append('<li class="pagination-page pp142_min" data-id="pp" ><a id="pp" class="pagination__link" style="text-align: center;">&lt;</a></li>');
 				 
+				 // добавляем линки в пагинатор
 				 for(var i=0; i<count_page; i++)
 				 {
-					 var t = (i+1)+'';
-					  $('#pag_part142').append(' <li class="pagination-page pp142_'+t+'" data-id="'+t+'" ><a id="p'+t+'" class="pagination__link">'+t+'</a></li>');
+					 var t = (i+1)+''; // номер страницы для каждого линка
+					  $('#pag_part142').append(' <li class="pagination-page pp142" data-id="'+t+'" ><a id="p'+t+'" class="pagination__link" style="text-align: center;">'+t+'</a></li>');
 				 }
 				 
 				 
-				 $('#pag_part142').append(' <li class="pagination-page pp142_max" data-id="pn" ><a id="pn" class="pagination__link">&gt;</a></li>');
+				 $('#pag_part142').append(' <li class="pagination-page pp142_max" data-id="pn" ><a id="pn" class="pagination__link" style="text-align: center;">&gt;</a></li>');
 				 
+				 // активируем 1-ю страницу (линк)
 				 $('#p1').addClass('pagination__link_active');
-			 /*<li class="pagination-page " data-id="1" ><a id="p1" class="pagination__link pagination__link_active">1</a></li>
-            <li class="pagination-page " data-id="2" ><a id="p2" class="pagination__link">2</a></li>
-            <li class="pagination-page p25" data-id="3" ><a id="p3" class="pagination__link">3</a></li>
-            <li class="pagination-page p25" data-id="4" ><a id="p4" class="pagination__link">4</a></li>
-            <li class="pagination-page p25" data-id="5" ><a id="p5" class="pagination__link">5</a></li>
-           */
+				/*---------------------------------------------------------------------------------*/
 				
-				/*
-				*/
+					var current_num_page = 1; // номер текущей страницы
+					
+					// отобразить текущую страницу
+					$('.participant').each(function(i, el){
+						if ($(el).hasClass('pp142_p'+current_num_page)){
+						  $(el).css({'display':'inline-block'});
+						}else
+						{
+							$(el).css({'display':'none'});
+						}
+					});
+				
+					// событие на линки
+					$('.pp142').click(function(){
+						
+						$('#p'+current_num_page).removeClass('pagination__link_active');
+						current_num_page = $(this).data('id'); // текущей становится страница с id из линка
+						$('#p'+current_num_page).addClass('pagination__link_active');
+						
+						// отобразить элементы с текущей страницы
+						if (current_num_page !== undefined)
+						{
+							
+								$('.participant').each(function(i, el){
+									if ($(el).hasClass('pp142_p'+current_num_page)){
+									  $(el).css({'display':'inline-block'});
+									}else
+									{
+										$(el).css({'display':'none'});
+									}
+								});
+						}
+						else{}
+						
+						
+					});
+					
+					// линк "влево"
+					$('.pp142_min').click(function(){
+						
+						$('#p'+current_num_page).removeClass('pagination__link_active');
+						current_num_page = current_num_page - 1;
+						if (current_num_page <=0){
+							current_num_page = 1;
+						}
+						$('#p'+current_num_page).addClass('pagination__link_active');
+					
+					
+					
+						if (current_num_page !== undefined)
+						{
+							
+								$('.participant').each(function(i, el){
+									if ($(el).hasClass('pp142_p'+current_num_page)){
+									  $(el).css({'display':'inline-block'});
+									}else
+									{
+										$(el).css({'display':'none'});
+									}
+								});
+						}
+						else{}
+					});
+					
+					// линк "вправо"
+					$('.pp142_max').click(function(){
+						
+						$('#p'+current_num_page).removeClass('pagination__link_active');
+						current_num_page = current_num_page + 1;
+						if (current_num_page > count_page){
+							current_num_page = count_page;
+						}
+						$('#p'+current_num_page).addClass('pagination__link_active');
+					
+					
+					
+						if (current_num_page !== undefined)
+						{
+							
+								$('.participant').each(function(i, el){
+									if ($(el).hasClass('pp142_p'+current_num_page)){
+									  $(el).css({'display':'inline-block'});
+									}else
+									{
+										$(el).css({'display':'none'});
+									}
+								});
+						}
+						else{}
+					});
+					
+					// paginator end
+				
+				/*----------------------------------------------------------------------------------*/
 			},
 			error: function(errmsg){
 				console.log(errmsg);

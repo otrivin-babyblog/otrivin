@@ -15,9 +15,49 @@ $('.print-btn').on('click', function (e) {
 	
 	
     e.preventDefault;
+	
+	var c = 0;
+	var c2 = 0;
+	$('#notes-list .li').each(function(i, el){
+		//console.log('i   :'+i);
+					if (i % 7 == 0 && i!=0)
+					{
+						console.log('add block :'+i);
+						$(el).after('<div class="d12" style="width:100%; height: 250px;"></div>');
+					}						
+						
+						
+						/*
+						c = c +1;
+						c2 = c2+1;
+						if (c2 >= 8){
+							
+							if (c >8){
+								c2 = 0;
+							$(el).after('<div data-id="'+c+'" class="d12" style="width:100%; height: 250px;"></div>');
+							//$('.otriv-medic-save').css({'top':'-200px'});
+							console.log('add r33   :'+i);
+							}
+						}*/
+						
+					});
+	
+	/*$('.d12').each(function(i, el){
+		var id = $(el).data('id');
+		
+		if (id == c)
+		{
+			$(el).addClass('remove33');
+			console.log('add r33');
+		}
+		
+	});
+	$('.remove33').remove();*/
+	console.log(c);
+	
 	window.print();
 	$('.otriv-medic-save').css({'display':'none'});
-	
+	$('.d12').remove();
 });
 
 
@@ -74,7 +114,23 @@ function remSave(param1)
 	
 
 $(document).ready(function () {
-	$('.print-btn').hide();
+	
+	
+	for(var i=0; i<6; i++){
+		
+		$('#notes-list').prepend(
+							  
+										'<li class="li">'+
+									  '<div class="top"><i class="fa fa-times remSave"></i></div>'+
+									  '<div class="content">'+
+										'<p class="title">34234234</p>'+
+									   ' <p class="phone">34242424</p>'+
+										'<p class="description">23424234</p>'+
+									  '</div>'+
+								   ' </li>' );
+	}
+	
+	//$('.print-btn').hide();
 	$.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
@@ -101,7 +157,7 @@ $(document).ready(function () {
 							$('.print-btn').show();
 							  $('#notes-list').prepend(
 							  
-										'<li data-id="'+item.id+'" id="save'+count+'">'+
+										'<li class="li" data-id="'+item.id+'" id="save'+count+'">'+
 									  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
 									  '<div class="content">'+
 										'<p class="title">'+item.name+'</p>'+
@@ -177,7 +233,7 @@ $(document).ready(function () {
 							//count = count+1;
 							$('#notes-list').prepend(
 					  
-								'<li data-id="'+msg+'" id="save'+count+'">'+
+								'<li class="li" data-id="'+msg+'" id="save'+count+'">'+
 							  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
 							  '<div class="content">'+
 								'<p class="title">'+t+'</p>'+
@@ -200,7 +256,7 @@ $(document).ready(function () {
 				$('.print-btn').show();
 				$('#notes-list').prepend(
 					  
-								'<li data-id="" id="save'+count+'">'+
+								'<li class="li" data-id="" id="save'+count+'">'+
 							  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
 							  '<div class="content">'+
 								'<p class="title">'+t+'</p>'+
