@@ -305,27 +305,26 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 <p align="JUSTIFY"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: small;">16.6. Персональные данные, полученные от Участников в соответствии с данными Правилами, хранятся в базе данных, администрированием которой занимается Организатор Конкурса. Персональные данные используются и хранятся в целях проведения Конкурса, выбора и оглашения победителей, присуждения призов, выдачи, получения и распределения призов, а также в целях последующего предоставления рекламной информации.</span></span></p> </ol>
     </div>
     <div class="popup _participants">
-      <h2 class="popup-title">участники конкурса</h2>
+	<div id="lb99" class="popuplb">
+       <button class="popuplb_close"></button>
+    </div>
+	
+      <h2 id="pppt" class="popup-title">участники конкурса</h2>
       <button class="popup-close"></button>
       <div id="part443" class="participants">
 	  
 	  
-	   <ul id="pag_part142" class="pagination">
+	   
+      </div>
+	  <ul id="pag_part142" class="pagination">
            
           </ul>
-      </div>
       <div class="content-footer">
-        <!--ul class="pagination">
-          <li class="pagination-page"><a href="" class="pagination__link">&lt;</a></li>
-          <li class="pagination-page"><a href="" class="pagination__link pagination__link_active">1</a></li>
-          <li class="pagination-page"><a href="" class="pagination__link">2</a></li>
-          <li class="pagination-page"><a href="" class="pagination__link">3</a></li>
-          <li class="pagination-page"><a href="" class="pagination__link">4</a></li>
-          <li class="pagination-page"><a href="" class="pagination__link">5</a></li>
-          <li class="pagination-page"><a href="" class="pagination__link">&gt;</a></li>
-        </ul-->
+       
       </div>
     </div>
+	
+	
     <script src="<? echo $source; ?>js/jquery.min.js"></script>
     <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>

@@ -109,14 +109,14 @@ $og_description = 'Спланируйте свой день по часам и �
 				
 				<p>А для подробного ознакомления с потешками и сказками, кликните на нужной кнопке правой кнопкой мыши и выбирете "Открыть на новой вкладке" или "Открыть в новом окне" или наведите курсор на нужную кнопку и нажмите среднюю кнопку мыши (колесико)</p>
 				<ul>
-                  <li><a href="<? echo $source; ?>nose_hygiene.php"><span>Гигиена носика</span></a></li>
-                  <li><a href="<? echo $source; ?>igry_s_rebenkom.php"><span>Игры с ребенком</span></a></li>
-                  <li><a href="<? echo $source; ?>music.php"><span>Музыка</span></a></li>
-                  <li><a href="<? echo $source; ?>verses.php"><span>Потешки</span></a></li>
+                  <li><a href="<? echo $source; ?>nose_hygiene.php">Гигиена носика</a></li>
+                  <li><a href="<? echo $source; ?>igry_s_rebenkom.php">Игры с ребенком</a></li>
+                  <li><a href="<? echo $source; ?>music.php">Музыка</a></li>
+                  <li><a href="<? echo $source; ?>verses.php">Потешки</a></li>
 				  
-				  <li><a href="<? echo $source; ?>uroki_dlya_mam.php"><span>Уроки для мам</span></a></li>
-				  <li><a href="<? echo $source; ?>domestic_chores.php"><span>Домашние дела</span></a></li>
-				  <li><a href="<? echo $source; ?>tales.php"><span>Сказки на ночь</span></a></li>
+				  <li><a href="<? echo $source; ?>uroki_dlya_mam.php">Уроки для мам</a></li>
+				  <li><a href="<? echo $source; ?>domestic_chores.php">Домашние дела</a></li>
+				  <li><a href="<? echo $source; ?>tales.php">Сказки на ночь</a></li>
 				  
 				  
                   <li>
