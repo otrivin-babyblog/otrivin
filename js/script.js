@@ -3,7 +3,7 @@ var files;
 var fileName = '';
 var user_id = '';
 var ajaxgetinfo = '';
-
+$('.js_contest').hide();
 
 function div(val, by){
     return (val - val % by) / by;
@@ -289,7 +289,7 @@ $(document).ready(function () {
 				
 				// TEST NEW EL
 				// сгенерировать  тестовые элементы
-				for(var j=0; j<10; j++)
+				/*for(var j=0; j<10; j++)
 				{
 						$('#part443').prepend(
 				  
@@ -306,7 +306,7 @@ $(document).ready(function () {
 					   );
 						
 						
-				}
+				}*/
 				
 				$('.prewLB').click(function(){
 					var s = $(this).attr('src');

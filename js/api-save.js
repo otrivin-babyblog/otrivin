@@ -16,44 +16,33 @@ $('.print-btn').on('click', function (e) {
 	
     e.preventDefault;
 	
-	var c = 0;
-	var c2 = 0;
+	var c = 0 , co = 0;
+	var block = 0;
 	$('#notes-list .li').each(function(i, el){
 		//console.log('i   :'+i);
-					if (i % 7 == 0 && i!=0)
+		c = c +1;
+		co = co +1;
+		
+		
+					if (c % 8 == 0  )
 					{
-						console.log('add block :'+i);
-						$(el).after('<div class="d12" style="width:100%; height: 250px;"></div>');
+						//console.log('add block :'+block);
+						block = block +1;
+						$(el).after('<div id="b'+block+'" class="d12" style="width:100%; height: 250px;"></div>');
+						
 					}						
 						
-						
-						/*
-						c = c +1;
-						c2 = c2+1;
-						if (c2 >= 8){
-							
-							if (c >8){
-								c2 = 0;
-							$(el).after('<div data-id="'+c+'" class="d12" style="width:100%; height: 250px;"></div>');
-							//$('.otriv-medic-save').css({'top':'-200px'});
-							console.log('add r33   :'+i);
-							}
-						}*/
+						if (c>8){
+							c = c -8;
+						}
+						//console.log(c);
 						
 					});
 	
-	/*$('.d12').each(function(i, el){
-		var id = $(el).data('id');
-		
-		if (id == c)
-		{
-			$(el).addClass('remove33');
-			console.log('add r33');
-		}
-		
-	});
-	$('.remove33').remove();*/
-	console.log(c);
+	if (co % 8 == 0){
+	$('#b'+block).remove();
+	}
+	
 	
 	window.print();
 	$('.otriv-medic-save').css({'display':'none'});
@@ -115,8 +104,8 @@ function remSave(param1)
 
 $(document).ready(function () {
 	
-	
-	for(var i=0; i<6; i++){
+	// генерируем тестовые блоки 
+	/*for(var i=0; i<32; i++){
 		
 		$('#notes-list').prepend(
 							  
@@ -128,9 +117,9 @@ $(document).ready(function () {
 										'<p class="description">23424234</p>'+
 									  '</div>'+
 								   ' </li>' );
-	}
+	}*/
 	
-	//$('.print-btn').hide();
+	$('.print-btn').hide();
 	$.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
