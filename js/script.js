@@ -269,7 +269,7 @@ function vote(param1,param2){
 
 $(document).ready(function () {
 	
-	$('#vid1 iframe').iframeTracker({
+	/*$('#vid1 iframe').iframeTracker({
 		blurCallback: function(){
 			console.log('iframe 1 click');
 			ga('send', 'event', 'mom_lessons', 'click', 'play_video_1');
@@ -289,7 +289,7 @@ $(document).ready(function () {
 			console.log('iframe 3 click');
 			ga('send', 'event', 'mom_lessons', 'click', 'play_video_3');
 		}
-	});
+	});*/
 	
 	/*
 	
