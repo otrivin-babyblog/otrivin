@@ -183,17 +183,18 @@ $('.otrivin-nasmork-fairy-tale').click( function(){
  	ga('send', 'event', 'planning', 'to_fairy_tale', 'anons_fairy_tale');
 });
 
+/*
 $('.otrivin-mom-video1').load(function(){
-  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_1'); });
+	//$(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_1'); });
 });
 
 $('.otrivin-mom-video2').load(function(){
-  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_2'); });
+  //$(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_2'); });
 });
 
 $('.otrivin-mom-video3').load(function(){
-  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_3'); });
-});
+ // $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_3'); });
+});*/
 
 $('.otrivin-anons-contest').click( function(){
 	ga('send', 'event', 'fun', 'to_fk', 'anons_fk');
@@ -268,7 +269,41 @@ function vote(param1,param2){
 
 $(document).ready(function () {
 	
+	$('#vid1 iframe').iframeTracker({
+		blurCallback: function(){
+			console.log('iframe 1 click');
+			ga('send', 'event', 'mom_lessons', 'click', 'play_video_1');
+		}
+	});
 	
+	$('#vid2 iframe').iframeTracker({
+		blurCallback: function(){
+			console.log('iframe 2 click');
+			ga('send', 'event', 'mom_lessons', 'click', 'play_video_2');
+		}
+	});
+	
+	
+	$('#vid3 iframe').iframeTracker({
+		blurCallback: function(){
+			console.log('iframe 3 click');
+			ga('send', 'event', 'mom_lessons', 'click', 'play_video_3');
+		}
+	});
+	
+	/*
+	
+	$.ajax({
+			type: "GET",
+			url: "http://otrivindata.pdigit.top/api/video/1",
+			success: function(msg) {
+				console.log(msg);
+				$('#vid1').append(msg);
+				},
+			error: function(errmsg){
+				console.log(errmsg);
+			} 
+		});*/
 	
 	
     $('.header_bot_menu_320_icon').click(function () {

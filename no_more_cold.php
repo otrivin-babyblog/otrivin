@@ -80,7 +80,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <h3 class="product-video__title">Смотрите видео-инструкцию</h3>
           <div class="product-video">
             <div class="responsive-video ">
-              <iframe class="otrivin-play-video" width="911" height="512" src="https://www.youtube.com/embed/9hKbR32sEMo?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+              <iframe class="otrivin-play-video" width="911" height="512" src="https://www.youtube.com/embed/-Fd77XPGRWg?iv_load_policy=3?&rel=0&showinfo=0&modestbranding=0&autohide=1" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
           <a class="otrivin-instructions" href="http://www.otrivin.ru/products/otrivin-baby-aspirator-instruktsiya.html" target="_blank" class="btn btn_product-video">смотреть инструкцию по применению</a>

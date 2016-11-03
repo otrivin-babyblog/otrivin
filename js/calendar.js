@@ -188,29 +188,38 @@ $('.print-btn').on('click', function (e) {
       values.forEach(function (value) {
 		  
 		  var v_link='';
+		  var v_class_ga = '';
+		  
 		  if (value=='Гигиена носика'){
 			  v_link = 'nose_hygiene.php';
+			  v_class_ga = 'otrivin-nasmork-anons';
 		  }else
 			  if(value=='Игры'){
 			  v_link = 'igry_s_rebenkom.php';
+			   v_class_ga = 'otrivin-nasmork-play';
 		  }else
 			  if(value=='Музыка'){
 			  v_link = 'music.php';
+			  v_class_ga = 'otrivin-nasmork-music';
 		  }else
 			  if(value=='Потешки'){
 			  v_link = 'verses.php';
+			  v_class_ga = 'otrivin-nasmork-poem';
 		  }else
 			  if(value=='Уроки для мам'){
 			  v_link = 'uroki_dlya_mam.php';
+			  v_class_ga = 'otrivin-nasmork-mom-lessons';
 		  }else
 			  if(value=='Домашние дела'){
 			  v_link = 'domestic_chores.php';
+			  v_class_ga = 'otrivin-nasmork-house-cleaning';
 		  }else
 			  if(value=='Сказки'){
 			  v_link = 'tales.php';
+			  v_class_ga = 'otrivin-nasmork-fairy-tale';
 		  }
 		  
-        $('.calendar-mobile-table .one-time:eq(' + (time - 1) + ') ul').append('<li><a target="_blank" href="'+siteurl+v_link+'" >' + value + '</a></li>');
+        $('.calendar-mobile-table .one-time:eq(' + (time - 1) + ') ul').append('<li><a class="'+v_class_ga+'" target="_blank" href="'+siteurl+v_link+'" >' + value + '</a></li>');
         callbacks.add(time - 1, value);
       });
     });
