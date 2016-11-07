@@ -1,5 +1,5 @@
 'use strict';
-
+$('.js_contest').hide();
 
 $(document).ready(function() {
 
@@ -64,7 +64,11 @@ $(document).ready(function() {
         }
     }).done(function(user_data) {
         // Данные о пользователе - user_data
-
+		
+		$('.vote').css({'display':'block'});
+		$('.js_contest').show();
+		
+		
         authorizedButton = authorizedButton
             .replace('USER_URL', 'https://www.babyblog.ru/user/lenta/' + user_data.login)
             .replace('AVATAR_URL', user_data.avatar)
@@ -73,6 +77,10 @@ $(document).ready(function() {
         authButton.html(authorizedButton);
     }).fail(function() {
         authButton.html(loginButton);
+		
+		//$('.vote').css({'display':'none'});
+		$('.js_contest').hide();
+		
     });
 
 });

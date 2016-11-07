@@ -3,7 +3,7 @@ var files;
 var fileName = '';
 var user_id = '';
 var ajaxgetinfo = '';
-$('.js_contest').hide();
+
 
 function div(val, by){
     return (val - val % by) / by;
@@ -213,7 +213,7 @@ function callIframe(url) {
 			
 		}else
 		{
-			$('.js_contest').hide();
+			//$('.js_contest').hide();
 		}
        // console.log('iframe !!!!');
     });
@@ -230,27 +230,41 @@ function vote(param1,param2){
 				
 					if (msg=='200')
 												{
-													$('.vote').css({'display':'none'});
+													//$('.vote').css({'display':'none'});
 													// vote +
 													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Спасибо, голос засчитан!</h2>');
 													
 												}else if (msg=='201'){
 													
 													// vote+
-													$('.vote').css({'display':'none'});
+													//$('.vote').css({'display':'none'});
 													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Спасибо, голос засчитан!</h2>');
 													
-												}else
+												}else if (msg=='301')
 												{
-													$('.vote').css({'display':'none'});
-													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Извините, Вы не можете голосовать!</h2>');
+													//$('.vote').css({'display':'none'});
+													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Извините, Вы уже голосовали за эту работу!</h2>');
 													
-												}
-								 $('#vote99').css({'display':'block'});
+												}else
+													
+													{
+														$('#vote99').prepend('<h2 id="vote2" class="popup-title">Извините, Вы не можете голосовать!</h2>');
+													
+													}
+												
+							$('._participants').css({'height':'250px','overflow':'hidden'});
+							$('#vote99').css({'height':'250px'});	
+							
+							$('#vote99').css({'display':'block'});
 							console.log('pvote block');
 
 							
 					$('.popupvote_close').click(function () {
+						
+						
+						$('._participants').css({'height':'auto'/*,'overflow':'none'*/});
+						$('#vote99').css({'height':'auto'});
+						
 					$('#vote99').css({'display':'none'});
 					$('#vote2').remove();
 					console.log('vote close');
@@ -268,43 +282,6 @@ function vote(param1,param2){
 
 
 $(document).ready(function () {
-	
-	/*$('#vid1 iframe').iframeTracker({
-		blurCallback: function(){
-			console.log('iframe 1 click');
-			ga('send', 'event', 'mom_lessons', 'click', 'play_video_1');
-		}
-	});
-	
-	$('#vid2 iframe').iframeTracker({
-		blurCallback: function(){
-			console.log('iframe 2 click');
-			ga('send', 'event', 'mom_lessons', 'click', 'play_video_2');
-		}
-	});
-	
-	
-	$('#vid3 iframe').iframeTracker({
-		blurCallback: function(){
-			console.log('iframe 3 click');
-			ga('send', 'event', 'mom_lessons', 'click', 'play_video_3');
-		}
-	});*/
-	
-	/*
-	
-	$.ajax({
-			type: "GET",
-			url: "http://otrivindata.pdigit.top/api/video/1",
-			success: function(msg) {
-				console.log(msg);
-				$('#vid1').append(msg);
-				},
-			error: function(errmsg){
-				console.log(errmsg);
-			} 
-		});*/
-	
 	
     $('.header_bot_menu_320_icon').click(function () {
         $('.header_bot_link_menu ul').fadeIn(700);
@@ -325,7 +302,7 @@ $(document).ready(function () {
 	
 		}else
 		{
-			callIframe('http://otrivindata.pdigit.top/api/images/form/-1/-1/-1');
+			callIframe('http://otrivindata.pdigit.top/api/images/form/-1/-1/null');
 	
 		}
 		
@@ -383,7 +360,7 @@ $(document).ready(function () {
 				  '<p class="participant__comment">'+item.description+'</p>'+
 				  
 					/*'<a href="javascript:void(0);" class="btn" style="width:100%; background: #fff;">Голосовать</a>'+*/
-					'<a onclick="javascript:vote(\'1\',\''+item.url+'\');" class="btn vote" style="width:100%;">Голосовать</a>'+
+					'<a onclick="javascript:vote(\'2\',\''+item.url+'\');" class="btn vote" style="width:100%;">Голосовать</a>'+
 				'</div>'
 					   );
 					   
@@ -393,8 +370,9 @@ $(document).ready(function () {
 				
 				
 				
-				
-				if (user_id!='')
+				// проверка возможности голосование на старте
+				// отменено
+				/*if (user_id!='')
 				{
 					$.ajax({
 									type: "GET",
@@ -403,7 +381,7 @@ $(document).ready(function () {
 												console.log(msg);
 												if (msg=='info 301')
 												{
-													$('.vote').css({'display':'none'});
+													//$('.vote').css({'display':'none'});
 												}else if (msg=='info 200'){
 													$('.vote').css({'display':'block'});
 												}
@@ -418,8 +396,8 @@ $(document).ready(function () {
 				else
 					
 					{
-						$('.vote').css({'display':'none'});
-					}
+						//$('.vote').css({'display':'none'});
+					}*/
 				
 				
 				
