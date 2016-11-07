@@ -1,8 +1,8 @@
 'use strict';
 var files;
 var fileName = '';
-var user_id = '';
-var ajaxgetinfo = '';
+//var user_id = '';
+//var ajaxgetinfo = '';
 
 
 function div(val, by){
@@ -314,7 +314,7 @@ $(document).ready(function () {
 			type: "GET",
 			url: "http://otrivindata.pdigit.top/api/images/getall",
 			success: function(msg) {
-				//console.log(msg); 
+				console.log(msg); 
 				msg.forEach(function(item, i, arr) {
 				 
 				  var str = unescape(JSON.parse('"'+item.fio+'"'));

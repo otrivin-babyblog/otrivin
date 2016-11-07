@@ -1,4 +1,6 @@
 'use strict';
+var user_id = '';
+var ajaxgetinfo = '';
 $('.js_contest').hide();
 
 $(document).ready(function() {
@@ -68,6 +70,8 @@ $(document).ready(function() {
 		$('.vote').css({'display':'block'});
 		$('.js_contest').show();
 		
+		user_id = user_data.user_id;
+		ajaxgetinfo = user_data;
 		
         authorizedButton = authorizedButton
             .replace('USER_URL', 'https://www.babyblog.ru/user/lenta/' + user_data.login)
