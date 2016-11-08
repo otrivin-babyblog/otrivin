@@ -201,23 +201,7 @@ $('.otrivin-anons-contest').click( function(){
 });
 
 
-function callIframe(url) {
-    $('.popup._upload').append(' <iframe id="f200" src="'+url+'" style="border: 0px; width: 100%; height: 550px;" ></iframe>');
-   // $('iframe#f200').attr('src', url);
-    $('iframe#f200').load(function()
-    {
-		if (user_id !=''){
-			$('.js_contest').show();
-			
-			
-			
-		}else
-		{
-			//$('.js_contest').hide();
-		}
-       // console.log('iframe !!!!');
-    });
-}
+
 
 
 
@@ -296,16 +280,7 @@ $(document).ready(function () {
         $('.contest_link div a').text('Свернуть');
     });
 	
-	    console.log('user_id: '+user_id+' ainfo: '+ajaxgetinfo);
-	    if (user_id !='' && ajaxgetinfo!=''){
-			callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id+'/'+ajaxgetinfo.fio+'/'+ajaxgetinfo.avatar);
-	
-		}else
-		{
-			callIframe('http://otrivindata.pdigit.top/api/images/form/-1/-1/null');
-	
-		}
-		
+	    
 		
 	 
 	 /*------------------------------------------*/
@@ -360,7 +335,7 @@ $(document).ready(function () {
 				  '<p class="participant__comment">'+item.description+'</p>'+
 				  
 					/*'<a href="javascript:void(0);" class="btn" style="width:100%; background: #fff;">Голосовать</a>'+*/
-					'<a onclick="javascript:vote(\'2\',\''+item.url+'\');" class="btn vote" style="width:100%;">Голосовать</a>'+
+					'<a onclick="javascript:vote(\'1\',\''+item.url+'\');" class="btn vote" style="width:100%;">Голосовать</a>'+
 				'</div>'
 					   );
 					   
