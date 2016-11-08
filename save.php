@@ -35,16 +35,16 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 						    <p class="phone">8 495 111 22 33</p>
 							<p class="description">Участковый Иванов И.Д., каб. 303 вт-пт 9-18ч<br> сб-вс 11-17ч</p>
 						  </div>
-					    </li>
+					    </li>-->
 					   
 						<li data-id="-2">
 						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
 						  <div class="content">
-							<p class="title">Скорая помощь</p>
+							<p class="title">Экстренная служба</p>
 						    <p class="phone">112</p>
 							<p class="description"></p>
 						  </div>
-					    </li-->
+					    </li>
 			  
 				<li class="form">
                     <form id="add-note">
