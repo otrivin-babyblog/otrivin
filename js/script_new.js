@@ -36,7 +36,7 @@ $(document).ready(function() {
                 BBAPI.signup({
                     success_cb: function(user_data) {
                         // Данные о пользователе - user_data
-
+						
                         authorizedButton = authorizedButton
                             .replace('USER_URL', 'https://www.babyblog.ru/user/lenta/' + user_data.login)
                             .replace('AVATAR_URL', user_data.avatar)
@@ -44,6 +44,10 @@ $(document).ready(function() {
 
                         authButton.html(authorizedButton);
 
+						
+						$('.vote').css({'display':'block'});
+		$('.js_contest').show();
+		
                         BBAPI.signup().hide();
                     }
                 }).showAuthForm();
