@@ -37,6 +37,9 @@ $(document).ready(function() {
                     success_cb: function(user_data) {
                         // Данные о пользователе - user_data
 						
+						user_id = user_data.user_id;
+						ajaxgetinfo = user_data;
+						
                         authorizedButton = authorizedButton
                             .replace('USER_URL', 'https://www.babyblog.ru/user/lenta/' + user_data.login)
                             .replace('AVATAR_URL', user_data.avatar)

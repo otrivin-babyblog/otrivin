@@ -8,7 +8,7 @@ var fileName = '';
 function div(val, by){
     return (val - val % by) / by;
 }
-
+/*
 $.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
@@ -34,7 +34,7 @@ $.ajax({
 			error: function(errmsg){
 				console.log(errmsg);
 			} 
-		});
+		});*/
 	
 
 
@@ -296,7 +296,7 @@ $(document).ready(function () {
         $('.contest_link div a').text('Свернуть');
     });
 	
-	
+	    console.log('user_id: '+user_id+' ainfo: '+ajaxgetinfo);
 	    if (user_id !='' && ajaxgetinfo!=''){
 			callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id+'/'+ajaxgetinfo.fio+'/'+ajaxgetinfo.avatar);
 	
