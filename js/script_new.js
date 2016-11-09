@@ -2,6 +2,31 @@
 var user_id = '';
 var ajaxgetinfo = '';
 $('.js_contest').hide();
+$('.js_contest2').hide();
+
+function callIframe(url) {
+	
+	console.log(url);
+	
+    $('.popup._upload').append(' <iframe id="f200" src="'+url+'" style="border: 0px; width: 100%; height: 550px;" ></iframe>');
+	
+	// $('iframe#f200').attr('src', url);
+    $('iframe#f200').load(function()
+    {
+		if (user_id !=''){
+			$('.js_contest').show();
+			
+			
+			
+		}else
+		{
+			//$('.js_contest').hide();
+		}
+       // console.log('iframe !!!!');
+    });
+}
+
+
 
 $(document).ready(function() {
 
@@ -40,6 +65,18 @@ $(document).ready(function() {
 						user_id = user_data.user_id;
 						ajaxgetinfo = user_data;
 						
+						console.log('user_id: '+user_id+' ainfo: '+ajaxgetinfo);
+						/*if (user_id !='' && ajaxgetinfo!=''){
+							callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id+'/'+ajaxgetinfo.fio+'/'+ajaxgetinfo.avatar);
+					
+						}else
+						{
+							callIframe('http://otrivindata.pdigit.top/api/images/form/-1/-1/null');
+					
+						}*/
+		
+						
+						
                         authorizedButton = authorizedButton
                             .replace('USER_URL', 'https://www.babyblog.ru/user/lenta/' + user_data.login)
                             .replace('AVATAR_URL', user_data.avatar)
@@ -49,7 +86,8 @@ $(document).ready(function() {
 
 						
 						$('.vote').css({'display':'block'});
-		$('.js_contest').show();
+						$('.js_contest').show();
+						$('.js_contest2').show();
 		
                         BBAPI.signup().hide();
                     }
@@ -76,9 +114,24 @@ $(document).ready(function() {
 		
 		$('.vote').css({'display':'block'});
 		$('.js_contest').show();
+		$('.js_contest2').show();
 		
 		user_id = user_data.user_id;
 		ajaxgetinfo = user_data;
+		/*
+		console.log('user_id: '+user_id+' ainfo: '+ajaxgetinfo);
+	    if (user_id !='' && ajaxgetinfo!=''){
+			callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id+'/'+ajaxgetinfo.fio+'/'+ajaxgetinfo.avatar);
+	
+		}else
+		{
+			callIframe('http://otrivindata.pdigit.top/api/images/form/-1/-1/null');
+	
+		}*/
+		
+		
+		
+		
 		
         authorizedButton = authorizedButton
             .replace('USER_URL', 'https://www.babyblog.ru/user/lenta/' + user_data.login)
