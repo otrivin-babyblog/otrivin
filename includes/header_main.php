@@ -152,9 +152,6 @@
 							<li class="left_ul_li_4_5">
 								<a href="https://sp.babyblog.ru" title="Совместные покупки"><span>Совместные покупки</span></a>
 							</li>
-							<li class="left_ul_li_6">
-								<a href="/otrivin_baby/" title="Беременным"><span>Беременным</span></a>
-							</li>
 						</ul>
 					</div>
 					<div class="right">
