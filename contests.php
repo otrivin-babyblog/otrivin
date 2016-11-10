@@ -207,12 +207,13 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       <h2 id="pppt-contest2" class="popup-title">участники конкурса</h2>
       <button class="popup-close"></button>
       <div id="part443-contest2" class="participants">
-        <ul id="pag_part142" class="pagination">
+       
+      </div>
+	   <ul id="pag_part142" class="pagination">
            
           </ul>
       <div class="content-footer">
        
-      </div>
       </div>
       
     </div>
