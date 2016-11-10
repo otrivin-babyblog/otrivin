@@ -611,6 +611,13 @@ function Participants(){
 
 $(document).ready(function() {
 
+	window.addEventListener("message", function(event) {
+		if (event.data) {
+			var signup = BBAPI.signup();
+			signup.setUser(event.data).socialAuthSuccess();
+		}
+	});
+
 
 
 	
