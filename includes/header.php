@@ -1,9 +1,6 @@
 <?
 $source = 'http://promo.babyblog.ru/otrivin_baby/';
 
-header("Access-Control-Allow-Origin: https://www.babyblog.ru");
-header("Access-Control-Allow-Credentials: true");
-
 ?>
 
 
