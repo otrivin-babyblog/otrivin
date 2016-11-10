@@ -645,6 +645,7 @@ $(document).ready(function() {
         '</a>')
             .on('click', function() {
 				//alert(1);
+				//console.log('21132');
                 // Виджет авторизации.
                 BBAPI.signup({
                     success_cb: function(user_data) {
@@ -665,7 +666,7 @@ $(document).ready(function() {
 						
 						
 						var loc = window.location.pathname;
-						
+						console.log(loc);
 						
 						if (loc=='/contests_s.php')
 						{
@@ -677,7 +678,19 @@ $(document).ready(function() {
 							ParticipantsRemove();
 							ParticipantsC2();
 						
+						}else if (loc == '/otrivin_baby/contests_s.php')
+						{
+							ParticipantsRemove();
+							Participants();
+						
+						}else if (loc == '/otrivin_baby/contests.php')
+						{
+							ParticipantsRemove();
+							ParticipantsC2();
+						
 						}
+						
+						
 						/*
 						*/
 		
@@ -691,16 +704,20 @@ $(document).ready(function() {
                         authButton.html(authorizedButton);
 
 						
+						
+						
+						
+						
 						$('.vote').css({'display':'block'});
 						$('.js_contest').show();
 						$('.js_contest2').show();
 		
                         BBAPI.signup().hide();
                     }
-                }).showAuthForm( function(){
-					alert(1);
-				});
+                }).showAuthForm();
 
+					
+				console.log('21132');
                 return false;
             });
 
@@ -710,7 +727,10 @@ $(document).ready(function() {
             '<span>USER_NAME</span>' +
         '</a>';
 
-
+	$('.js__socialAuthButton >.r-signin__item >.r-signin__item-facebook').data('url','https://auth.babyblog.ru/user/register2/socialauth/facebook');
+	
+	
+	
     $.ajax({
         url: 'https://www.babyblog.ru/user/ajax_get_info',
 
