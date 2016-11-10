@@ -612,9 +612,9 @@ function Participants(){
 $(document).ready(function() {
 
 	window.addEventListener("message", function(event) {
-		if (event.data) {
+		if (event.data && event.data.type == 'socialAuth') {
 			var signup = BBAPI.signup();
-			signup.setUser(event.data).socialAuthSuccess();
+			signup.setUser(event.data.user).socialAuthSuccess();
 		}
 	});
 
