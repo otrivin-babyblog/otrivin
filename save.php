@@ -9,7 +9,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 <body> 
     <div class="wrapper">
         <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
-        <div class="content">
+        <div class="content content-save">
           <div class="title-img">
             <img src="<? echo $source; ?>img/save-top.png" alt="Сохраняй важное">
             <h1 class="main-title">Сохраняй важное</h1>
@@ -19,7 +19,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <span class="breadcrumb__separator">/</span>
             <a href="" class="breadcrumb__link breadcrumb__link_current">Сохраняй важное</a>
           </div>
-          <h1 class="page-title">ваша личная записная книжка</h1>
+          <h1 class="page-title page-save">ваша личная записная книжка</h1>
           <p class="page-about page-about_short font-save">Нужно запомнить телефон соседки, адрес поликлиники или время занятий по рисованию? Записывай напоминания, прикрепляй стикеры на доску и сохраняй их прямо в режиме онлайн! Когда шпаргалка потеряет актуальность, сотри ее одним нажатием на крестик.<br/><br/>
 А если малыш приболел или ему просто прописали лекарства для профилактики, рецепт лечения всегда будет под рукой в нашем онлайн списке лекарств. Под названием для вашего удобства доступно описание средства.</p>
           <div class="save-wrapper">
@@ -35,16 +35,16 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 						    <p class="phone">8 495 111 22 33</p>
 							<p class="description">Участковый Иванов И.Д., каб. 303 вт-пт 9-18ч<br> сб-вс 11-17ч</p>
 						  </div>
-					    </li>
+					    </li>-->
 					   
 						<li data-id="-2">
 						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
 						  <div class="content">
-							<p class="title">Скорая помощь</p>
+							<p class="title">Экстренная служба</p>
 						    <p class="phone">112</p>
 							<p class="description"></p>
 						  </div>
-					    </li-->
+					    </li>
 			  
 				<li class="form">
                     <form id="add-note">
@@ -178,7 +178,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
               </ul>
             </div>
           </div>
-			 <div class="otriv-medic-save"><img src="img/otriv_medic_save.png" alt="" class="otriv-medic-save-img"></div>
+			 <div class="otriv-medic-save">
+          <img src="img/elephant_family.png" alt="" class="otriv-medic-save-img">
+          <img src="img/otriv_medic_save.png" alt="" class="otriv-medic-save-img">
+        </div>
 		
           <div class="content-footer">
             <div class="social">

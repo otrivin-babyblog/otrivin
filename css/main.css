@@ -3052,14 +3052,15 @@
   background: #ffcec0;
   color: #8d574c;
   font-weight: normal;
+  text-decoration: underline;
   font-family: 'Conv_RobotoCondensedBold';
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li:last-child a {
   text-decoration: none;
 }
-.calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a span{
-  border-bottom: 1px solid #a97469;
-}
+// .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a span{
+//   border-bottom: 1px solid #a97469;
+// }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a:hover {
   background: #e9baad;
 }

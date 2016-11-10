@@ -1,10 +1,14 @@
 'use strict';
 var files;
 var fileName = '';
-var user_id = '';
-var ajaxgetinfo = '';
+//var user_id = '';
+//var ajaxgetinfo = '';
 
 
+function div(val, by){
+    return (val - val % by) / by;
+}
+/*
 $.ajax({
 			type: "GET",
 			url: "https://www.babyblog.ru/user/ajax_get_info",
@@ -18,6 +22,11 @@ $.ajax({
 				if (uid)
 				{
 					user_id = uid;
+					
+					
+					
+					
+					
 				}
 				
 				
@@ -25,11 +34,10 @@ $.ajax({
 			error: function(errmsg){
 				console.log(errmsg);
 			} 
-		});
+		});*/
 	
 
-		
-	
+
 	
 		
 $(document).bind('popup_close', function(){
@@ -175,48 +183,89 @@ $('.otrivin-nasmork-fairy-tale').click( function(){
  	ga('send', 'event', 'planning', 'to_fairy_tale', 'anons_fairy_tale');
 });
 
+/*
 $('.otrivin-mom-video1').load(function(){
-  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_1'); });
+	//$(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_1'); });
 });
 
 $('.otrivin-mom-video2').load(function(){
-  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_2'); });
+  //$(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_2'); });
 });
 
 $('.otrivin-mom-video3').load(function(){
-  $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_3'); });
-});
+ // $(this).contents().find("body").on('click', function(event) { ga('send', 'event', 'mom_lessons', 'click', 'play_video_3'); });
+});*/
 
 $('.otrivin-anons-contest').click( function(){
 	ga('send', 'event', 'fun', 'to_fk', 'anons_fk');
 });
 
 
-function callIframe(url) {
-    $('.popup._upload').append(' <iframe id="f200" src="'+url+'" style="border: 0px; width: 100%; height: 550px;" ></iframe>');
-   // $('iframe#f200').attr('src', url);
-    $('iframe#f200').load(function()
-    {
-		if (user_id !=''){
-			$('.js_contest').show();
-			
-			
-			
-		}else
-		{
-			$('.js_contest').hide();
-		}
-       // console.log('iframe !!!!');
-    });
+
+
+
+
+function vote(param1,param2){
+	$.ajax({
+			type: "GET",
+			url: "http://otrivindata.pdigit.top/api/vote/"+param1+"/"+param2,
+			success: function(msg) {
+				//console.log(msg);
+				
+					if (msg=='200')
+												{
+													//$('.vote').css({'display':'none'});
+													// vote +
+													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Спасибо, голос засчитан!</h2>');
+													
+												}else if (msg=='201'){
+													
+													// vote+
+													//$('.vote').css({'display':'none'});
+													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Спасибо, голос засчитан!</h2>');
+													
+												}else if (msg=='301')
+												{
+													//$('.vote').css({'display':'none'});
+													$('#vote99').prepend('<h2 id="vote2" class="popup-title">Извините, Вы уже голосовали за эту работу!</h2>');
+													
+												}else
+													
+													{
+														$('#vote99').prepend('<h2 id="vote2" class="popup-title">Извините, Вы не можете голосовать!</h2>');
+													
+													}
+												
+							$('._participants').css({'height':'250px','overflow':'hidden'});
+							$('#vote99').css({'height':'250px'});	
+							
+							$('#vote99').css({'display':'block'});
+							//console.log('pvote block');
+
+							
+					$('.popupvote_close').click(function () {
+						
+						
+						$('._participants').css({'height':'auto'/*,'overflow':'none'*/});
+						$('#vote99').css({'height':'auto'});
+						
+					$('#vote99').css({'display':'none'});
+					$('#vote2').remove();
+					//console.log('vote close');
+				});
+				
+				},
+			error: function(errmsg){
+				console.log(errmsg);
+			} 
+		});
+	
 }
 
 
 
 
-
 $(document).ready(function () {
-	
-	
 	
     $('.header_bot_menu_320_icon').click(function () {
         $('.header_bot_link_menu ul').fadeIn(700);
@@ -231,103 +280,10 @@ $(document).ready(function () {
         $('.contest_link div a').text('Свернуть');
     });
 	
-	
-	    if (user_id !='' && ajaxgetinfo!=''){
-			callIframe('http://otrivindata.pdigit.top/api/images/form/'+user_id+'/'+ajaxgetinfo.fio+'/'+ajaxgetinfo.avatar);
-	
-		}else
-		{
-			callIframe('http://otrivindata.pdigit.top/api/images/form/-1/-1/-1');
-	
-		}
-		
+	    
 		
 	 
-	 /*------------------------------------------*/
-	 /*--------     участики конкурса    -------*/
-	 $.ajax({
-			type: "GET",
-			url: "http://otrivindata.pdigit.top/api/images/getall",
-			success: function(msg) {
-				//console.log(msg); 
-				msg.forEach(function(item, i, arr) {
-				 
-				  var str = unescape(JSON.parse('"'+item.fio+'"'));
-				  var ava ='';
-				  
-				 if (''+item.avatar=='null'){
-					 ava = 'http://otrivin.pdigit.top/img/user.png';
-					// console.log('nl');
-				 }else
-				 {
-					 ava = item.avatar;
-					 // console.log('nl  ---');
-				 }
-				 
-				 
-				  $('#part443').prepend(
-				  
-				  '<div class="participant">'+
-				 '<div style="height: 400px; min-height: 400px; overflow: hidden; margin-bottom: 20px;"> <img src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img" ></div>'+
-				  '<div class="participant-author">'+
-					'<img src="'+ava+'" alt="" class="author__img">'+
-					'<h3 class="author__name">'+str+'</h3>'+
-					/*'<p class="author__location">Москва</p>'+*/
-				 '</div>'+
-				  '<p class="participant__comment">'+item.description+'</p>'+
-				
-				'</div>'
-					   );
-				});
-				/*
-				*/
-				var count_on_page = 1,
-				    count_el = 0,
-					cur_p = 0,
-					cp = 1;
-				var	count_page = 0;
-				
-				$('.participant').each(function(i,el){
-					count_el = count_el + 1;
-					cur_p = cur_p +1;
-					$(el).addClass('pp142_p'+cp);
-					
-					if (cur_p >= count_on_page){
-						cur_p = 0;
-						cp = cp +1;
-					}
-				});
-				
-				count_page = (count_el % count_on_page) +1;
-				console.log('el: '+count_el+' page: '+count_page);
-				 $('#pag_part142').append('<li class="pagination-page pp142_min" data-id="pp" ><a id="pp" class="pagination__link">&lt;</a></li>');
-				 
-				 for(var i=0; i<count_page; i++)
-				 {
-					 var t = (i+1)+'';
-					  $('#pag_part142').append(' <li class="pagination-page pp142_'+t+'" data-id="'+t+'" ><a id="p'+t+'" class="pagination__link">'+t+'</a></li>');
-				 }
-				 
-				 
-				 $('#pag_part142').append(' <li class="pagination-page pp142_max" data-id="pn" ><a id="pn" class="pagination__link">&gt;</a></li>');
-				 
-				 $('#p1').addClass('pagination__link_active');
-			 /*<li class="pagination-page " data-id="1" ><a id="p1" class="pagination__link pagination__link_active">1</a></li>
-            <li class="pagination-page " data-id="2" ><a id="p2" class="pagination__link">2</a></li>
-            <li class="pagination-page p25" data-id="3" ><a id="p3" class="pagination__link">3</a></li>
-            <li class="pagination-page p25" data-id="4" ><a id="p4" class="pagination__link">4</a></li>
-            <li class="pagination-page p25" data-id="5" ><a id="p5" class="pagination__link">5</a></li>
-           */
-				
-				/*
-				*/
-			},
-			error: function(errmsg){
-				console.log(errmsg);
-			} 
-		});
-	 /*--------------------------------------------------*/
-	 /*--------------------------------------------------*/
+	 Participants();
 	 
 });
 	
