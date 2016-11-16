@@ -35,10 +35,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <a href="/contests.php" class="activity__link">Подробнее</a>
           </div-->
           <div class="activity activity-bird"     style="width: 100%; text-align: center;">
-            <!--<h3 class="activity__name">поразительное сходство</h3>
-            <p class="activity__about">Участвуй в семейном конкурсе и получай подарки! ...</p-->
-			 <h3 class="activity__name">Конкурс … совсем скоро! Следи за обновлениями!</h3>
-            <!--a href="<? echo $source; ?>contests_s.php" class="activity__link otrivin-anons-contest">Подробнее</a-->
+            <h3 class="activity__name">поразительное сходство</h3>
+            <p class="activity__about">Участвуй в семейном конкурсе и получай подарки! ...</p>
+			 <!--h3 class="activity__name">Конкурс … совсем скоро! Следи за обновлениями!</h3-->
+            <a href="<? echo $source; ?>contests_s.php" class="activity__link otrivin-anons-contest">Подробнее</a>
           </div>
           <!--div class="activity">
             <h3 class="activity__name">папин сын</h3>
