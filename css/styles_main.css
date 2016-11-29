@@ -180,8 +180,8 @@ img {
                 display: flex;
                 font-size: 14px;
                 color: #FFF; }
-                .header .centr .container .left .left_ul li .left_ul_item .left_ul_item_a a span {
-                  margin: auto; }
+               /*  .header .centr .container .left .left_ul li .left_ul_item .left_ul_item_a a span {
+                 margin: auto; } */
             .header .centr .container .left .left_ul li .left_ul_item .left_link {
               display: none;
               position: absolute;
@@ -235,7 +235,7 @@ img {
           height: 100%;
           padding: 0 13px; }
           .header .centr .container .left .left_ul .left_ul_li_4_5 a span {
-            margin: auto;
+            /*margin: auto;*/
             font-size: 14px;
             color: #FFF; }
         .header .centr .container .left .left_ul .left_ul_li_4_5:hover {

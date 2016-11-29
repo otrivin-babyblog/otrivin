@@ -1,0 +1,288 @@
+#active-concurs a {
+  color: #F3937E;
+  position: relative; }
+  #active-concurs a:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #F3937E; }
+
+.concurs {
+  padding: 0 55px; }
+  .concurs .conditions-concurs {
+    background: url("../img/condit-bac.png") no-repeat;
+    background-size: contain;
+    display: -ms-flexbox;
+    display: flex; }
+    .concurs .conditions-concurs p {
+      padding: 40px 0 80px;
+      margin: auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .concurs .conditions-concurs p a {
+        width: 345px;
+        height: 57px;
+        display: -ms-flexbox;
+        display: flex;
+        background: #F5F2E9;
+        border: 1px solid #D5CBAB;
+        margin: 15px; }
+        .concurs .conditions-concurs p a span {
+		  width: 100%;
+		  text-align: center;
+          // margin: auto;
+          padding-top: 18px;
+          font-size: 18px;
+          text-transform: uppercase; }
+      .concurs .conditions-concurs p .condit span {
+        color: #1765a5; }
+      .concurs .conditions-concurs p .priz span {
+        color: #cb7663; }
+
+.wrap-winner-concurs {
+  background: #e8f8ff;
+  padding: 40px 0; }
+  .wrap-winner-concurs .winners-conc h2 {
+    padding: 0 0 40px 0;
+    margin: 0;
+    position: relative; }
+    .wrap-winner-concurs .winners-conc h2:after, .wrap-winner-concurs .winners-conc h2:before {
+      content: url("../img/cubok-concurs.png");
+      position: absolute;
+      margin-left: 9vw;
+      z-index: 2;
+      top: -1.5vw; }
+    .wrap-winner-concurs .winners-conc h2:before {
+      margin-left: -16vw; }
+  .wrap-winner-concurs .winner-compet {
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .wrap-winner-concurs .winner-compet .winner-compet-item {
+      background: #FFF;
+      cursor: pointer;
+      margin: 10px;
+      padding: 23px 18px 0;
+      max-width: 314px;
+      border: 2px solid #1765a5; }
+      .wrap-winner-concurs .winner-compet .winner-compet-item .photo-win {
+        max-width: 270px;
+        max-height: 210px;
+        overflow: hidden; }
+      .wrap-winner-concurs .winner-compet .winner-compet-item .win-name {
+        display: -ms-flexbox;
+        display: flex; }
+        .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .photo-name {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          overflow: hidden; }
+        .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .win-name-item {
+          color: #5A5A5A;
+          font: 20px 'Roboto_Regular';
+          margin: auto 0 auto 10px; }
+        .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .place {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+          margin: auto 0 auto auto;
+          max-height: 72px; }
+      .wrap-winner-concurs .winner-compet .winner-compet-item .win-text {
+        font: 15px 'Roboto_Regular';
+        color: #5A5A5A;
+        margin-top: 15px;
+        margin-bottom: 25px; }
+      .wrap-winner-concurs .winner-compet .winner-compet-item .golosa {
+        display: -ms-flexbox;
+        display: flex; }
+        .wrap-winner-concurs .winner-compet .winner-compet-item .golosa div {
+          margin: auto;
+          background: #1765A5; }
+          .wrap-winner-concurs .winner-compet .winner-compet-item .golosa div p {
+            font-family: 'Roboto_Regular';
+            padding: 0 15px;
+            color: #fff; }
+            .wrap-winner-concurs .winner-compet .winner-compet-item .golosa div p:first-child {
+              font-size: 22px;
+              padding-top: 15px; }
+            .wrap-winner-concurs .winner-compet .winner-compet-item .golosa div p:last-child {
+              font-size: 13px; }
+    .wrap-winner-concurs .winner-compet .winner-prew {
+      position: absolute;
+      display: none;
+      z-index: 11;
+      max-width: 865px; }
+      .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item {
+        position: relative;
+        background: #FFF;
+        padding: 55px 110px 60px; }
+        .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item:after {
+          content: "";
+          position: fixed;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.7); }
+        .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .page-title {
+          font-family: 'Conv_RobotoCondensed-Regular'; }
+        .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .close-pop-concurs {
+          position: absolute;
+          top: 25px;
+          right: 35px; }
+          .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .close-pop-concurs img {
+            width: 20px; }
+        .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link {
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 25px; }
+          .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link p {
+            margin: auto 0; }
+          .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link .winner-prew-photo {
+            height: 65px; }
+            .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link .winner-prew-photo img {
+              width: 65px;
+              border-radius: 50%;
+              overflow: hidden; }
+          .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link .name {
+            font-size: 16px;
+            margin: auto 70px auto 10px; }
+          .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link .info {
+            color: #5A5A5A;
+            font-size: 16px; }
+
+.pop-prizu {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  left: 10vw;
+  right: 10vw;
+  top: 5vh; }
+  .pop-prizu .pop-prizu-item {
+    position: relative;
+    padding: 55px 15px 125px;
+    background: #FFF; }
+    .pop-prizu .pop-prizu-item:after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7); }
+    .pop-prizu .pop-prizu-item .close-pop-concurs {
+      position: absolute;
+      top: 25px;
+      right: 35px; }
+      .pop-prizu .pop-prizu-item .close-pop-concurs img {
+        width: 20px; }
+    .pop-prizu .pop-prizu-item .prizes-nad {
+      display: -ms-flexbox;
+      display: flex;
+      margin: 30px 0;
+      padding-top: 30px; }
+      .pop-prizu .pop-prizu-item .prizes-nad img {
+        width: 230px;
+        margin: auto; }
+    .pop-prizu .pop-prizu-item .pop-prizu-link {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ {
+        width: 305px;
+        height: 305px;
+        margin: 0 15px;
+        box-sizing: border-box;
+        border: 10px solid #d8e5f0;
+        border-radius: 50%; }
+        .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .prizu-link__img {
+          display: -ms-flexbox;
+          display: flex;
+          height: 60%; }
+          .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .prizu-link__img img {
+            width: 190px;
+            margin: 30px auto auto; }
+        .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .nom-priz {
+          text-align: center;
+          font: 44px 'Conv_RobotoCondensed-Regular';
+          color: #1765A5; }
+          .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .nom-priz span {
+            text-transform: uppercase; }
+        .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .text-priz {
+          text-align: center;
+          color: #5A5A5A;
+          font: 14px 'Roboto_Regular'; }
+
+.pop-uslovia {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  left: 10vw;
+  right: 10vw;
+  top: 5vh;
+  max-width: 1070px; }
+  .pop-uslovia .pop-uslovia-item {
+    padding: 55px 40px 40px;
+    background: #FFF;
+    position: relative; }
+    .pop-uslovia .pop-uslovia-item:after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7); }
+    .pop-uslovia .pop-uslovia-item .page-title {
+      font-family: 'Conv_RobotoCondensed-Regular'; }
+    .pop-uslovia .pop-uslovia-item .close-pop-concurs {
+      position: absolute;
+      top: 25px;
+      right: 35px; }
+      .pop-uslovia .pop-uslovia-item .close-pop-concurs img {
+        width: 20px; }
+    .pop-uslovia .pop-uslovia-item ul li {
+      margin: 30px 0; }
+      .pop-uslovia .pop-uslovia-item ul li span {
+        margin-right: 5px; }
+
+@media screen and (max-width: 767px) {
+  .concurs .conditions-concurs p a {
+    width: 63vw; }
+  .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item {
+    padding: 50px 10px 15px; }
+  .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .close-pop-concurs {
+    top: 7px;
+    right: 13px; }
+  .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link .name {
+    margin: auto 10px auto 10px; }
+  .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ {
+    width: 150px;
+    height: 150px; }
+  .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .prizu-link__img img {
+    width: 70px;
+    margin: 10px auto auto; }
+  .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .nom-priz {
+    font-size: 12px; }
+  .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .text-priz {
+    font-size: 8px; }
+  .title-img .main-title, .title-img > h1, .title-img h1 {
+    font-size: 18px; } }
