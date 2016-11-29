@@ -29,12 +29,12 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         <div class="activities-wrapper">
           <h2 class="page-title">наши конкурсы</h2>
           <!-- <img src="img/bird_amuse.png" alt="" class="bird_amuse_ent"> -->
-          <!--div class="activity activity_bird">
+          <div class="activity activity_bird">
             <h3 class="activity__name">Важный носик знает толк</h3>
             <p class="activity__about">Поделись фотоисторией о своем ребенке и выиграй подарки! ...</p>
             <a href="/contests.php" class="activity__link">Подробнее</a>
-          </div-->
-          <div class="activity activity-bird"     style="width: 100%; text-align: center;">
+          </div>
+          <div class="activity"    >
             <h3 class="activity__name">поразительное сходство</h3>
             <p class="activity__about">Участвуй в семейном конкурсе и получай подарки! ...</p>
 			 <!--h3 class="activity__name">Конкурс … совсем скоро! Следи за обновлениями!</h3-->
