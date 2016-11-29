@@ -4,7 +4,6 @@ var fileName = '';
 //var user_id = '';
 //var ajaxgetinfo = '';
 
-
 function div(val, by){
     return (val - val % by) / by;
 }
@@ -200,7 +199,15 @@ $('.otrivin-anons-contest').click( function(){
 	ga('send', 'event', 'fun', 'to_fk', 'anons_fk');
 });
 
+$('#piluli').click( function(){
+	ga('send', 'event', 'nasmork', 'to_client', 'piluli');
+console.log('piluli');
+});
 
+$('#apteka').click( function(){
+	ga('send', 'event', 'nasmork', 'to_client', 'apteka');
+//console.log('apteka');
+});
 
 
 

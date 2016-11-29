@@ -611,13 +611,6 @@ function Participants(){
 
 $(document).ready(function() {
 
-	window.addEventListener("message", function(event) {
-		if (event.data && event.data.type == 'socialAuth') {
-			var signup = BBAPI.signup();
-			signup.setUser(event.data.user).socialAuthSuccess();
-		}
-	});
-
 
 
 	
@@ -651,8 +644,7 @@ $(document).ready(function() {
             '<span>Войти</span>' +
         '</a>')
             .on('click', function() {
-				//alert(1);
-				//console.log('21132');
+
                 // Виджет авторизации.
                 BBAPI.signup({
                     success_cb: function(user_data) {
@@ -724,7 +716,6 @@ $(document).ready(function() {
                 }).showAuthForm();
 
 					
-				console.log('21132');
                 return false;
             });
 
@@ -734,8 +725,6 @@ $(document).ready(function() {
             '<span>USER_NAME</span>' +
         '</a>';
 
-	$('.js__socialAuthButton >.r-signin__item >.r-signin__item-facebook').data('url','https://auth.babyblog.ru/user/register2/socialauth/facebook');
-	
 	
 	
     $.ajax({
