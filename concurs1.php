@@ -10,27 +10,27 @@ $ref_title = 'Главная';
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
  ?>
-<link rel="stylesheet" type="text/css" href="css/concurs.css">
+<link rel="stylesheet" type="text/css" href="<? echo $source; ?>css/concurs.css">
 
 <body>
 	<div class="pop-prizu">
 		<div class="pop-prizu-item">
-			<a href="javascript:void(0);" class="close-pop-concurs"><img src="/img/close_menu_320.png" alt=""></a>
+			<a href="javascript:void(0);" class="close-pop-concurs"><img src="<? echo $source; ?>img/close_menu_320.png" alt=""></a>
 			<h2 class="page-title">призы</h2>
 			<p class="prizes-nad"><img src="img/prizes-nad.png" alt=""></p>
 			<div class="pop-prizu-link">
 				<div class="prizu-link__">
-					<p class="prizu-link__img"><img src="img/ozonru.png" alt=""></p>
+					<p class="prizu-link__img"><img src="<? echo $source; ?>img/ozonru.png" alt=""></p>
 					<p class="nom-priz"><span>1</span> место</p>
 					<p class="text-priz">Сертификат на 4000 р<br/>в магазине «Озон»</p>
 				</div>
 				<div class="prizu-link__">
-					<p class="prizu-link__img"><img src="img/ozonru.png" alt=""></p>
+					<p class="prizu-link__img"><img src="<? echo $source; ?>img/ozonru.png" alt=""></p>
 					<p class="nom-priz"><span>2</span> место</p>
 					<p class="text-priz">Сертификат на 4000 р<br/>в магазине «Озон»</p>
 				</div>
 				<div class="prizu-link__">
-					<p class="prizu-link__img"><img src="img/ozonru.png" alt=""></p>
+					<p class="prizu-link__img"><img src="<? echo $source; ?>img/ozonru.png" alt=""></p>
 					<p class="nom-priz"><span>3</span> место</p>
 					<p class="text-priz">Сертификат на 4000 р<br/>в магазине «Озон»</p>
 				</div>
@@ -39,7 +39,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 	</div>
 	<div class="pop-uslovia">
 		<div class="pop-uslovia-item">
-			<a href="javascript:void(0);" class="close-pop-concurs"><img src="/img/close_menu_320.png" alt=""></a>
+			<a href="javascript:void(0);" class="close-pop-concurs"><img src="<? echo $source; ?>img/close_menu_320.png" alt=""></a>
 			<h2 class="page-title">условия участия и правила</h2>
 			<div class="pop-prizu-link">
 				<ol class="conditions">
@@ -230,14 +230,14 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		 <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
     <div class="concurs content">
       <div class="title-img">
-        <img src="./img/concurs-top.png" alt="Статьи">
+        <img src="<? echo $source; ?>img/concurs-top.png" alt="Статьи">
         <h1 class="main-title">победители</h1>
       </div>
      
 	  <div class="breadcrumb">
-          <a href="/" class="breadcrumb__link"><? echo $ref_title;?></a>
+          <a href="<? echo $source; ?>" class="breadcrumb__link"><? echo $ref_title;?></a>
 		   <span class="breadcrumb__separator">/</span>
-		    <a href="/entertain.php" class="breadcrumb__link">Развлекай ребёнка</a>
+		    <a href="<? echo $source; ?>entertain.php" class="breadcrumb__link">Развлекай ребёнка</a>
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Победители Конкурса</a>
         </div>
@@ -282,9 +282,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 	<div class="wrapper">
 		 <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer_main.php") ?>
 	</div>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/flexibility.js"></script>
-	<script type="text/javascript" src="js/concurs.js"></script>
+	<script type="text/javascript" src="<? echo $source; ?>js/jquery.min.js"></script>
+	<script type="text/javascript" src="<? echo $source; ?>js/flexibility.js"></script>
+	<script type="text/javascript" src="<? echo $source; ?>js/concurs.js"></script>
 	<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 <script src="//yastatic.net/share2/share.js" async="async"></script>
  <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
