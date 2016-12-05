@@ -104,14 +104,15 @@
           height: 65px;
           border-radius: 50%;
           overflow: hidden; 
-          float: left;
+          /*float: left;*/
           }
         .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .win-name-item {
           color: #5A5A5A;
           font: 20px 'Roboto_Regular';
-          margin: auto 0 auto 10px; 
-          float: left;/*добавил*/
+          margin: auto 0 10x 10px; 
+          /*float: left;//добавил*/
           margin-top: 20px;
+		  min-height: 50px;
           }
         .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .place {
           // display: -ms-flexbox;
@@ -200,7 +201,9 @@
   .pop-prizu .pop-prizu-item {
     position: relative;
     padding: 55px 15px 125px;
-    background: #FFF; }
+    background: #FFF;
+	text-align: center;
+ }
     .pop-prizu .pop-prizu-item:after {
       content: "";
       position: fixed;
