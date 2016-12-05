@@ -37,7 +37,7 @@ $(document).ready(function () {
     						'<img src="img/place'+(i+1)+'-concers.png" alt="">'+
     					'</p>'+
     				'</div>'+
-    				'<p class="win-text" style="min-height: 120px; ">'+item.description+'</p>'+
+    				'<p class="win-text" style="min-height: 175px; ">'+item.description+'</p>'+
     				'<div class="golosa">'+
     					'<div>'+
     						'<p style="text-align: center;">'+item.votes+'</p>'+
