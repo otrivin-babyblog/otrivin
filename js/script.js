@@ -199,9 +199,18 @@ $('.otrivin-anons-contest').click( function(){
 	ga('send', 'event', 'fun', 'to_fk', 'anons_fk');
 });
 
+$('.fk2').click( function(){
+	ga('send', 'event', 'fun', 'to_fk_2', 'anons_fk');
+});
+
+$('.otrivin-photo-upload2').click( function(){
+	ga('send', 'event', 'FK', 'click', 'upload_photo');
+});
+
+
 $('#piluli').click( function(){
 	ga('send', 'event', 'nasmork', 'to_client', 'piluli');
-console.log('piluli');
+//console.log('piluli');
 });
 
 $('#apteka').click( function(){

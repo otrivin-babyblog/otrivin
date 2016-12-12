@@ -5,52 +5,104 @@ var url = 'http://otrivindata.pdigit.top';
 var user_id = '';
 var count = 0;
 
+function init() {
+var objBrowse = window.navigator;
+if (objBrowse.appName == "Opera") {
+	
+	
+	$('.print-btn').on('click', function (e) {
+		ga('send', 'event', 'planning', 'click', 'print');
+		$('.otriv-medic-save').css({'display':'flex'});
+		
+		e.preventDefault;
+		
+		var c = 0 , co = 0;
+		var block = 0;
+		$('#notes-list .li').each(function(i, el){
+			//console.log('i   :'+i);
+			c = c +1;
+			co = co +1;
+			
+			
+						if (c % 8 == 0  )
+						{
+							//console.log('add block :'+block);
+							block = block +1;
+							//$(el).after('<div id="b'+block+'" class="d12" style="width:100%; height: 250px;"></div>');
+							$(el).after('<li class="li li12"><div class="d12" style="width:100%; height: 250px;"></div> </li>');
+						}						
+							
+							if (c>8){
+								c = c -8;
+							}
+							//console.log(c);
+							
+		});
+		
+		if (co % 8 == 0){
+		$('#b'+block).remove();
+		}
+		
+		$('.li').css({'margin':'5px'});
+		
+		setTimeout('window.print()', 500);
+		$('.otriv-medic-save').css({'display':'none'});
+		$('.li12').remove();
+		$('.li').css({'margin':'0 0 25px'});
+	});
+	
+	
+	
+
+} else {
+
 
 
 $('.print-btn').on('click', function (e) {
-    ga('send', 'event', 'planning', 'click', 'print');
-	
-	
-	$('.otriv-medic-save').css({'display':'flex'});
-	
-	
-    e.preventDefault;
-	
-	var c = 0 , co = 0;
-	var block = 0;
-	$('#notes-list .li').each(function(i, el){
-		//console.log('i   :'+i);
-		c = c +1;
-		co = co +1;
+		ga('send', 'event', 'planning', 'click', 'print');
+		$('.otriv-medic-save').css({'display':'flex'});
 		
+		e.preventDefault;
 		
-					if (c % 8 == 0  )
-					{
-						//console.log('add block :'+block);
-						block = block +1;
-						$(el).after('<div id="b'+block+'" class="d12" style="width:100%; height: 250px;"></div>');
-						
-					}						
-						
-						if (c>8){
-							c = c -8;
-						}
-						//console.log(c);
-						
+		var c = 0 , co = 0;
+		var block = 0;
+		$('#notes-list .li').each(function(i, el){
+			console.log('i   :'+i);
+			c = c +1;
+			co = co +1;
+			
+			
+						if (c % 8 == 0  )
+						{
+							//console.log('add block :'+block);
+							block = block +1;
+							$(el).after('<li class="li li12"><div class="d12" style="width:100%; height: 250px;"></div> </li>');
+						}						
+							
+							if (c>8){
+								c = c -8;
+							}
+							//console.log(c);
+							
+		});
+		
+		if (co % 8 == 0){
+		$('#b'+block).remove();
+		}
+		
+		$('.li').css({'margin':'5px'});
+		
+		window.print();
+		$('.otriv-medic-save').css({'display':'none'});
+		$('.li12').remove();
+		$('.li').css({'margin':'0 0 25px'});
 	});
-	
-	if (co % 8 == 0){
-	$('#b'+block).remove();
-	}
-	
-	$('.li').css({'margin':'5px'});
-	window.print();
-	$('.otriv-medic-save').css({'display':'none'});
-	$('.d12').remove();
-	$('.li').css({'margin':'0 0 25px'});
-	//$('.li').css({'margin-right':'10px'});
-});
 
+
+}
+}
+
+window.onload = init;
 
 
 $(function () {
@@ -107,11 +159,15 @@ function remSave(param1)
 $(document).ready(function () {
 	
 	// генерируем тестовые блоки 
-	/*for(var i=0; i<12; i++){
-		
+	/*$('#notes-list').append(
+							  
+										'<li class=""><div class="d12" style="width:100%; height: 250px;"></div>'+
+								   ' </li>' );
+	
+	for(var i=0; i<12; i++){
 		$('#notes-list').prepend(
 							  
-										'<li class="li">'+
+										'<li class="d12li li">'+
 									  '<div class="top"><i class="fa fa-times remSave"></i></div>'+
 									  '<div class="content">'+
 										'<p class="title">34234234</p>'+
@@ -148,7 +204,7 @@ $(document).ready(function () {
 							$('.print-btn').show();
 							  $('#notes-list').prepend(
 							  
-										'<li class="li" data-id="'+item.id+'" id="save'+count+'">'+
+										'<li class="d12li li" data-id="'+item.id+'" id="save'+count+'">'+
 									  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
 									  '<div class="content">'+
 										'<p class="title">'+item.name+'</p>'+
@@ -197,13 +253,16 @@ $(document).ready(function () {
 			phone = $('#phone25').val(),
 			desc = $('#desc25').val();
 			
+			var vp = phone.replace(/[^-0-9]/gim,'');
+			//console.log('vp: '+vp);
 			
-			if (phone!='' && t!='')
+			
+			if (phone!='' && t!='' && vp!='')
 			{
      
 		   
 		   
-		   
+		      phone = vp;
 		   /* сохранение в  базу*/
 		   
 		   // не можем сохранить, если не авторизованы
@@ -224,7 +283,7 @@ $(document).ready(function () {
 							//count = count+1;
 							$('#notes-list').prepend(
 					  
-								'<li class="li" data-id="'+msg+'" id="save'+count+'">'+
+								'<li class="d12li li" data-id="'+msg+'" id="save'+count+'">'+
 							  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
 							  '<div class="content">'+
 								'<p class="title">'+t+'</p>'+
@@ -247,7 +306,7 @@ $(document).ready(function () {
 				$('.print-btn').show();
 				$('#notes-list').prepend(
 					  
-								'<li class="li" data-id="" id="save'+count+'">'+
+								'<li class="d12li li" data-id="" id="save'+count+'">'+
 							  '<div class="top"><i onclick="javascript:remSave(\''+count+'\');"data-id="'+count+'" class="fa fa-times remSave"></i></div>'+
 							  '<div class="content">'+
 								'<p class="title">'+t+'</p>'+

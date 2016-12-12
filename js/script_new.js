@@ -4,6 +4,19 @@ var ajaxgetinfo = '';
 $('.js_contest').hide();
 $('.js_contest2').hide();
 
+function navi(){
+var objBrowse = window.navigator;
+
+	if (objBrowse.appName == "Opera") {
+		
+	  return 'wav';
+	}else
+		{
+			return  'mp3';
+		}
+
+}
+
 function callIframe(url) {
 	
 	//console.log(url);
@@ -612,6 +625,9 @@ function Participants(){
 $(document).ready(function() {
 
 
+	var aud1 = $('#aud1').attr('src');
+	$('#aud1').attr('src',aud1+navi());
+	$('#aud1a').attr('href',aud1+navi());
 
 	
 

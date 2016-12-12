@@ -1,9 +1,24 @@
 'use strict';
 
-
-
-$(function () {
-
+function init() {
+var objBrowse = window.navigator;
+if (objBrowse.appName == "Opera") {
+	
+	$('.print-btn').on('click', function (e) {
+    ga('send', 'event', 'planning', 'click', 'print');
+    e.preventDefault;
+	
+  $('.otriv-calend-pr').css({'display':'flex'});
+  // $('.header_bot_link_menu').css({'background':'none'});
+  $('.calendar-images').css({'display':'block'});
+	
+	$('.calendar-mobile-table , .calendar-actions-mobile').hide();
+   setTimeout('window.print()', 500);
+	$('.otriv-calend-pr').css({'display':'none'});
+	
+  });
+		
+} else {
 
 $('.print-btn').on('click', function (e) {
     ga('send', 'event', 'planning', 'click', 'print');
@@ -19,6 +34,17 @@ $('.print-btn').on('click', function (e) {
 	$('.otriv-calend-pr').css({'display':'none'});
 	
   });
+
+
+}
+}
+
+window.onload = init;
+
+$(function () {
+
+
+
 
 
   // callbacks
@@ -117,8 +143,9 @@ $('.print-btn').on('click', function (e) {
       var target = $(e.target);
       var idx = findActiveTd({ x: e.pageX, y: e.pageY });
       if (idx !== undefined) {
-        $('.calendar-table .action').eq(idx).html(drag.clone().removeClass('drag-action').attr('style', ''));
+        $('.calendar-table .action').eq(idx).html(drag.clone().removeClass('drag-action').attr('style', '')).css({'background':'#ffe6df','padding-top':'40px'});
         callbacks.add(idx % 7, drag.text());
+		//console.log(drag.text());
       }
       drag = null;
       $('body .drag-action').remove();
@@ -164,8 +191,19 @@ $('.print-btn').on('click', function (e) {
     $('.calendar-actions .add-form').hide();
     var title = $('.calendar-actions .add-form input').val();
     $('.calendar-actions .add-form input').val('');
-    $('.calendar-actions .add').parent('li').before('<li><a>' + title + '</a></li>');
-    callbacks.addAction(title);
+	
+	var valid = title.replace(/\s+/g,'');
+	if (valid!=''){
+		$('.calendar-actions .add').parent('li').before('<li><a>' + title + '</a></li>');
+		callbacks.addAction(title);
+		//console.log('1');
+	}else
+	{
+		//console.log('0');
+	}
+	
+	
+	
   });
 
   /* mobile */
