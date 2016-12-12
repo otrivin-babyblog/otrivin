@@ -23,6 +23,9 @@ $ref_title = 'Главная';
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 ?>
+
+
+
 <body>
     <div class="wrapper music">
       <? include($_SERVER['DOCUMENT_ROOT']."/includes/header_main.php") ?>
@@ -45,9 +48,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h3 class="music__name">Колыбельная 1 (Twinkle Twinkle Little Star)
 			 <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139392-twinkle-twinkle-little-star-lullaby-license.pdf" >авторские права</a></h3>
 			
-            <audio src="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_1');"></audio>
+            <audio id="aud1" src="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star."  preload="auto"  onplay="ga('send', 'event', 'music', 'click', 'song_1');"></audio>
             <span class="music__listen otrivin-song-1">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star.wav"  download class="music-download otrivin-song-1">
+            <a id="aud1a" href="<? echo $source; ?>files/audio/Twinkle Twinkle Little Star."  download class="music-download otrivin-song-1">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -57,9 +60,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h3 class="music__name">Колыбельная 2 (Chopin Nocturn Op9 No2)
 			 <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139393-chopin-nocturne-op9-no2-license.pdf" >авторские права</a></h3>
 			
-            <audio src="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_2');"></audio>
+            <audio src="<? echo $source; ?>files/audio/Chopin Nocturn Op9 No2.mp3" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_2');"></audio>
             <span class="music__listen otrivin-song-2">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Chopin_Nocturn_Op9_No2.wav"  download class="music-download otrivin-song-2">
+            <a href="<? echo $source; ?>files/audio/Chopin Nocturn Op9 No2.mp3"  download class="music-download otrivin-song-2">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -68,9 +71,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="music-item">
             <h3 class="music__name">Колыбельная 3 (10 LULLABY)  <a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139395-lullaby-license.pdf" >авторские права</a></h3>
 			
-            <audio src="<? echo $source; ?>files/audio/10_LULLABY.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_3');"></audio>
+            <audio src="<? echo $source; ?>files/audio/10_LULLABY.mp3" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_3');"></audio>
             <span class="music__listen otrivin-song-3">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/10_LULLABY.wav"  download class="music-download otrivin-song-3">
+            <a href="<? echo $source; ?>files/audio/10_LULLABY.mp3"  download class="music-download otrivin-song-3">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -80,9 +83,12 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
             <h3 class="music__name">Колыбельная 4 (Fairy Orchestral Lullaby)
 			<a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="<? echo $source; ?>files/34139394-fairy-orchestral-lullaby-license.pdf" >авторские права</a></h3>
 			
-            <audio src="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_4');"></audio>
+            <audio src="<? echo $source; 
+			
+			
+			?>files/audio/Fairy_Orchestral_Lullaby.mp3" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_4');"></audio>
             <span class="music__listen otrivin-song-4">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.wav"  download class="music-download otrivin-song-4">
+            <a href="<? echo $source; ?>files/audio/Fairy_Orchestral_Lullaby.mp3"  download class="music-download otrivin-song-4">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>
@@ -93,9 +99,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 			<!--a style=" font-weight: bold; font-size: 8px;color: #000;" target="_blank" href="/files/34139395-lullaby10-license.pdf" >авторские права</a--></h3>
 			
 			
-            <audio src="<? echo $source; ?>files/audio/Lullaby.wav" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_5');"></audio>
+            <audio src="<? echo $source; ?>files/audio/Lullaby.mp3" preload="auto" onplay="ga('send', 'event', 'music', 'click', 'song_5');"></audio>
             <span class="music__listen otrivin-song-5">Слушать</span>
-            <a href="<? echo $source; ?>files/audio/Lullaby.wav"   download class="music-download otrivin-song-5">
+            <a href="<? echo $source; ?>files/audio/Lullaby.mp3"   download class="music-download otrivin-song-5">
               <div class="music-download__image"></div>
               <span class="music-download__text">скачать</span>
             </a>

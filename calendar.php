@@ -154,31 +154,31 @@ $og_description = 'Спланируйте свой день по часам и �
 			
 			 <div class="calendar-mobile-table">
               <div class="one-time">
-                <p class="time">7:00-9:00</p>
+                <p class="time">7:00 - 9:00</p>
                 <ul></ul>
               </div>
               <div class="one-time">
-                <p class="time">9:00-11:00</p>
+                <p class="time">9:00 - 11:00</p>
                 <ul></ul>
               </div>
               <div class="one-time">
-                <p class="time">11:00-13:00</p>
+                <p class="time">11:00 - 13:00</p>
                 <ul></ul>
               </div>
               <div class="one-time">
-                <p class="time">13:00-15:00</p>
+                <p class="time">13:00 - 15:00</p>
                 <ul></ul>
               </div>
               <div class="one-time">
-                <p class="time">15:00-17:00</p>
+                <p class="time">15:00 - 17:00</p>
                 <ul></ul>
               </div>
               <div class="one-time">
-                <p class="time">17:00-19:00</p>
+                <p class="time">17:00 - 19:00</p>
                 <ul></ul>
               </div>
               <div class="one-time">
-                <p class="time">19:00-21:00</p>
+                <p class="time">19:00 - 21:00</p>
                 <ul></ul>
               </div>
             </div>

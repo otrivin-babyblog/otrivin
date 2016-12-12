@@ -37,7 +37,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 						  </div>
 					    </li>-->
 					   
-						<li data-id="-2">
+						<li class="d12li li" data-id="-2">
 						<div class="top"><i onclick="javascript:void(0);" class="fa fa-times remSave"></i></div>
 						  <div class="content">
 							<p class="title">Экстренная служба</p>
@@ -46,7 +46,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 						  </div>
 					    </li>
 			  
-				<li class="form">
+				<li class="d12li form">
                     <form id="add-note">
                       <div class="input">
                         <input id="title25" name="title" value="" placeholder="Название" type="text">
@@ -63,8 +63,9 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
                       </div>
                     </form>
                   </li>
-			  
-					  <button class="print-btn"><span>распечатать</span></button>
+						<li class="li_print">
+					  <div id="b29" class="print-btn"><span>распечатать</span></div>
+					  </li>
 			  
 			  </ul>
             </div>

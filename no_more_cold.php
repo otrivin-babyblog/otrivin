@@ -116,7 +116,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
               <a href="<? echo $source; ?>article6.php" class="useful__link otrivin-lesson-6"><span>Урок 6</span>"Наука и искусство сморкания"</a>
            	
 		   <li class="useful__item">
-              <a href="<? echo $source; ?>article7.php" class="useful__link otrivin-lesson-7"><span>Урок 7</span>"Чтобы хорошо дышалось"</a>
+              <a href="<? echo $source; ?>article7.php" class="useful__link otrivin-lesson-7"><span>Урок 7</span>"Чтобы дышалось хорошо"</a>
             </li>
            </li>
 			  <li class="useful__item">
@@ -151,4 +151,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
-<? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
+	
+<? 
+$scrollPage = 'Main';
+$s25 = true;$s50 = true;$s75 = true;$s100 = true;
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/doscroll.php");
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
