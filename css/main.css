@@ -2631,6 +2631,8 @@
   // -ms-flex-align: start;
   //     align-items: flex-start;
 }
+
+/*
 .save-wrapper .phones-wrapper ul li {
   position: relative;
   float: left;
@@ -2656,7 +2658,39 @@
   width: 100%;
   height: 57px;
   background: url(../img/note-bottom-bg.png) center no-repeat #fff;
+}*/
+/*-------------------- 091216 */
+
+.d12li {
+  position: relative;
+  float: left;
+  width: 233px;
+  margin: 0 0 25px;
+  padding: 40px 15px 15px;
+  background: url(../img/note-bg.png) center repeat-y;
 }
+.d12li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px solid transparent;
+  border-top: 6px solid #fff;
+  border-right: 3px solid #fff;
+}
+.d12li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 57px;
+  background: url(../img/note-bottom-bg.png) center no-repeat #fff;
+}
+
+
+
+/*-------------------------------*/
 .save-wrapper .phones-wrapper ul li .top {
   position: absolute;
   top: 0;
@@ -3003,12 +3037,34 @@
   border-left: 2px dotted #c5f0fd;
 }
 .calendar-wrapper .calendar-table table td.action a {
-  // display: -ms-flexbox;
+  /*// display: -ms-flexbox;
   // display: flex;
   // -ms-flex-align: center;
   //     align-items: center;
   // -ms-flex-pack: center;
-  //     justify-content: center;
+  //     justify-content: center;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffe6df;
+  color: #8d574c;
+  text-transform: uppercase;
+  padding-top: 20px;
+
+}
+
+/*---------------------------------*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		   /* IE10+ specific styles go here */  
+		.calendar-wrapper .calendar-table table td.action a {
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-align: center;
+       align-items: center;
+   -ms-flex-pack: center;
+       justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -3018,6 +3074,11 @@
   color: #8d574c;
   text-transform: uppercase;
 }
+}
+
+
+
+/*----------------------------------------------*/
 .calendar-wrapper .calendar-table table td.action a:hover {
   background: #ddc7c0;
 }
@@ -3467,3 +3528,27 @@
     padding: 5px 0;
   }
 }
+
+
+
+/* pd_091216 */
+s, strike, del {
+    text-decoration: none;
+}
+
+
+.li12 {
+	margin: 0px 0px 25px;
+    position: relative;
+    float: left;
+    height: 250px;
+    width: 100%;
+}
+
+.li_print{
+	position: relative;
+    float: left;
+    width: 233px;
+    margin: 0 0 25px;
+}	
+/*------------*/

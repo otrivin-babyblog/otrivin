@@ -268,7 +268,7 @@ img {
       font-weight: 500;
       font-size: 17px; }
     .social-item {
-      margin: 0 25px 0 0; } }
+      margin: 0 /*25px*/10px 0 0; } }
 
 .header .container {
   padding: 0;
@@ -578,11 +578,23 @@ img {
               // display: flex;
               }
               .header .centr .container .right form div button i img {
-                // margin: auto;
-                margin-top: 3px;/*добавил*/
-                width: 15px;/*добавил*/
-                // width: 50%;
+				 margin-top: 3px;/*добавил*/
+				 width: 15px;/*добавил*/
                 }
+				
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		   /* IE10+ specific styles go here */  
+		   .header .centr .container .right form div button i {
+					  display: -ms-flexbox;
+					  display: flex;
+					  }
+		   
+		   
+		   .header .centr .container .right form div button i img {
+					   /*margin-top: 13px;*/
+					  width: 50%;
+						}
+		}		
 
 .header .bottom {
   padding: 0 45px; }
@@ -2472,7 +2484,7 @@ label.input-error {
     margin-right: 0; }
   .chore_elephant {
     padding: 0;
-    background-color: initial;
+    background-color: white;/*initial;*/
     text-align: center; }
   .chore__img, .chore > img {
     width: auto;
@@ -2733,7 +2745,7 @@ label.input-error {
       justify-content: center;
   text-transform: uppercase;
   text-align: center;
-  width: 25%;
+ /* width: 25%;*/ /*removed 091216*/
   margin: 10px 0 10px auto;
   padding: 10px;
 }
