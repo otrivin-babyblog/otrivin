@@ -153,7 +153,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 	
 <? 
-$scrollPage = 'Main';
+$scrollPage = 'nasmork';
 $s25 = true;$s50 = true;$s75 = true;$s100 = true;
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/doscroll.php");

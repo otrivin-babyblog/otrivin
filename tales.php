@@ -2326,4 +2326,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     </script>
 	
 	 <script src="<? echo $source; ?>js/sad.js"></script>
- <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
+<? 
+//$scrollPage = 'fun';
+$s25 = true;$s50 = true;$s75 = true;$s100 = true;
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/doscroll.php");
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

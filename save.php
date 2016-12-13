@@ -210,4 +210,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 	
     <script src="<? echo $source; ?>js/script.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
-<? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
+<? 
+//$scrollPage = '';
+$s25 = true;$s50 = true;$s75 = true;$s100 = true;
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/doscroll.php");
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>

@@ -460,4 +460,10 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 	
 	  <script src="<? echo $source; ?>js/masonry.pkgd.min.js"></script>
     <script src="<? echo $source; ?>js/masonry.js"></script>
- <? include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
+<? 
+//$scrollPage = '';
+$s25 = true;$s50 = true;$s75 = true;$s100 = true;
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/doscroll.php");
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php") ?>
