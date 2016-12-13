@@ -32,7 +32,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
           <div class="activity activity_bird">
             <h3 class="activity__name">Важный носик знает толк</h3>
             <p class="activity__about">Поделись фотоисторией о своем ребенке и выиграй подарки! ...</p>
-            <a href="/contests.php" class="activity__link  fk2">Подробнее</a>
+            <a href="<? echo $source; ?>contests.php" class="activity__link  fk2">Подробнее</a>
           </div>
           <div class="activity"    >
             <h3 class="activity__name">поразительное сходство</h3>
