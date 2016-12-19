@@ -335,7 +335,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     <script src="<? echo $source; ?>js/jquery.columnizer.js"></script>
     <script src="<? echo $source; ?>js/chores.js"></script>
 <? 
-//$scrollPage = '';
+$scrollPage = 'house_cleaning';
 $s25 = true;$s50 = true;$s75 = true;$s100 = true;
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/doscroll.php");

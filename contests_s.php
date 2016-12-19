@@ -18,7 +18,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         <div class="breadcrumb">
           <a href="<? echo $source; ?>entertain.php" class="breadcrumb__link">Развлекай ребенка</a>
           <span class="breadcrumb__separator">/</span>
-          <a href="" class="breadcrumb__link breadcrumb__link_current">Конкурсы</a>
+          <a class="breadcrumb__link breadcrumb__link_current">Конкурсы</a>
         </div>
         <h1 class="page-title">Поразительное сходство</h1>
         <p class="page-about page-about_short">Участвуй в семейном конкурсе и получай подарки! 
@@ -26,7 +26,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		среди читателей работ выйдут в финал. Жюри BabyBlog выберет из их числа трех победителей и наградит призами!</p>
         <div class="contest-wrapper">
           <div class="contest-sender">
-            <a class="btn btn_border js_contest otrivin-photo-upload">отправить фотографии</a>
+            <a target="_blank" href="<? echo $source; ?>concurs1.php" class="btn btn_border otrivin-winners1">Победители</a>
           </div>
           <div class="contest-prizes">
             <div class="contest-prize">

@@ -67,7 +67,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
     <script src="//yastatic.net/share2/share.js" async="async"></script>
 <? 
-//$scrollPage = '';
+$scrollPage = 'lessons';
 $s25 = true;$s50 = true;$s75 = true;$s100 = true;
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/doscroll.php");
