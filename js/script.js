@@ -218,7 +218,10 @@ $('#apteka').click( function(){
 //console.log('apteka');
 });
 
-
+$('.otrivin-winners1').click( function(){
+	ga('send', 'event', 'FK', 'click', 'winners');
+	//console.log('winners1');
+});
 
 
 function vote(param1,param2){

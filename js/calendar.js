@@ -119,6 +119,11 @@ $(function () {
 			  callbacks.remove(target.parent('td').index(), target.text());
 			  var width = target.width();
 			  var height = target.height();
+			  
+			  // фон для освободившегося поля таблицы
+			  var idx = findActiveTd({ x: e.pageX, y: e.pageY });
+			   $('.calendar-table .action').eq(idx).css({'background':'#ffffff','padding-top':'40px'});
+			  
 			  drag = target;
 			  drag.addClass('drag-action').css({ top: e.pageY - height / 2, left: e.pageX - width / 2 }).width(width).height(height);
 			  $('body').append(drag);
@@ -186,10 +191,17 @@ $(function () {
   });
 
   $('.calendar-actions .add-form form').on('submit', function (e) {
+	  // form add new task
+	  
     e.preventDefault();
     $('.calendar-actions .add').show();
     $('.calendar-actions .add-form').hide();
     var title = $('.calendar-actions .add-form input').val();
+	// xss
+			title = title.replace(/\&/gi, "&amp;");
+			title = title.replace(/\</gi, "&lt;");
+			title = title.replace(/\>/gi, "&gt;");
+			
     $('.calendar-actions .add-form input').val('');
 	
 	var valid = title.replace(/\s+/g,'');

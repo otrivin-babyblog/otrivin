@@ -256,6 +256,17 @@ $(document).ready(function () {
 			var vp = phone.replace(/[^-0-9]/gim,'');
 			//console.log('vp: '+vp);
 			
+			// xss
+			t = t.replace(/\&/gi, "&amp;");
+			t = t.replace(/\</gi, "&lt;");
+			t = t.replace(/\>/gi, "&gt;");
+			desc = desc.replace(/\&/gi, "&amp;");
+			desc = desc.replace(/\</gi, "&lt;");
+			desc = desc.replace(/\>/gi, "&gt;");
+			//console.log('t: '+t);
+			
+			
+			
 			
 			if (phone!='' && t!='' && vp!='')
 			{
