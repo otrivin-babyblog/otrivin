@@ -26,7 +26,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		Победителя определит специальное жюри. Гордись своим малышом, фотографируй и побеждай!</p>
         <div class="contest-wrapper">
           <div class="contest-sender">
-            <a class="btn btn_border js_contest2 otrivin-photo-upload2">отправить фотографии</a>
+			<a target="_blank" href="<? echo $source; ?>concurs2.php" class="btn btn_border otrivin-winners2">Победители</a>
           </div>
           <div class="contest-prizes">
             <div class="contest-prize">
