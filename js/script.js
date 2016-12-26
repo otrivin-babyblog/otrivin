@@ -224,6 +224,8 @@ $('.otrivin-winners1').click( function(){
 });
 
 
+
+
 function vote(param1,param2){
 	$.ajax({
 			type: "GET",

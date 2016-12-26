@@ -9,7 +9,12 @@ $(document).ready(function () {
 			type: "GET",
 			url: "http://otrivindata.pdigit.top/api/images/getwinners2",
 			success: function(msg) {
-				//console.log(msg); 
+				//console.log(msg[0]); 
+				var temp = msg[0];
+				msg[0] = msg[2];
+				msg[2] = msg[1];
+				msg[1] = temp;
+				
 				msg.forEach(function(item, i, arr) {
 					//console.log(item);
 					 var str = unescape(JSON.parse('"'+item.fio+'"'));

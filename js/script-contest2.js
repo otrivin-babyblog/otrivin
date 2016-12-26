@@ -14,6 +14,12 @@ $(document).bind('popup_close', function(){
 
 
 
+
+$('.otrivin-winners2').click( function(){
+	ga('send', 'event', 'FK', 'click', 'winners');
+	//console.log('winners2');
+});
+
 function vote2(param1,param2){
 	$.ajax({
 			type: "GET",
