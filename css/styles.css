@@ -1376,6 +1376,24 @@ img {
     text-align: center;
     cursor: pointer;
 }
+  #apteka{
+    width: 172px!important;
+    margin: 10px auto;
+    margin-left:10%;
+    float:left;
+        
+  }
+   #piluli{
+     width: 172px!important;
+     float:right;
+     margin: 10px auto;
+     margin-right:10%;  
+  }
+  #links-container:after{
+   content: "";
+   clear: both;
+   display: block;
+  }
 .other-games-item {
   float: left;
   width: 45%;
@@ -1638,6 +1656,15 @@ img {
     min-height: 440px; } }
 
 @media screen and (max-width: 767px) {
+  #apteka{
+    margin: 10px auto;
+    float:none;
+        
+  }
+   #piluli{
+     float:none;
+     margin: 10px auto;
+  }
   .nose_hygiene .page-about, .nose_hygiene .content > p {
     display: none; }
   .nose_hygiene .social {
