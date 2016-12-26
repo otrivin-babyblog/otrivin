@@ -52,7 +52,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
                         <input id="title25" name="title" value="" placeholder="Название" type="text">
                       </div>
                       <div class="input">
-                        <input id="phone25" name="phone" value="" placeholder="Номер телефона" type="text">
+                        <input maxlength="16" id="phone25" name="phone" value="" placeholder="Номер телефона" type="text">
                       </div>
                       <div class="input">
                         <textarea id="desc25" name="description" placeholder="Комментарий"></textarea>

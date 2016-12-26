@@ -427,7 +427,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
         
       </div>
 	  
-	  <div class="content-footer">
+	  <div class="content-footer pd-pad-top-35">
           <!--ul class="pagination">
             <li class="pagination-page" id="pageprev"><a class="pagination__link">&lt;</a></li>
             <li class="pagination-page" id="page1"><a id="p1" class="pagination__link pagination__link_active">1</a></li>
