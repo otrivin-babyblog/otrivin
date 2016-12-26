@@ -126,8 +126,12 @@ img {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 0 0 25px; 
+  padding: 0px 0 /*25px*/15px; 
   margin-bottom: 10px;
+}
+
+.pd-pad-top-35{
+	padding-top: 35px;
 }
 
 .pagination {
@@ -162,8 +166,8 @@ img {
   display: block;
   float: right; }
   .social_absolute {
-    position: absolute;
-    right: 0;
+   /* position: absolute;
+    right: 0;*/
     /*top: 4px;*/
 	}
   .social__text {
@@ -2469,7 +2473,7 @@ label.input-error {
 
 .chores-wrapper {
   overflow: hidden;
-  margin: 0 0 80px; }
+  margin: 0 0 30px;/*80px;*/ }
 
 .chore {
   max-height: 171px;
