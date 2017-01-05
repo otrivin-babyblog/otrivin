@@ -3047,7 +3047,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: inherit;
   background: #ffe6df;
   color: #8d574c;
   text-transform: uppercase;
