@@ -32,17 +32,17 @@ $(document).ready(function () {
 					$('#winners1').append(
 					
 					 '<div class="winner-compet-item winner-'+(i+1)+'">'+
-    				'<p class="photo-win" style="min-height: 300px;overflow: hidden; margin-bottom: 15px;"><img src="http://otrivindata.pdigit.top/uploads/2/'+item.url+'.jpg" alt=""></p>'+
+    				'<p class="photo-win" style="min-height: 310px;overflow: hidden; margin-bottom: 15px;"><img src="http://otrivindata.pdigit.top/uploads/2/'+item.url+'.jpg" alt=""></p>'+
     				'<div class="win-name">'+
     					'<p class="photo-name">'+
     						'<img src="'+ava+'" alt="">'+
     					'</p>'+
-    					'<p class="win-name-item">'+str+'</p>'+
+    					'<p class="win-name-item">'+str+'<img src="img/place'+(i+1)+'-concers.png" style="width: auto;" alt="">'+'</p>'+
     					'<p class="place">'+
-    						'<img src="img/place'+(i+1)+'-concers.png" alt="">'+
+    						//'<img src="img/place'+(i+1)+'-concers.png" alt="">'+
     					'</p>'+
     				'</div>'+
-    				'<p class="win-text" style="min-height: 175px; ">'+item.description+'</p>'+
+    				'<p class="win-text" style="min-height: 100px;" >'+item.description+'</p>'+
     				'<div class="golosa">'+
     					'<div>'+
     						'<p style="text-align: center;">'+item.votes+'</p>'+
