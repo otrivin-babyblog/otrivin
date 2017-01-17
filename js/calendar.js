@@ -122,7 +122,7 @@ $(function () {
 			  
 			  // фон для освободившегося поля таблицы
 			  var idx = findActiveTd({ x: e.pageX, y: e.pageY });
-			   $('.calendar-table .action').eq(idx).css({'background':'#ffffff','padding-top':'40px'});
+         $('.calendar-table .action').eq(idx).addClass('calendar-active');
 			  
 			  drag = target;
 			  drag.addClass('drag-action').css({ top: e.pageY - height / 2, left: e.pageX - width / 2 }).width(width).height(height);
@@ -148,7 +148,7 @@ $(function () {
       var target = $(e.target);
       var idx = findActiveTd({ x: e.pageX, y: e.pageY });
       if (idx !== undefined) {
-        $('.calendar-table .action').eq(idx).html(drag.clone().removeClass('drag-action').attr('style', '')).css({'background':'#ffe6df','padding-top':'40px'});
+        $('.calendar-table .action').eq(idx).html(drag.clone().removeClass('drag-action').attr('style', '')).removeClass('calendar-active');
         callbacks.add(idx % 7, drag.text());
 		//console.log(drag.text());
       }
@@ -206,9 +206,9 @@ $(function () {
 	
 	var valid = title.replace(/\s+/g,'');
 	if (valid!=''){
-		$('.calendar-actions .add').parent('li').before('<li><a>' + title + '</a></li>');
+		$('.calendar-actions .add').parent('li').before('<li><a><span>' + title + '</span></a></li>');
 		callbacks.addAction(title);
-		//console.log('1');
+		console.log('1');
 	}else
 	{
 		//console.log('0');

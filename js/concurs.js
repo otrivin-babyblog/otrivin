@@ -32,7 +32,7 @@ $(document).ready(function () {
     					'<p class="photo-name">'+
     						'<img src="'+ava+'" alt="">'+
     					'</p>'+
-    					'<p class="win-name-item">'+str+ '<img src="img/place'+(i+1)+'-concers.png" style="width: auto;margin-left: 10%;" alt="">'+'</p>'+
+    					'<p class="win-name-item"><span class="win-name-item-span">'+str+'</span><img src="img/place'+(i+1)+'-concers.png"  alt="">'+'</p>'+
     					'<p class="place">'+
     					//	'<img src="img/place'+(i+1)+'-concers.png" alt="">'+
     					'</p>'+
@@ -69,13 +69,13 @@ $(document).ready(function () {
 										   
 										   var ot = document.body.scrollTop;
 										   //console.log(ot);
-										   $('.pop-uslovia').css({'top': (ot+25)+'px'});
+										   /*$('.pop-uslovia').css({'top': (ot+25)+'px'});*/
 									$('.pop-uslovia').show(700);
 								  });
 								  $('.priz').click(function () {
 									  
 									  var ot = document.body.scrollTop;
-										$('.pop-prizu').css({'top': (ot+25)+'px'});
+										/*$('.pop-prizu').css({'top': (ot+25)+'px'});*/
 									$('.pop-prizu').show(700);
 								  });
 								  $('.winner-1').click(function () {
