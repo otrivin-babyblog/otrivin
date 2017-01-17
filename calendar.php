@@ -109,14 +109,14 @@ $og_description = 'Спланируйте свой день по часам и �
 				
 				<p>А для подробного ознакомления с потешками и сказками, кликните на нужной кнопке правой кнопкой мыши и выбирете "Открыть на новой вкладке" или "Открыть в новом окне" или наведите курсор на нужную кнопку и нажмите среднюю кнопку мыши (колесико)</p>
 				<ul>
-                  <li><a href="<? echo $source; ?>nose_hygiene.php" class="otrivin-nasmork-anons">Гигиена носика</a></li>
-                  <li><a href="<? echo $source; ?>igry_s_rebenkom.php" class="otrivin-nasmork-play">Игры с ребенком</a></li>
-                  <li><a href="<? echo $source; ?>music.php" class="otrivin-nasmork-music">Музыка</a></li>
-                  <li><a href="<? echo $source; ?>verses.php" class="otrivin-nasmork-poem">Потешки</a></li>
+                  <li><a href="<? echo $source; ?>nose_hygiene.php" class="otrivin-nasmork-anons"><span>Гигиена носика</span></a></li>
+                  <li><a href="<? echo $source; ?>igry_s_rebenkom.php" class="otrivin-nasmork-play"><span>Игры с ребенком</span></a></li>
+                  <li><a href="<? echo $source; ?>music.php" class="otrivin-nasmork-music"><span>Музыка</span></a></li>
+                  <li><a href="<? echo $source; ?>verses.php" class="otrivin-nasmork-poem"><span>Потешки</span></a></li>
 				  
-				  <li><a href="<? echo $source; ?>uroki_dlya_mam.php" class="otrivin-nasmork-mom-lessons">Уроки для мам</a></li>
-				  <li><a href="<? echo $source; ?>domestic_chores.php" class="otrivin-nasmork-house-cleaning">Домашние дела</a></li>
-				  <li><a href="<? echo $source; ?>tales.php" class="otrivin-nasmork-fairy-tale">Сказки на ночь</a></li>
+				  <li><a href="<? echo $source; ?>uroki_dlya_mam.php" class="otrivin-nasmork-mom-lessons"><span>Уроки для мам</span></a></li>
+				  <li><a href="<? echo $source; ?>domestic_chores.php" class="otrivin-nasmork-house-cleaning"><span>Домашние дела</span></a></li>
+				  <li><a href="<? echo $source; ?>tales.php" class="otrivin-nasmork-fairy-tale"><span>Сказки на ночь</span></a></li>
 				  
 				  
                   <li>
