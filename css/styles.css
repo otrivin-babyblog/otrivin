@@ -134,6 +134,15 @@ img {
 	padding-top: 35px;
 }
 
+.calendar-active{
+  background: rgb(255, 230, 223); 
+  padding-top: 40px;
+}
+.calendar-active:hover{
+  background: #ddc7c0;
+}
+
+
 .pagination {
   display: inline-block; }
   .pagination-page {
@@ -2631,7 +2640,7 @@ label.input-error {
   background-color: #e8f8ff; }
   .verse_whale {
     padding: 0;
-    background-color: initial; }
+    background-color: #FFFFFF; }
   .verse__img {
     display: block;
     width: 100%; }
