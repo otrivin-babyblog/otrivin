@@ -96,24 +96,41 @@
         max-height: 210px;
         overflow: hidden; }
       .wrap-winner-concurs .winner-compet .winner-compet-item .win-name {
-        // display: -ms-flexbox;
-        // display: flex; 
-        }
+          height: 105px;       
+                 }
         .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .photo-name {
-          width: 65px;
-          height: 65px;
-          border-radius: 50%;
-          overflow: hidden; 
+              width: 70px;
+               height: 70px;
+              border-radius: 50%;
+              overflow: hidden;
+              display: inline-block;
           /*float: left;*/
           }
         .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .win-name-item {
+          width: 70%;
           color: #5A5A5A;
           font: 20px 'Roboto_Regular';
           margin: auto 0 10x 10px; 
           /*float: left;//добавил*/
-          margin-top: 20px;
-		  min-height: 50px;
+          /* margin-top: 20px; */
+          display: inline-block;
+		      min-height: 50px;
+          
           }
+        .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .win-name-item img{
+          position: relative;
+          left: 10px;
+          width: 45%;
+        }
+          .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .win-name-item .win-name-item-span{
+            font-size: 14.4px;
+            width: 55%;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            top: -25px;
+          }
+
         .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .place {
           // display: -ms-flexbox;
           // display: flex;
@@ -150,6 +167,7 @@
       position: absolute;
       display: none;
       z-index: 11;
+
       max-width: 865px; }
       .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item {
         position: relative;
@@ -193,7 +211,7 @@
 
 .pop-prizu {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 11;
   left: 10vw;
   right: 10vw;
@@ -266,7 +284,7 @@
 
 .pop-uslovia {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 11;
   left: 10%;
   right: 10%;

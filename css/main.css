@@ -3051,10 +3051,14 @@
   background: #ffe6df;
   color: #8d574c;
   text-transform: uppercase;
-  padding-top: 20px;
+  
 
 }
 
+.calendar-wrapper .calendar-table table td.action a span{
+  padding-top: 20px;
+  display: block;
+}
 /*---------------------------------*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
 		   /* IE10+ specific styles go here */  

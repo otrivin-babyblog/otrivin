@@ -2106,7 +2106,11 @@ label.input-error {
     margin: 0; }
 
 .popup._conditions {
-  padding: 54px 40px 45px; }
+  padding: 54px 40px 45px;
+  position: fixed !important;
+  top: 20px !important;
+  height: 100% !important;
+  overflow: scroll !important; }
   .popup._conditions ol {
     list-style-type: none;
     counter-reset: item;
@@ -2869,4 +2873,15 @@ label.input-error {
 .li {
 	min-height: 225px;
 	margin-right: 10px !important;
+}
+
+.calendar-actions-wrapper .print-btn{
+  width: 160px;
+  margin-right: 5px;
+  background-color: transparent;
+ 
+}
+
+.calendar-actions-wrapper .print-btn span{
+   line-height: 39px !important;
 }
