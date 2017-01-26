@@ -3194,10 +3194,10 @@
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn span {
   width: 100%;
   line-height: 60px;
-  padding: 13px 31px;
   background: #f3937e;
   color: #fff;
   transition: all .3s;
+  display: block;
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn span:hover {
   background: #e9baad;
@@ -3555,4 +3555,12 @@ s, strike, del {
     width: 233px;
     margin: 0 0 25px;
 }	
+
+ .save{
+  float:left;
+}
+
+.cancel{
+  float: right;
+}
 /*------------*/
