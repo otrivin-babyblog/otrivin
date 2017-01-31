@@ -258,9 +258,9 @@
       display: inline-block;/*добавил*/
       }
       .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ {
-        width: 305px;
-        float: left;/*добавил*/
-        height: 305px;
+        width: 290px;
+        float: left;
+        height: 290px;
         margin: 8px;
         box-sizing: border-box;
         border: 10px solid #d8e5f0;
@@ -321,6 +321,14 @@
       margin: 30px 0; }
       .pop-uslovia .pop-uslovia-item ul li span {
         margin-right: 5px; }
+        
+@media screen and (max-width: 1024px) {
+      .prizu-link__:first-of-type{
+        margin-left: 30%;
+      }
+      .prizu-link__:nth-of-type(2n) {
+         margin-left: 30%;}
+     }
 
 @media screen and (max-width: 767px) {
   .concurs .conditions-concurs p a {
@@ -344,3 +352,6 @@
     font-size: 8px; }
   .title-img .main-title, .title-img > h1, .title-img h1 {
     font-size: 18px; } }
+
+
+    

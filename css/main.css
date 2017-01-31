@@ -3056,7 +3056,11 @@
 }
 
 .calendar-wrapper .calendar-table table td.action a span{
-  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.calendar-wrapper .calendar-table table td.action a p{
+  margin-top: 20px;
   display: block;
 }
 /*---------------------------------*/
@@ -3137,6 +3141,13 @@
   font-weight: normal;
   text-decoration: underline;
   font-family: 'Conv_RobotoCondensedBold';
+}
+
+.calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a p{
+   color: #8d574c;
+   margin-bottom: 0;
+   text-decoration: none;
+
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li:last-child a {
   text-decoration: none;
@@ -3564,3 +3575,9 @@ s, strike, del {
   float: right;
 }
 /*------------*/
+
+
+/*  31.01.2017*/
+.pdot-dt:hover{
+	cursor: pointer;
+}
