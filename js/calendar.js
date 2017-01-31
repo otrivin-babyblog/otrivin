@@ -63,6 +63,8 @@ $(function () {
     }
   };
 
+ 
+  
   // datepicker
   $('.datepicker').datepicker({
     autoclose: true,
@@ -70,7 +72,25 @@ $(function () {
     language: 'ru'
   }).on('changeDate', function (e) {
     callbacks.changeDate(e.date);
+	//console.log('22');
   });
+  
+  
+  
+   /* 31.01.17 */
+  $('.pdot-dt').click(function()
+  {
+			  // datepicker
+		  $('.pdot-dt').datepicker({
+			autoclose: true,
+			format: 'DD dd MM yyyy',
+			language: 'ru'
+		  }).on('changeDate', function (e) {
+			 $('.datepicker').datepicker('update', e.date);
+		});
+	  //console.log('223');
+  });
+  
 
   $('.datepicker').datepicker('update', new Date());
 
@@ -122,7 +142,7 @@ $(function () {
 			  
 			  // фон для освободившегося поля таблицы
 			  var idx = findActiveTd({ x: e.pageX, y: e.pageY });
-         $('.calendar-table .action').eq(idx).addClass('calendar-active');
+         //$('.calendar-table .action').eq(idx).addClass('calendar-active');  оказывается этого делать не надо было...
 			  
 			  drag = target;
 			  drag.addClass('drag-action').css({ top: e.pageY - height / 2, left: e.pageX - width / 2 }).width(width).height(height);
@@ -206,7 +226,7 @@ $(function () {
 	
 	var valid = title.replace(/\s+/g,'');
 	if (valid!=''){
-		$('.calendar-actions .add').parent('li').before('<li><a><span>' + title + '</span></a></li>');
+		$('.calendar-actions .add').parent('li').before('<li><a><p>' + title + '</p></a></li>');
 		callbacks.addAction(title);
 		console.log('1');
 	}else
