@@ -26,7 +26,7 @@ $og_description = 'Спланируйте свой день по часам и �
             <div class="choose-date">
               <div class="datepicker-wrapper">
                 <input readonly type="text" class="datepicker">
-                <i class="fa fa-caret-down"></i>
+                <i class="fa fa-caret-down pdot-dt"></i>
               </div>
             </div>
             <div class="calendar-images">
@@ -109,14 +109,14 @@ $og_description = 'Спланируйте свой день по часам и �
 				
 				<p>А для подробного ознакомления с потешками и сказками, кликните на нужной кнопке правой кнопкой мыши и выбирете "Открыть на новой вкладке" или "Открыть в новом окне" или наведите курсор на нужную кнопку и нажмите среднюю кнопку мыши (колесико)</p>
 				<ul>
-                  <li><a href="<? echo $source; ?>nose_hygiene.php" class="otrivin-nasmork-anons"><span>Гигиена носика</span></a></li>
-                  <li><a href="<? echo $source; ?>igry_s_rebenkom.php" class="otrivin-nasmork-play"><span>Игры с ребенком</span></a></li>
-                  <li><a href="<? echo $source; ?>music.php" class="otrivin-nasmork-music"><span>Музыка</span></a></li>
-                  <li><a href="<? echo $source; ?>verses.php" class="otrivin-nasmork-poem"><span>Потешки</span></a></li>
+                  <li><a href="<? echo $source; ?>nose_hygiene.php" class="otrivin-nasmork-anons"><p>Гигиена носика</p></a></li>
+                  <li><a href="<? echo $source; ?>igry_s_rebenkom.php" class="otrivin-nasmork-play"><p>Игры с ребенком</p></a></li>
+                  <li><a href="<? echo $source; ?>music.php" class="otrivin-nasmork-music"><p>Музыка</p></a></li>
+                  <li><a href="<? echo $source; ?>verses.php" class="otrivin-nasmork-poem"><p>Потешки</p></a></li>
 				  
-				  <li><a href="<? echo $source; ?>uroki_dlya_mam.php" class="otrivin-nasmork-mom-lessons"><span>Уроки для мам</span></a></li>
-				  <li><a href="<? echo $source; ?>domestic_chores.php" class="otrivin-nasmork-house-cleaning"><span>Домашние дела</span></a></li>
-				  <li><a href="<? echo $source; ?>tales.php" class="otrivin-nasmork-fairy-tale"><span>Сказки на ночь</span></a></li>
+				  <li><a href="<? echo $source; ?>uroki_dlya_mam.php" class="otrivin-nasmork-mom-lessons"><p>Уроки для мам</p></a></li>
+				  <li><a href="<? echo $source; ?>domestic_chores.php" class="otrivin-nasmork-house-cleaning"><p>Домашние дела</p></a></li>
+				  <li><a href="<? echo $source; ?>tales.php" class="otrivin-nasmork-fairy-tale"><p>Сказки на ночь</p></a></li>
 				  
 				  
                   <li>
