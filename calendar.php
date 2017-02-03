@@ -25,7 +25,7 @@ $og_description = 'Спланируйте свой день по часам и �
           <div class="calendar-wrapper">
             <div class="choose-date">
               <div class="datepicker-wrapper">
-                <input readonly type="text" class="datepicker">
+                <input readonly type="text" id="datepc" class="datepicker">
                 <i class="fa fa-caret-down pdot-dt"></i>
               </div>
             </div>
