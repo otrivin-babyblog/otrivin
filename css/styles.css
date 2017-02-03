@@ -2137,7 +2137,6 @@ label.input-error {
   position: fixed !important;
   top: 33px!important;
   height: 93%;
-  left: 8%!important;
 	overflow-x: auto !important;
 
   }
@@ -2788,7 +2787,15 @@ label.input-error {
 }  
 
 
+#notes-list .print-btn{
+  width: 197px;
+  height: 40px;
+  padding: 0;
 
+}
+#notes-list .print-btn span{
+  line-height: 40px;
+}
 
 .print-btn {
   background: #f3937e;

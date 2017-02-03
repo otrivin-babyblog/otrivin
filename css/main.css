@@ -3190,17 +3190,21 @@
   background: #e9baad;
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn {
-  // display: -ms-flexbox;
-  // display: flex;
-  // -ms-flex-align: center;
-  //     align-items: center;
-  // -ms-flex-pack: center;
-  //     justify-content: center;
-  // text-transform: uppercase;
-  // text-align: center;
-  // width: 25%;
-  // margin: 10px 0 10px auto;
-  // padding: 10px;
+   /* display: -ms-flexbox;
+   display: flex;
+   -ms-flex-align: center;
+       align-items: center;
+   -ms-flex-pack: center;
+       justify-content: center;
+   text-transform: uppercase;
+   text-align: center;
+   width: 25%;
+   margin: 10px 0 10px auto;
+   padding: 10px; */
+   background: #f3937e;
+   margin: 15px 0;
+   margin-right: 5px;
+   padding: 0;
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn span {
   width: 100%;
