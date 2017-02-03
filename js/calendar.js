@@ -77,21 +77,12 @@ $(function () {
   
   
   
-   /* 31.01.17 */
-  $('.pdot-dt').click(function()
-  {
-			  // datepicker
-		  $('.pdot-dt').datepicker({
-			autoclose: true,
-			format: 'DD dd MM yyyy',
-			language: 'ru'
-		  }).on('changeDate', function (e) {
-			 $('.datepicker').datepicker('update', e.date);
-		});
-	  //console.log('223');
+	   /* 31.01.17 */
+  $('.pdot-dt').click(function(event){
+	  event.preventDefault();
+	 $('.datepicker').datepicker('show');
   });
-  
-
+ 
   $('.datepicker').datepicker('update', new Date());
 
   // drag
