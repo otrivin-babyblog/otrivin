@@ -142,6 +142,10 @@ img {
   background: #ddc7c0;
 }
 
+._participants .pagination{
+  text-align: center;
+  display: block !important;
+}
 
 .pagination {
   display: inline-block; }

@@ -57,6 +57,7 @@
         color: #cb7663; }
 
 .wrap-winner-concurs {
+  position: relative;
   background: #e8f8ff;
   padding: 40px 0; }
   .wrap-winner-concurs .winners-conc h2 {
@@ -167,7 +168,9 @@
       position: absolute;
       display: none;
       z-index: 11;
-
+      width: 75%;
+      left: 14.55%;
+      right: 14.55%;
       max-width: 865px; }
       .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item {
         position: relative;
@@ -175,6 +178,7 @@
         padding: 55px 110px 60px; }
         .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item:after {
           content: "";
+          display: block;
           position: fixed;
           z-index: -1;
           top: 0;
@@ -208,6 +212,19 @@
           .wrap-winner-concurs .winner-compet .winner-prew .winner-prew-item .winner-prew-link .info {
             color: #5A5A5A;
             font-size: 16px; }
+.pop__back{
+  /* display: block; */
+  display: none;
+  content: "";
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 
 .pop-prizu {
   display: none;
@@ -216,8 +233,8 @@
   left: 10vw;
   right: 10vw;
   top: 5vh; 
-  height:100%!important;
-  overflow: scroll;}
+  height: 100vh!important;
+  overflow: auto;}
   .pop-prizu .pop-prizu-item {
     position: relative;
     padding: 55px 15px 125px;
@@ -227,6 +244,7 @@
     .pop-prizu .pop-prizu-item:after {
       content: "";
       position: fixed;
+      display: none;
       z-index: -1;
       top: 0;
       left: 0;
@@ -291,8 +309,8 @@
   left: 10%;
   right: 10%;
   top: 10px;
-  height:100%!important;
-  overflow: scroll;
+  height: 100vh!important;
+  overflow: auto;
   /*max-width: 1070px;*/ 
   
 }
@@ -304,6 +322,7 @@
       content: "";
       position: fixed;
       z-index: -1;
+      display: none;
       top: 0;
       left: 0;
       width: 100vw;
