@@ -70,13 +70,15 @@ $(document).ready(function () {
 										   var ot = document.body.scrollTop;
 										   //console.log(ot);
 										   /*$('.pop-uslovia').css({'top': (ot+25)+'px'});*/
-									$('.pop-uslovia').show(700);
-								  });
+										  $('.pop__back').show();
+											$('.pop-uslovia').show(700);
+								  		});
 								  $('.priz').click(function () {
 									  
 									  var ot = document.body.scrollTop;
 										/*$('.pop-prizu').css({'top': (ot+25)+'px'});*/
-									$('.pop-prizu').show(700);
+										$('.pop__back').show();
+										$('.pop-prizu').show(700);
 								  });
 								  $('.winner-1').click(function () {
 									$('.prew-1').show(700);
@@ -88,7 +90,7 @@ $(document).ready(function () {
 									$('.prew-3').show(700);
 								  });
 								  $('.close-pop-concurs, .pop-uslovia-item, .pop-prizu-item').click(function () {
-									$('.pop-prizu, .pop-uslovia, .winner-prew').hide();
+									$('.pop-prizu, .pop-uslovia, .winner-prew, .pop__back').hide();
 								  });
 												
 				
