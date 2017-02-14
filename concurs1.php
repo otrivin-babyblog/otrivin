@@ -13,14 +13,17 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 <link rel="stylesheet" type="text/css" href="<? echo $source; ?>css/concurs.css">
 
 <body>
+	<div class="pop__back">
+		
+	</div>
 	<div class="pop-prizu">
 		<div class="pop-prizu-item">
 			<a href="javascript:void(0);" class="close-pop-concurs"><img src="<? echo $source; ?>img/close_menu_320.png" alt=""></a>
 			<h2 class="page-title">призы</h2>
-			<p class="prizes-nad"><img src="img/prizes-nad.png" alt=""></p>
+			<p class="prizes-nad"><img src="<? echo $source; ?>img/prizes-nad.png" alt=""></p>
 			<div class="pop-prizu-link">
 				<div class="prizu-link__">
-					<p class="prizu-link__img"><img src="<? echo $source; ?>img/ozonru.png" alt=""></p>
+					<p class="prizu-link__img"><img src="img/ozonru.png" alt=""></p>
 					<p class="nom-priz"><span>1</span> место</p>
 					<p class="text-priz">Сертификат на 4000 р<br/>в магазине «Озон»</p>
 				</div>
@@ -235,9 +238,13 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
       </div>
      
 	  <div class="breadcrumb">
-          <a href="<? echo $source; ?>" class="breadcrumb__link"><? echo $ref_title;?></a>
+          <a href="/" class="breadcrumb__link"><? echo $ref_title;?></a>
 		   <span class="breadcrumb__separator">/</span>
-		    <a href="<? echo $source; ?>entertain.php" class="breadcrumb__link">Развлекай ребёнка</a>
+		    <a href="/entertain.php" class="breadcrumb__link">Развлекай ребёнка</a>
+			
+			<span class="breadcrumb__separator">/</span>
+		    <a href="/contests_s.php" class="breadcrumb__link">Конкурс "Поразительное сходство"</a>
+			
           <span class="breadcrumb__separator">/</span>
           <a href="" class="breadcrumb__link breadcrumb__link_current">Победители Конкурса</a>
         </div>
@@ -264,7 +271,6 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
   </div>
   <div class="wrapper">
     <div class="content-footer">
-      <a href="#" class="article-back" onclick="window.history.back()">Вернуться</a>
       <div class="social">
         <p class="social__text">Поделиться в социальных сетях</p>
         <ul class="social-wrap">
