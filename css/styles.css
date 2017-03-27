@@ -129,6 +129,7 @@ img {
   overflow: hidden;
   padding: 0px 0 /*25px*/15px; 
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .pd-pad-top-35{
@@ -2200,12 +2201,9 @@ label.input-error {
 
 @media screen and (max-width: 1024px) {
   .participant {
-    width: 48%;
-    margin: 0 2% 22px 0; }
-    .participant:nth-of-type(3n) {
-      margin: 0 2% 22px 0; }
-    .participant:nth-of-type(2n) {
-      margin: 0 0 15px; }
+    width: 60%;
+    margin: 0 auto 22px auto!important; }
+
     .participant__comment, .participant > p {
       min-height: initial;
       margin: 0 0 15px; } }

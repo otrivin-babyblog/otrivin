@@ -3122,7 +3122,7 @@
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li {
   width: 25%;
-  padding: 15px;
+  padding: 5px;
   float: left;
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a {
@@ -3135,7 +3135,8 @@
   text-transform: uppercase;
   text-align: center;
   // min-height: 60px;
-  width: 160px;
+  max-width: 160px;
+  width: 100%;
   padding: 10px 6px;
   display: inline-block;
   background: #ffcec0;
@@ -3143,6 +3144,7 @@
   font-weight: normal;
   text-decoration: underline;
   font-family: 'Conv_RobotoCondensedBold';
+      font-size: 14px;
 }
 
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions ul li a p{
@@ -3206,7 +3208,7 @@
    background: #f3937e;
    margin: 15px 0;
    margin-right: 5px;
-   font-size: 16px;
+   font-size: 14px;
    padding: 0;
 }
 .calendar-wrapper .calendar-actions-wrapper .calendar-actions .print-btn span {
