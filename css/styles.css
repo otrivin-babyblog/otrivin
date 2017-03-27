@@ -48,7 +48,8 @@ img {
   background-color: #fff; }
 
 .content {
-  padding: 0 55px; }
+  padding: 0 55px;
+  position: relative; }
 
 .container, .container-top {
   width: 100%;
@@ -2179,6 +2180,8 @@ label.input-error {
   float: left;
   display: block;
   width: 65px;
+  overflow: hidden;
+  height: 65px;
   margin: 0 10px 0 0;
   border-radius: 50%; }
 
@@ -2644,6 +2647,13 @@ label.input-error {
 .verse-gutter {
   width: 2%; }
 
+.verse__kit{
+  width: 23.5%;
+
+  margin-top: -120px;
+  /*position: absolute;*/
+}
+
 .verses-wrapper {
   position: relative;
   margin: 0 0 25px; }
@@ -2685,9 +2695,15 @@ label.input-error {
 
 @media screen and (max-width: 850px) {
   .verse-size, .verse {
-    width: 49%; } }
+    width: 49%; } 
+  .verse__kit{
+        margin-top: -162px;
+        width: 43.5%;
+            margin-left: auto;
+  }}
 
 @media screen and (max-width: 767px) {
+  
   .verses-wrapper {
     padding: 0 20px; }
   .verse {

@@ -81,7 +81,7 @@ function ParticipantsC2(){
 				  '<div class="participant">'+
 				 '<div style="height: 300px; min-height: 300px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" src="http://otrivindata.pdigit.top/uploads/2/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
 				  '<div class="participant-author">'+
-					'<img src="'+ava+'" alt="" class="author__img">'+
+					'<div  class="author__img"><img src="'+ava+'" alt=""></div>'+
 					'<h3 class="author__name">'+str+'</h3>'+
 					/*'<p class="author__location">Москва</p>'+*/
 				 '</div>'+
@@ -99,7 +99,7 @@ function ParticipantsC2(){
 				  '<div class="participant">'+
 				 '<div style="height: 300px; min-height: 300px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" src="http://otrivindata.pdigit.top/uploads/2/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
 				  '<div class="participant-author">'+
-					'<img src="'+ava+'" alt="" class="author__img">'+
+					'<div  class="author__img"><img src="'+ava+'" alt=""></div>'+
 					'<h3 class="author__name">'+str+'</h3>'+
 					/*'<p class="author__location">Москва</p>'+*/
 				 '</div>'+
@@ -348,7 +348,7 @@ function Participants(){
 				  '<div class="participant">'+
 				 '<div style="height: 300px; min-height: 300px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
 				  '<div class="participant-author">'+
-					'<img src="'+ava+'" alt="" class="author__img">'+
+					'<div  class="author__img"><img src="'+ava+'" alt=""></div>'+
 					'<h3 class="author__name">'+str+'</h3>'+
 					/*'<p class="author__location">Москва</p>'+*/
 				 '</div>'+
@@ -366,7 +366,7 @@ function Participants(){
 				  '<div class="participant">'+
 				 '<div style="height: 300px; min-height: 300px; overflow: hidden; margin-bottom: 20px;"> <img data-desc="'+str+'" src="http://otrivindata.pdigit.top/uploads/1/'+item.url+'.jpg" alt="" class="participant__img prewLB" ></div>'+
 				  '<div class="participant-author">'+
-					'<img src="'+ava+'" alt="" class="author__img">'+
+					'<div  class="author__img"><img src="'+ava+'" alt=""></div>'+
 					'<h3 class="author__name">'+str+'</h3>'+
 					/*'<p class="author__location">Москва</p>'+*/
 				 '</div>'+

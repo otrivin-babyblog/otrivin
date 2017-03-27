@@ -1,5 +1,8 @@
 'use strict';
 
+
+
+
 function init() {
 var objBrowse = window.navigator;
 if (objBrowse.appName == "Opera") {
@@ -44,7 +47,7 @@ window.onload = init;
 $(function () {
 
 
-
+console.log('calendar');
 
 
   // callbacks
@@ -98,12 +101,14 @@ $(function () {
 		}
 		else if (e.button==0)
 		{
-		
-			if (target.is('a') && !target.hasClass('add') && !target.hasClass('print')) {
+				
+			if (target.is('a')&& !target.hasClass('add') && !target.hasClass('print')) {
 			  e.preventDefault();
 			  var width = target.width();
 			  var height = target.height();
-			  drag = target.clone();
+			  
+			 drag = target.clone();
+			  
 			  drag.addClass('drag-action').css({ top: e.pageY - height / 2, left: e.pageX - width / 2 }).width(width).height(height);
 			  $('body').append(drag);
 			}

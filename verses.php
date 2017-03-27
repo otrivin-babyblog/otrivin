@@ -419,11 +419,11 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
 		</div>
 		
 		  
-          <div class="verse verse_whale">
+       
+        </div>
+		   <div class="verse__kit verse_whale">
             <img src="<? echo $source; ?>img/whale-and-sea-reversed.png" alt="" class="verse__img">
           </div>
-        </div>
-		
         
       </div>
 	  

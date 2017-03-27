@@ -361,7 +361,9 @@
     margin: auto 10px auto 10px; }
   .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ {
     width: 150px;
-    height: 150px; }
+    height: 150px;
+    float: none; 
+  }
   .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .prizu-link__img img {
     width: 70px;
     margin: 10px auto auto; }
@@ -370,7 +372,15 @@
   .pop-prizu .pop-prizu-item .pop-prizu-link .prizu-link__ .text-priz {
     font-size: 8px; }
   .title-img .main-title, .title-img > h1, .title-img h1 {
-    font-size: 18px; } }
+    font-size: 18px; }
 
 
-    
+
+}
+
+
+@media screen and (max-width: 350px) {
+  .wrap-winner-concurs .winner-compet .winner-compet-item .win-name .win-name-item{
+    width: 65%;
+  }
+}
