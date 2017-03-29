@@ -80,7 +80,7 @@
     //     justify-content: center;
     // -ms-flex-wrap: wrap;
     // flex-wrap: wrap;
-    width:/* 82%;*/85%;
+    width:82%;
     margin: 0 auto;
     display: block;
     }
@@ -346,17 +346,10 @@
         margin-left: 30%;
       }
       .prizu-link__:nth-of-type(2n) {
-         margin-left: 30%;}
+         margin-left: 30%;
+      }
      }
-.pop-prizu .pop-prizu-item .pop-prizu-link,
-     .wrap-winner-concurs .winner-compet .winner-compet-item {
-      float: none;
-      width: 60%;
-      margin: 20px auto;
-     }
-     .pop-prizu .pop-prizu-item .pop-prizu-link {
-      width: 290px;
-     }
+
 
 @media screen and (max-width: 767px) {
   .concurs .conditions-concurs p a {
@@ -386,6 +379,10 @@
 .wrap-winner-concurs .winner-compet .winner-compet-item .win-name {
           height: auto;       
                  }
+  .wrap-winner-concurs .winner-compet .winner-compet-item{
+    margin: 10px auto;
+    float:none;
+  }
 
 }
 

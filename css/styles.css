@@ -2190,7 +2190,8 @@ label.input-error {
   font-size: 20px;
   line-height: 22px;
   font-weight: normal;
-  margin: 7px 0 5px; }
+  margin: 7px 0 5px;
+  width: 114%; }
 
 .author__location, .participant-author > p {
   margin: 0; }
